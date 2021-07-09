@@ -6,7 +6,7 @@ layout: default
 <label for="pets">Choose your pets:</label>
  
 <select id="pets" multiple="multiple">
-    {% for tag in site.tags %}
+    {% for tag in site.rawtags  %}
     <option value="{{ tag }}">" {{ tag }} "</option>
     {% endfor %}
 </select>
