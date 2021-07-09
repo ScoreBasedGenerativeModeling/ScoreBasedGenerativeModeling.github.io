@@ -8,7 +8,7 @@ layout: default
 <select id="pets" multiple="multiple">
     {% assign unique_tags =  site.posts | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
     {% for tag in unique_tags  %}
-    <option value="{{ tag }}">" {{ tag }} "</option>
+    <option value="{{ tag }}">{{ tag }}</option>
     {% endfor %}
 </select>
 <button id="submit">Get Selected Values</button>
