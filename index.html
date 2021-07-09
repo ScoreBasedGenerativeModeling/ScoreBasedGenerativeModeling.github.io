@@ -3,11 +3,21 @@ layout: default
 ---
 
 <div class="posts">
+  {% assign selected_tags = ["classics", "theory"] %}
   {% for post in site.posts %}
+    {% for possible_tag in post.tags %}
+    {% for selected_tag in selected_tags %}
+      {% if possible_tag ==  selected_tag%}
+        {% assign show = "True" %}
+      {% endif %}
+    {% endfor %}
+    {% endfor %}
+    
+    {% if show %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>      
-
+      
       <div id="block_container">
         {% if post.paperurl %}
             <div id="bloc1">
@@ -39,6 +49,7 @@ layout: default
        </div>
       
     </article>
+  {% endif %}
   {% endfor %}
   
   
