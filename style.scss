@@ -307,13 +307,11 @@ footer {
 }
 
 
-#block_container
-{
+#block_container {
     text-align:left;
 }
-#bloc1, #bloc2
-{
-    display:inline;
+#bloc1, #bloc2 {
+    display:inline-block;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
