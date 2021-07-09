@@ -3,19 +3,10 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign show = "False" %}
-  {% assign selected_tags = {"theory"} %}
+  {% assign id = 0 %}
   {% for post in site.posts %}
-    {% for possible_tag in post.tags %}
-    {% for selected_tag in selected_tags %}
-      {% if possible_tag ==  selected_tag%}
-        {% assign show = "True" %}
-      {% endif %}
-    {% endfor %}
-    {% endfor %}
-    
-    {% if show %}
-    <article class="post">
+    {% assign id = id | plus:1 %}
+    <article class="post" id="{{id}}">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>      
       
@@ -76,6 +67,21 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+</script>
+  
+script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+    var id = 0;
+    {% for post in site.posts %}
+      var cats = {{ post.categories | jsonify }}
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    {% endfor %}
+  }
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
