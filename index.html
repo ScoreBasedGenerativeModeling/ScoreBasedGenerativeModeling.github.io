@@ -11,8 +11,12 @@ layout: default
       <div id="block_container">
         {% if post.paperurl %}
             <div id="bloc1">
-                <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
-
+              <p>
+                <button class="btn btn-primary" data-toggle="collapse" href=" {{ post.paperurl }} " role="button">
+                  Paper
+                </button>
+              </p>
+            </div>  
         {% endif %}
         <div id="bloc2">
             <p>
