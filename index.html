@@ -7,38 +7,28 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>      
-      <button type="button" class="collapsible">See More</button>
-      <div class="content">
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-      </div>
-      
-      
-      {% if post.paperurl %}
+
       <div id="block_container">
+        {% if post.paperurl %}
           <div id="bloc1">
               <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
           </div>  
+        {% endif %}
           <div id="bloc2">
-            <span>[
-              {% for tag in post.tags %}
-                {% capture tag_name %}{{ tag }}{% endcapture %}
-                <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-              {% endfor %}
-            ]</span>
-          </div>
-
+            <button type="button" class="collapsible">See More</button>
+            <div class="content">
+              <div class="entry">
+                {{ post.excerpt }}
+              </div>
+            </div>
       </div>
-      {% else %}
-          <span>[
-            {% for tag in post.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-            {% endfor %}
-          ]</span>
-
-     {% endif %}
+     
+     <span>[
+        {% for tag in post.tags %}
+          {% capture tag_name %}{{ tag }}{% endcapture %}
+          <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+        {% endfor %}
+      ]</span>
       
     </article>
   {% endfor %}
