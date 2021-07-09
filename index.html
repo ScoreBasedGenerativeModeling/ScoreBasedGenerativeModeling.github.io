@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign selected_tags = ["classics", "theory"] %}
+  {% assign selected_tags = ["theory"] %}
   {% for post in site.posts %}
     {% for possible_tag in post.tags %}
     {% for selected_tag in selected_tags %}
