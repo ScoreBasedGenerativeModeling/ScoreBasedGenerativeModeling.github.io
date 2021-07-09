@@ -309,12 +309,13 @@ footer {
 
 #block_container
 {
-    text-align:center;
+    text-align:left;
 }
 #bloc1, #bloc2
 {
     display:inline;
 }
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
