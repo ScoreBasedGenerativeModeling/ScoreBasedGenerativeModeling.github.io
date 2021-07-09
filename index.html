@@ -28,7 +28,7 @@ layout: default
               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.title }}" aria-expanded="false" aria-controls="{{ post.title }}">
                 See More
               </button>
-	      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#{{ id }}" aria-expanded="false" aria-controls="{{ id }}">
+	      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
 	    		Button with data-bs-target
 	      </button>
             </p>
@@ -44,7 +44,7 @@ layout: default
     
       </div>
         
-      <div class="collapse" id="#{{ id }}">
+      <div class="collapse" id="collapse{{ id }}">
               <div class="entry">
                 {{ post.excerpt }}
               </div>
