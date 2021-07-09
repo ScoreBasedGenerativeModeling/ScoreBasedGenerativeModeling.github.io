@@ -13,15 +13,33 @@ layout: default
           {{ post.excerpt }}
         </div>
       </div>
-      <span>[
+      
+      
       {% if post.paperurl %}
-        <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
-      {% endif %}
-      {% for tag in post.tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-      {% endfor %}
-    ]</span>
+      <div id="block_container">
+
+          <div id="bloc1">
+              <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
+          </div>  
+          <div id="bloc2">
+            <span>[
+              {% for tag in post.tags %}
+                {% capture tag_name %}{{ tag }}{% endcapture %}
+                <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+              {% endfor %}
+            ]</span>
+          </div>
+
+      </div>
+      {% else %}
+          <span>[
+            {% for tag in post.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+            {% endfor %}
+          ]</span>
+
+     {% endif %}
       
       
 
