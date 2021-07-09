@@ -1,10 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: Generative Modeling by Estimating Gradients of the Data Distribution
+url: https://arxiv.org/abs/1907.05600
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+ * See also the blogpost (http://yang-song.github.io/blog/2021/score/)
+ * Sample from multiple noisy versions of the data distribution
+ * First results on popular image datasets
