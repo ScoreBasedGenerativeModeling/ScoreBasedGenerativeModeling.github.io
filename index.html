@@ -6,7 +6,8 @@ layout: default
 <label for="pets">Choose your pets:</label>
  
 <select id="pets" multiple="multiple">
-    {% for tag in site.rawtags  %}
+    {% assign unique_tags =  site.posts | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+    {% for tag in unique_tags  %}
     <option value="{{ tag }}">" {{ tag }} "</option>
     {% endfor %}
 </select>
