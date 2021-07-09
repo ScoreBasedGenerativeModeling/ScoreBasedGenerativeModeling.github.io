@@ -7,7 +7,7 @@ layout: default
  
 <select id="pets" multiple="multiple">
     {% for tag in site.tags %}
-    <option value="{{tag}}">{{tag}}</option>
+    <option value="{{ tag }}">" {{ tag }} "</option>
     {% endfor %}
 </select>
 <button id="submit">Get Selected Values</button>
