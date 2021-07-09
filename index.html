@@ -10,7 +10,9 @@ layout: default
       <div class="entry">
         {{ post.excerpt }}
       </div>
-      <li>{{ post.url }}</li> 
+      {% if post.paperurl %}
+        <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
+      {% endif %}
       
       
 
