@@ -14,14 +14,14 @@ layout: default
                 <p><a href=" {{ post.paperurl }} "><u>Paper</u></a></p>
 
         {% endif %}
-        <div id="bloc1">
+        <div id="bloc2">
             <p>
               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 See More
               </button>
             </p>
         </div>  
-        <div id="bloc1">
+        <div id="bloc3">
           <span>[
             {% for tag in post.tags %}
               {% capture tag_name %}{{ tag }}{% endcapture %}
