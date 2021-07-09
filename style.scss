@@ -280,7 +280,7 @@ nav {
 
 .collapsible {
   background-color: $white;
-  color: $darkGray;
+  color: $lightGray;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -291,7 +291,7 @@ nav {
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  color: $darkGray;
 }
 
 .content {
