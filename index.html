@@ -3,15 +3,22 @@ layout: default
 ---
 
 
-<label for="pets">Choose your pets:</label>
- 
-<select id="pets" multiple="multiple">
-    {% assign unique_tags =  site.posts | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+<div class="container">
+	<h2>Example: Multi Select Dropdown with Checkbox using Bootstrap, jQuery and PHP</h2>   
+	<form class="form-signin" method="post" id="register-form" action="action.php">		
+		<div class="form-group">
+			<select id="languages" name="languages[]" multiple >						    
+				{% assign unique_tags =  site.posts | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
     {% for tag in unique_tags  %}
     <option value="{{ tag }}">{{ tag }}</option>
     {% endfor %}
-</select>
-<button id="submit">Get Selected Values</button>
+			</select>	
+		</div>	
+		<div class="form-group">		
+			<button type="submit" class="btn btn-default" name="btn-save" id="btn-submit">Submit</button> 
+		</div>     
+	</form>	
+</div>
   
   {% assign id = 0 %}
   {% for post in site.posts %}
