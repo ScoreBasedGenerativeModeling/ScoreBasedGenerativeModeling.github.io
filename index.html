@@ -13,7 +13,7 @@ layout: default
   {% assign id = 0 %}
   {% for post in site.posts %}
     {% assign id = id | plus:1 %}
-    <article class="post" id="{{id}}">
+    <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>      
       
@@ -25,7 +25,7 @@ layout: default
         {% endif %}
         <div id="bloc2">
             <p>
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.title }}" aria-expanded="false" aria-controls="collapseExample">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#{{ post.title }}" aria-expanded="false" aria-controls="{{ post.title }}">
                 See More
               </button>
             </p>
