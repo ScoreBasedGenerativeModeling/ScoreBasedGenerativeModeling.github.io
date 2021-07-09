@@ -2,6 +2,7 @@
 layout: post
 title: Generative Modeling by Estimating Gradients of the Data Distribution
 paperurl: https://arxiv.org/abs/1907.05600
+tags: classics
 
 ---
 
