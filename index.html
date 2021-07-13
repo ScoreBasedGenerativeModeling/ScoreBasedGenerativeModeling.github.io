@@ -5,27 +5,38 @@ layout: default
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
-
-<div class="row">
-  <div class="column1" >
-{% capture x %}
-# Generative Modeling by Estimating Gradients of the Data Distribution
-{% endcapture %}{{ x | markdownify }}
-  </div>
-  <div class="column2" >
-    <div id="block_container">
-	<div id="bloc2">
-	<a href="https://arxiv.org/abs/1907.05600" target="_blank" class="btn btn-info" role="button"> Paper </a>
-	</div>  
-	<div id="bloc3">
-	    <p>
-	      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
-	    		See More
-	      </button>
-	    </p>
-	</div>  
-     </div>
-  </div>
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+	{% capture x %}
+	# Generative Modeling by Estimating Gradients of the Data Distribution
+	{% endcapture %}{{ x | markdownify }}
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/1907.05600" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  classics, methodology
+		  </div>
+		  
+	  </div>
+	</div>
 </div>
 
 <div class="collapse" id="collapse{{ id }}">
@@ -37,8 +48,34 @@ layout: default
 </div>
 <!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
 
+<script>
+function hide() {
+   	var items = document.querySelectorAll('row');//matches first
+  	
+   	for (let i = 0; i < items.length; i++) {
+      		
+	      var tags = items[i].textContent.split(','); 
+	      const found = tags.some(r=> tags_all.includes(r));
+	      if (found) {
+		p[i].style.display  = 'none';
+	      }
+	    }
+}
 
-  
+function recover() {
+	var entryContent = document.querySelector('div');//matches first
+	var p = entryContent.querySelectorAll("p");
+  	
+    for (let i = 0; i < p.length; i++) {
+      
+      var tags = p[i].textContent.split(','); 
+      const found = tags.some(r=> tags_all.includes(r));
+      if (found) {
+      	p[i].style.display  = 'unset';
+      }
+    }
+}
+</script>
 
   <script src="https://utteranc.es/client.js"
         repo="ScoreBasedGenerativeModeling/scorebasedgenerativemodeling.github.io"
