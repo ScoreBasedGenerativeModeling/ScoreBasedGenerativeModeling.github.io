@@ -2,17 +2,6 @@
 layout: default
 ---
 
-<!-- Try to filter -->
-<!-- <select class="form-select" multiple aria-label="multiple select example">
-  {% assign unique_tags =  site.posts | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
-	{% for tag in unique_tags  %}
-	<option value="{{ tag }}">{{ tag }}</option>
-	{% endfor %}
-</select> -->
-
-<!--   Each post -->
-
-
 <!-- Post 1 -->
 {% capture x %}
 # Generative Modeling by Estimating Gradients of the Data Distribution
@@ -49,49 +38,6 @@ layout: default
 		
 </div>
 
-<!-- Post 2 -->
-
-
-
-<!--   {% assign id = 0 %}
-  {% for post in site.posts %}
-    {% assign id = id | plus:1 %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>      
-      
-      <div id="block_container">
-        {% if post.paperurl %}
-            <div id="bloc1">
-              <a href=" {{ post.paperurl }} " class="btn btn-info" role="button"> Paper </a>
-            </div>  
-        {% endif %}
-        <div id="bloc2">
-            <p>
-	      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
-	    		See More
-	      </button>
-            </p>
-        </div>  
-        <div id="bloc3">
-          <span>[
-            {% for tag in post.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-            {% endfor %}
-          ]</span>
-        </div>
-    
-      </div>
-        
-      <div class="collapse" id="collapse{{ id }}">
-              <div class="entry">
-                {{ post.excerpt }}
-              </div>
-       </div>
-      
-    </article>
-  {% endfor %} -->
   
   
   <script src="https://utteranc.es/client.js"
