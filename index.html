@@ -18,37 +18,35 @@ layout: default
 # Generative Modeling by Estimating Gradients of the Data Distribution
 {% endcapture %}{{ x | markdownify }}
 
-
-{% capture x %}
-[Paper](https://arxiv.org/abs/1907.05600)
-
- * See also the [blogpost](http://yang-song.github.io/blog/2021/score/)
- * Sample from multiple noisy versions of the data distribution
- * First results on popular image datasets 
-
-{% endcapture %}{{ x | markdownify }}
-
-<p>
+<div id="block_container">
+	<div id="bloc1">
+	<a href=https://arxiv.org/abs/1907.05600 class="btn btn-info" role="button"> Paper </a>
+	</div>  
+	<div id="bloc2">
+	    <p>
 	      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse{{ id }}">
 	    		See More
 	      </button>
-</p>
+	    </p>
+	</div>  
+        <div id="bloc3">
+          <span>[
+            {% for tag in post.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+            {% endfor %}
+          ]</span>
+        </div>
+      </div>
 
 <div class="collapse" id="collapse1">
-	<div class="entry">
 		
 {% capture x %}
-
-# Generative Modeling by Estimating Gradients of the Data Distribution
-
-[Paper](https://arxiv.org/abs/1907.05600)
-
  * See also the [blogpost](http://yang-song.github.io/blog/2021/score/)
  * Sample from multiple noisy versions of the data distribution
  * First results on popular image datasets 
 {% endcapture %}{{ x | markdownify }}
 		
-	</div>
 </div>
 
 <!-- Post 2 -->
