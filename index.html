@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign id = 0 %}
 
-<!-- Post 1--------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
 {% capture x %}
 # Generative Modeling by Estimating Gradients of the Data Distribution
@@ -31,40 +31,10 @@ layout: default
 {% endcapture %}{{ x | markdownify }}
 		
 </div>
-<!-- End Post 1--------------------------------------------------------------------------------------------------------------------------------------------->
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
 
   
-<!-- Post n--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-{% capture x %}
-# Generative Modeling by Estimating Gradients of the Data Distribution
-{% endcapture %}{{ x | markdownify }}
 
-<div id="block_container">
-	<div id="bloc1">
-	<a href="<paper title>" target="_blank" class="btn btn-info" role="button"> Paper </a>
-	</div>  
-	<div id="bloc2">
-	    <p>
-	      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
-	    		See More
-	      </button>
-	    </p>
-	</div>  
-   </div>
-
-<div class="collapse" id="collapse{{ id }}">
-		
-{% capture x %}
-<!-- Blog detail here -->
- * See also the [blogpost](http://yang-song.github.io/blog/2021/score/)
- * Sample from multiple noisy versions of the data distribution
- * First results on popular image datasets 
-{% endcapture %}{{ x | markdownify }}
-		
-</div>
-<!-- End Post n--------------------------------------------------------------------------------------------------------------------------------------------->
-  
   <script src="https://utteranc.es/client.js"
         repo="ScoreBasedGenerativeModeling/scorebasedgenerativemodeling.github.io"
         issue-term="pathname"
