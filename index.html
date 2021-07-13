@@ -14,7 +14,11 @@ layout: default
 
 
 <!-- Post 1 -->
+{% capture x %}
+## This is markdown
 
+so and so
+{% endcapture %}{{ x | markdownify }}
 <p>
 	      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse{{ id }}">
 	    		See More
