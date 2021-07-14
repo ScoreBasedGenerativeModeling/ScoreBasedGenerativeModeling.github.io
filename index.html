@@ -61,6 +61,58 @@ layout: default
 </div>
 <!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
 
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling
+{% endcapture %}{{ x | markdownify }}
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2106.01357 target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  classics,methodology,optimal transport
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ * See also the [blogpost](https://vdeborto.github.io/publication/schrodinger_bridge/)
+ * Approximates solution to Schrodinger bridge problem by approximiating iterative reverse diffusions with score/drift networks
+ * Theoretical results on quality of generative distribution
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
   <script src="https://utteranc.es/client.js"
         repo="ScoreBasedGenerativeModeling/scorebasedgenerativemodeling.github.io"
         issue-term="pathname"
@@ -87,7 +139,7 @@ $('#tagselection').change(function (e) {
 	console.log(tags_selected);
    	for (let i = 0; i < items.length; i++) {
 	     var tag_items = items[i].getElementsByClassName("tags")[0];
-	     var item_tags = tag_items.textContent.split(','); 
+	     var item_tags = tag_items.textContent.trim().split(','); 
 	     item_tags =  item_tags.map(v => v.replace("\n", '').replace("\t", '').trim());
 	      console.log("item tags");
 	      console.log(item_tags);
