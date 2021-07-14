@@ -90,7 +90,7 @@ $('#filter').on('click', function (e) {
 	console.log(tags_all);
   	console.log(items);
    	for (let i = 0; i < items.length; i++) {
-	     var tag_items = items[i].getElementsByClassName("tags");
+	     var tag_items = items[i].getElementsByClassName("tags")[0];
 	     var item_tags = tag_items.textContent.split(','); 
 	     console.log(item_tags);
       	      const found = item_tags.some(r=> tags_all.includes(r));
