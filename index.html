@@ -90,16 +90,14 @@ layout: default
 </div>
 
 <script>
+
 	
-$('#tagselection').on('click',function() {
-  alert($(this).val());
-  console.log($(this).val());
-});
-	
-$('#tagselection').on('click', function (e) {
+$('#tagselection').change(function (e) {
    	var items = document.getElementsByClassName('entry');
   	console.log(items);
 	var tags_all = $(this).val();
+	var selectedItem = $('.tagselection').val();
+        alert(selectedItem);
 	console.log(tags_all);
    	for (let i = 0; i < items.length; i++) {
 	     var tag_items = items[i].getElementsByClassName("tags")[0];
