@@ -86,7 +86,7 @@ layout: default
 	
 var tags_all = ["classics"];
 $('#filter').on('click', function (e) {
-   	var items = document.querySelectorAll('row');
+   	var items = document.getElementsByClassName('entry');
 	console.log(tags_all);
   	console.log(items);
    	for (let i = 0; i < items.length; i++) {
@@ -102,7 +102,7 @@ $('#filter').on('click', function (e) {
 })
 
 $('#showall').on('click', function (e) {
-	var items = document.querySelectorAll('row');
+	var items = document.getElementsByClassName('entry');
 
 	for (let i = 0; i < items.length; i++) {
 	      var tag_items = items[i].getElementsByClassName("tags");
