@@ -96,14 +96,14 @@ $('#tagselection').change(function (e) {
    	var items = document.getElementsByClassName('entry');
   	console.log(items);
 	var tags_all = $(this).val();
-	var selectedItem = $('.tagselection').val();
-        alert(selectedItem);
+	console.log("tags selected");
 	console.log(tags_all);
    	for (let i = 0; i < items.length; i++) {
 	     var tag_items = items[i].getElementsByClassName("tags")[0];
 	     var item_tags = tag_items.textContent.split(','); 
 	     item_tags =  item_tags.map(v => v.replace("\n", '').replace("\t", '').trim());
-	     console.log(item_tags);
+	      console.log("item tags");
+	      console.log(item_tags);
       	      const found = item_tags.some(r=> tags_all.includes(r));
 	      if (found) {
 		items[i].style.display  = 'none';
