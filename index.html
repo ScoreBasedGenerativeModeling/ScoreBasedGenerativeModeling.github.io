@@ -87,7 +87,8 @@ layout: default
 var tags_all = ["classics"];
 $('#filter').on('click', function (e) {
    	var items = document.querySelectorAll('row');
-  	
+	console.log(tags_all);
+  	console.log(items);
    	for (let i = 0; i < items.length; i++) {
 	     var tag_items = items[i].getElementsByClassName("tags");
 	     var item_tags = tag_items.textContent.split(','); 
