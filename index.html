@@ -10,20 +10,6 @@ layout: default
 	  <option>methodology</option>
 	</select>
   </div>
-  <div class="column2">
-	  <div id="block_container">
-		<button id="filter" class="btn btn-primary" type="button">
-				Filter
-		 </button>
-		<div id="bloc3">
-		    <p>
-		      <button id="showall" class="btn btn-primary" type="button">
-				Show All
-		      </button>
-		    </p>
-		</div>  
-	     </div>
-  </div>
 </div>
 
 {% assign id = 0 %}
@@ -108,18 +94,13 @@ $('#tagselection').change(function (e) {
 	      if (found) {
 		items[i].style.display  = 'none';
 	      }
+		else {
+		items[i].style.display  = 'unset';
+		}
 	    }
 
 })
 
-$('#showall').on('click', function (e) {
-	var items = document.getElementsByClassName('entry');
-
-	for (let i = 0; i < items.length; i++) {
-		items[i].style.display  = 'unset';
-	}
-
-})
 	
 
 </script>
