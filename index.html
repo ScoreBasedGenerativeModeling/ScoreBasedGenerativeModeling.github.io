@@ -91,7 +91,11 @@ layout: default
 
 <script>
 	
-
+$('#tagselection').on('click',function() {
+  alert($(this).val());
+  console.log($(this).val());
+});
+	
 $('#tagselection').on('click', function (e) {
    	var items = document.getElementsByClassName('entry');
   	console.log(items);
