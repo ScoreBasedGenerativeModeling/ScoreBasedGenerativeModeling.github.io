@@ -92,7 +92,7 @@ $('#tagselection').change(function (e) {
 	      console.log("item tags");
 	      console.log(item_tags);
       	      const found = item_tags.some(r=> tags_selected.includes(r));
-	      if (found || tags_selected.length === 0)) {
+	      if (found || tags_selected.length === 0) {
 		items[i].style.display  = 'unset';
 	      }
 		else {
