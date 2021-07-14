@@ -105,14 +105,8 @@ $('#showall').on('click', function (e) {
 	var items = document.getElementsByClassName('entry');
 
 	for (let i = 0; i < items.length; i++) {
-	      var tag_items = items[i].getElementsByClassName("tags");
-	      var item_tags = tag_items.textContent.split(','); 
-	      console.log(item_tags);
-	      const found = item_tags.some(r=> tags_all.includes(r));
-	      if (found) {
 		items[i].style.display  = 'unset';
-	      }
-	    }
+	}
 
 })
 	
