@@ -78,10 +78,10 @@ $('#filter').on('click', function (e) {
   	
    	for (let i = 0; i < items.length; i++) {
       		
-	      var tags = items[i].textContent.split(','); 
-	      const found = tags.some(r=> tags_all.includes(r));
+	      var item_tags = items[i].textContent.split(','); 
+      	      const found = item_tags.some(r=> tags_all.includes(r));
 	      if (found) {
-		p[i].style.display  = 'none';
+		items[i].style.display  = 'none';
 	      }
 	    }
 
@@ -93,10 +93,10 @@ var tags = items.getElementsByClassName("tags");
 tags = tags.textContent.split(','); 
 
 for (let i = 0; i < items.length; i++) {
-      var tags = items[i].textContent.split(','); 
-      const found = tags.some(r=> tags_all.includes(r));
+      var item_tags = items[i].textContent.split(','); 
+      const found = item_tags.some(r=> tags_all.includes(r));
       if (found) {
-	p[i].style.display  = 'unset';
+	items[i].style.display  = 'unset';
       }
     }
 
