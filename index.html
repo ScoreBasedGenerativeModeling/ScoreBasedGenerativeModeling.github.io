@@ -1,8 +1,28 @@
 ---
 layout: default
 ---
-{% assign id = 0 %}
 
+<div class="row">
+  <div class="column1" >
+	  
+  </div>
+  <div class="column2">
+	  <div id="block_container">
+		<button id="filter" class="btn btn-primary" type="button">
+				Filter
+		 </button>
+		<div id="bloc3">
+		    <p>
+		      <button id="showall" class="btn btn-primary" type="button">
+				Show All
+		      </button>
+		    </p>
+		</div>  
+	     </div>
+  </div>
+</div>
+
+{% assign id = 0 %}
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
 <div class="entry">
@@ -32,7 +52,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  classics, methodology
+			  classics,methodology
 		  </div>
 		  
 	  </div>
@@ -49,8 +69,12 @@ layout: default
 <!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
 
 <script>
-function hide() {
-   	var items = document.querySelectorAll('row');//matches first
+	
+var tags_all = ["classics"];
+$('#filter').on('click', function (e) {
+   	var items = document.querySelectorAll('row');
+	var tags = items.getElementsByClassName("tags");
+	tags = tags.textContent.split(','); 
   	
    	for (let i = 0; i < items.length; i++) {
       		
@@ -60,21 +84,25 @@ function hide() {
 		p[i].style.display  = 'none';
 	      }
 	    }
-}
 
-function recover() {
-	var entryContent = document.querySelector('div');//matches first
-	var p = entryContent.querySelectorAll("p");
-  	
-    for (let i = 0; i < p.length; i++) {
-      
-      var tags = p[i].textContent.split(','); 
+})
+
+$('#showall').on('click', function (e) {
+var items = document.querySelectorAll('row');
+var tags = items.getElementsByClassName("tags");
+tags = tags.textContent.split(','); 
+
+for (let i = 0; i < items.length; i++) {
+      var tags = items[i].textContent.split(','); 
       const found = tags.some(r=> tags_all.includes(r));
       if (found) {
-      	p[i].style.display  = 'unset';
+	p[i].style.display  = 'unset';
       }
     }
-}
+
+})
+	
+
 </script>
 
   <script src="https://utteranc.es/client.js"
