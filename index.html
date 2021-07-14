@@ -87,15 +87,11 @@ layout: default
 var tags_all = ["classics"];
 $('#filter').on('click', function (e) {
    	var items = document.querySelectorAll('row');
-	var tag_items = items.getElementsByClassName("tags");
-	var item_tags = tag_items.textContent.split(','); 
-	console.log(item_tags);
-	
-      	const found = item_tags.some(r=> tags_all.includes(r));
   	
    	for (let i = 0; i < items.length; i++) {
-      		
-	      var item_tags = items[i].textContent.split(','); 
+	     var tag_items = items[i].getElementsByClassName("tags");
+	     var item_tags = tag_items.textContent.split(','); 
+	     console.log(item_tags);
       	      const found = item_tags.some(r=> tags_all.includes(r));
 	      if (found) {
 		items[i].style.display  = 'none';
@@ -106,17 +102,16 @@ $('#filter').on('click', function (e) {
 
 $('#showall').on('click', function (e) {
 	var items = document.querySelectorAll('row');
-	var tag_items = items.getElementsByClassName("tags");
-	var item_tags = tag_items.textContent.split(','); 
-	console.log(item_tags);
 
-for (let i = 0; i < items.length; i++) {
-      var item_tags = items[i].textContent.split(','); 
-      const found = item_tags.some(r=> tags_all.includes(r));
-      if (found) {
-	items[i].style.display  = 'unset';
-      }
-    }
+	for (let i = 0; i < items.length; i++) {
+	      var tag_items = items[i].getElementsByClassName("tags");
+	      var item_tags = tag_items.textContent.split(','); 
+	      console.log(item_tags);
+	      const found = item_tags.some(r=> tags_all.includes(r));
+	      if (found) {
+		items[i].style.display  = 'unset';
+	      }
+	    }
 
 })
 	
