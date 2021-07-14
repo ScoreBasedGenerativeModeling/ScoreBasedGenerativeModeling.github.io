@@ -82,17 +82,17 @@ layout: default
 $('#tagselection').change(function (e) {
    	var items = document.getElementsByClassName('entry');
   	console.log(items);
-	var tags_all = $(this).val();
+	var tags_selected = $(this).val();
 	console.log("tags selected");
-	console.log(tags_all);
+	console.log(tags_selected);
    	for (let i = 0; i < items.length; i++) {
 	     var tag_items = items[i].getElementsByClassName("tags")[0];
 	     var item_tags = tag_items.textContent.split(','); 
 	     item_tags =  item_tags.map(v => v.replace("\n", '').replace("\t", '').trim());
 	      console.log("item tags");
 	      console.log(item_tags);
-      	      const found = item_tags.some(r=> tags_all.includes(r));
-	      if (found) {
+      	      const found = item_tags.some(r=> tags_selected.includes(r));
+	      if (found || tags_selected.length === 0)) {
 		items[i].style.display  = 'unset';
 	      }
 		else {
