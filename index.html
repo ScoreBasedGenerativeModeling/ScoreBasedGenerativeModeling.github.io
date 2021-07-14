@@ -93,10 +93,10 @@ $('#tagselection').change(function (e) {
 	      console.log(item_tags);
       	      const found = item_tags.some(r=> tags_all.includes(r));
 	      if (found) {
-		items[i].style.display  = 'none';
+		items[i].style.display  = 'unset';
 	      }
 		else {
-		items[i].style.display  = 'unset';
+		items[i].style.display  = 'none';
 		}
 	    }
 
