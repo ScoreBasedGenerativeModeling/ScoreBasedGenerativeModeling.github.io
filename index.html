@@ -10,7 +10,6 @@ layout: default
 	  <option>optimal transport</option>
 	  <option>methodology</option>
 	  <option>theory</option>
-    <option>variational</option>
 	</select>
   </div>
 </div>
@@ -183,8 +182,7 @@ $('#tagselection').change(function (e) {
    	for (let i = 0; i < items.length; i++) {
 	     var tag_items = items[i].getElementsByClassName("tags")[0];
 	     var item_tags = tag_items.textContent.trim().split(','); 
-	     item_tags =  item_tags.map(v => v.replace("
-", '').replace("	", '').trim());
+	     item_tags =  item_tags.map(v => v.replace("\n", '').replace("\t", '').trim());
 	      console.log("item tags");
 	      console.log(item_tags);
       	      const found = item_tags.some(r=> tags_selected.includes(r));
@@ -195,10 +193,6 @@ $('#tagselection').change(function (e) {
 		items[i].style.display  = 'none';
 		}
 	    }
-
 })
-
-	
-
 </script>
 
