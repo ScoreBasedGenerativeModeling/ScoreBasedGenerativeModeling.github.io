@@ -348,7 +348,8 @@ footer {
 
 .authors {
 	font-size: 12px;
-	border-left: thick solid #ff0000;
+	padding: 5px;
+    	border-left: solid #0096FF;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
