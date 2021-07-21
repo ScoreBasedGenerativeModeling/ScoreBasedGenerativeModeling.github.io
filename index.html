@@ -341,7 +341,12 @@ layout: default
 		<a href="https://arxiv.org/abs/2009.05475" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
-		    
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
 		</div>  
 	     </div>
 	  </div>
@@ -351,7 +356,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  performance
+			  performance, code, blog
 		  </div>
 		  
 	  </div>
@@ -359,7 +364,8 @@ layout: default
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- 
+ * [Blog](https://ajolicoeur.wordpress.com/adversarial-score-matching-and-consistent-sampling/)
+* [Code](https://github.com/AlexiaJM/AdversarialConsistentScoreMatching)
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -1178,7 +1184,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  performance, code, blog
+			  performance
 		  </div>
 		  
 	  </div>
@@ -1328,7 +1334,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  performance, code, blog
+			  performance
 		  </div>
 		  
 	  </div>
