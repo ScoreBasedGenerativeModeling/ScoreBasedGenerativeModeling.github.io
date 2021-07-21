@@ -4,7 +4,7 @@ layout: default
 
 <div class="row">
   <div class="column1" >
-	<p>Select categories: </p>
+	<span>Select categories: </span>
 	<select id="tagselection" class="selectpicker" multiple data-live-search="true">
 	  <option>application</option>
 <option>blog</option>
@@ -17,11 +17,70 @@ layout: default
 <option>variational</option>
 	</select>
   </div>
+  <div class="column2" >
+	<span>Select Authors: </span>
+	<select id="authorselection" class="selectpicker" multiple data-live-search="true">
+	  {AUTHORS_OPTIONS}
+	</select>
+  </div>
 </div>
 
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Sliced Score Matching: A Scalable Approach to Density and Score Estimation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 17, 2019 </span>    
+         <span class="authors"> Yang Song, Sahaj Garg, Jiaxin Shi, Stefano Ermon </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/1905.07088" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ * [Code](https://github.com/ermongroup/sliced_score_matching)
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -539,7 +598,12 @@ layout: default
 		<a href="https://arxiv.org/abs/2011.13456" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
-		    
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
 		</div>  
 	     </div>
 	  </div>
@@ -549,7 +613,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  classics, methodology
+			  classics, methodology, code
 		  </div>
 		  
 	  </div>
@@ -557,7 +621,8 @@ layout: default
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- 
+ * [JAX](https://github.com/yang-song/score_sde)
+* [PyTorch](https://github.com/yang-song/score_sde_pytorch)
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -646,54 +711,6 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  performance
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- 
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## On maximum likelihood training of score-based generative models
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> January 22, 2021 </span>    
-         <span class="authors"> Yang Song, Conor Durkan, Iain Murray, Stefano Ermon </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2101.09258" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		    
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  theory
 		  </div>
 		  
 	  </div>
@@ -2147,13 +2164,26 @@ layout: default
 
 <script>
 
+$('#authorselection').change(function (e) {
+   	var items = document.getElementsByClassName('entry');
+	var tags_selected = $(this).val();
+   	for (let i = 0; i < items.length; i++) {
+	     var tag_items = items[i].getElementsByClassName("authors")[0];
+	     var item_tags = tag_items.textContent.trim().split(','); 
+	     item_tags =  item_tags.map(v => v.replace("\n", '').replace("\t", '').trim());
+      	      const found = item_tags.some(r=> tags_selected.includes(r));
+	      if (found || tags_selected.length === 0) {
+		items[i].style.display  = 'unset';
+	      }
+		else {
+		items[i].style.display  = 'none';
+		}
+	    }
+})
 	
 $('#tagselection').change(function (e) {
    	var items = document.getElementsByClassName('entry');
-  	console.log(items);
 	var tags_selected = $(this).val();
-	console.log("tags selected");
-	console.log(tags_selected);
    	for (let i = 0; i < items.length; i++) {
 	     var tag_items = items[i].getElementsByClassName("tags")[0];
 	     var item_tags = tag_items.textContent.trim().split(','); 
