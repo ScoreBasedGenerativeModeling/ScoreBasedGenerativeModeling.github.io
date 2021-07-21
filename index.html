@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="row">
+  <span class="selector">
 	<span>Select categories: </span>
 	<select id="tagselection" class="selectpicker" multiple data-live-search="true">
 	  <option>application</option>
@@ -15,6 +16,8 @@ layout: default
 <option>theory</option>
 <option>variational</option>
 	</select>
+  </span>
+  <span class="selector">
 	<span>Select Authors: </span>
 	<select id="authorselection" class="selectpicker" multiple data-live-search="true">
 	  <option>Aaron Courville</option>
@@ -147,6 +150,7 @@ layout: default
 <option>Zekun Hao</option>
 <option>Zhifeng Kong</option>
 	</select>
+  </span>
 </div>
 
 {% assign id = 0 %}
