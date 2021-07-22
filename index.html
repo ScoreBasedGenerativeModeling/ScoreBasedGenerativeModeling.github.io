@@ -4,7 +4,7 @@ layout: default
 
 <div class="row">
   <span class="selector">
-    <span>Select categories: </span>
+    <span>Select Categories: </span>
     <select id="tagselection" class="selectpicker" multiple data-live-search="true">
       <option>application</option>
 <option>blog</option>
@@ -136,12 +136,14 @@ layout: default
 <option>Wanmo Kang</option>
 <option>Wei Chen</option>
 <option>Wei Ping</option>
+<option>Wenbo Gong</option>
 <option>William Chan</option>
 <option>Xu Tan</option>
 <option>Yang Song</option>
 <option>Yang Wang</option>
 <option>Yihang Wang</option>
 <option>Ying Nian Wu</option>
+<option>Yingzhen Li</option>
 <option>Yu Zhang</option>
 <option>Yuanqing Xia</option>
 <option>Yufeng Zhan</option>
@@ -642,7 +644,12 @@ layout: default
 		<a href="https://arxiv.org/abs/2010.02502" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
-		    
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
 		</div>  
 	     </div>
 	  </div>
@@ -652,7 +659,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  methodology
+			  methodology, code
 		  </div>
 		  
 	  </div>
@@ -660,7 +667,7 @@ layout: default
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- 
+ * [Code](https://github.com/ermongroup/ddim)
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -2269,6 +2276,54 @@ layout: default
 	    <div id="block_container">
 		<div id="bloc2">
 		<a href="https://arxiv.org/abs/2107.07675" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Interpreting diffusion score matching using normalizing flow
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> July 21, 2021 </span>    
+         <span class="authors"> Wenbo Gong, Yingzhen Li </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2107.10072" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
 		    
