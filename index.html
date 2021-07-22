@@ -153,6 +153,15 @@ layout: default
 <option>Zhifeng Kong</option>
     </select>
   </span>
+  <div class="selector">
+    <span>Select Year: </span>
+    <select id="yearselection" class="selectpicker" multiple data-live-search="true">
+      <option>2019</option>
+<option>2020</option>
+<option>2021</option>
+
+    </select>
+  </div>
 </div>
 
 {% assign id = 0 %}
@@ -344,7 +353,12 @@ layout: default
 		<a href="https://arxiv.org/abs/2006.09011" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
-		    
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
 		</div>  
 	     </div>
 	  </div>
@@ -354,7 +368,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  performance
+			  performance, code
 		  </div>
 		  
 	  </div>
@@ -362,7 +376,8 @@ layout: default
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- 
+ * [Code](https://github.com/ermongroup/ncsnv2)
+* Training tricks like exponential moving average (EMA), choosing prior variance etc.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -1068,7 +1083,8 @@ layout: default
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- * [Code](https://github.com/ermongroup/ncsnv2)
+ * [Code](https://github.com/openai/improved-diffusion)
+* Architecture improvements, simpler than previous networks, cosine schedule
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -2368,6 +2384,24 @@ layout: default
 </div>
 
 <script>
+
+$('#yearselection').change(function (e) {
+   	var items = document.getElementsByClassName('entry');
+	var tags_selected = $(this).val();
+   	for (let i = 0; i < items.length; i++) {
+	     var tag_items = items[i].getElementsByClassName("dates")[0];
+	     var year_tag = tag_items.textContent.trim().split(',')[1]; 
+       console.log(year_tag);
+      	const found = tags_selected.some(r=> year_tag.includes(r));
+	      if (found || tags_selected.length === 0) {
+		items[i].style.display  = 'unset';
+	      }
+		else {
+		items[i].style.display  = 'none';
+		}
+	    }
+})
+
 
 $('#authorselection').change(function (e) {
    	var items = document.getElementsByClassName('entry');
