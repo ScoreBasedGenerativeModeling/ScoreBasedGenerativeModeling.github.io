@@ -6,8 +6,7 @@ layout: default
   <span class="selector">
     <span>Select Categories: </span>
     <select id="tagselection" class="selectpicker" multiple data-live-search="true">
-      <option></option>
-<option>application</option>
+      <option>application</option>
 <option>blog</option>
 <option>classics</option>
 <option>code</option>
@@ -152,6 +151,7 @@ layout: default
 <option>Kashif Rasul</option>
 <option>Ke Li</option>
 <option>Kexin Zhao</option>
+<option>Konpat Preechakul</option>
 <option>Korbinian Abstreiter</option>
 <option>Kou Tanaka</option>
 <option>Kun Xu</option>
@@ -174,6 +174,7 @@ layout: default
 <option>Mohammad Norouzi</option>
 <option>Muneyoshi Inahara</option>
 <option>Nanxin Chen</option>
+<option>Nattanat Chatthee</option>
 <option>Nikola Simidjievski</option>
 <option>Noah Snavely</option>
 <option>Nobukatsu Hojo</option>
@@ -226,6 +227,8 @@ layout: default
 <option>Stefano Ermon</option>
 <option>Sung Ju Hwang</option>
 <option>Sungroh Yoon</option>
+<option>Supasorn Suwajanakorn</option>
+<option>Suttisak Wizadwongsa</option>
 <option>Taesung Kwon</option>
 <option>Takuhiro Kaneko</option>
 <option>Tal Kachman</option>
@@ -277,6 +280,7 @@ layout: default
 <option>Yufeng Zhan</option>
 <option>Yuling Jiao</option>
 <option>Yusuke Tashiro</option>
+<option>Yutong He</option>
 <option>Yuxiao Hu</option>
 <option>Zekun Hao</option>
 <option>Zhaoyang Lyu</option>
@@ -1544,7 +1548,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  
+			  methodology
 		  </div>
 		  
 	  </div>
@@ -3136,7 +3140,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> August 02, 2021 </span>    
-         <span class="authors"> Chenlin Meng, Yang Song, Jiaming Song, Jiajun Wu, Jun-Yan Zhu, Stefano Ermon </span>
+         <span class="authors"> Chenlin Meng, Yutong He, Yang Song, Jiaming Song, Jiajun Wu, Jun-Yan Zhu, Stefano Ermon </span>
 		</div>  
 </div>
 
@@ -3926,6 +3930,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Diffusion Autoencoders: Toward a Meaningful and Decodable Representation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> November 30, 2021 </span>    
+         <span class="authors"> Konpat Preechakul, Nattanat Chatthee, Suttisak Wizadwongsa, Supasorn Suwajanakorn </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2111.15640" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
 		  </div>
 		  
 	  </div>
