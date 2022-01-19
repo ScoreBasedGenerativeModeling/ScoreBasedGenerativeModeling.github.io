@@ -89,6 +89,7 @@ layout: default
 <option>Emiel Hoogeboom</option>
 <option>Eric Luhman</option>
 <option>Evangelos A. Theodorou</option>
+<option>Fan Bao</option>
 <option>Fang Wen</option>
 <option>Feiyang Chen</option>
 <option>Francois Lanusse</option>
@@ -4835,7 +4836,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> January 14, 2022 </span>    
-         <span class="authors"> Benjamin Remy, Francois Lanusse, Niall Jeffrey, Jean-Luc Starck, Ken Osato, Tim Schrabback </span>
+         <span class="authors"> Benjamin Remy, Francois Lanusse, Niall Jeffrey, Jia Liu, Jean-Luc Starck, Ken Osato, Tim Schrabback </span>
 		</div>  
 </div>
 
@@ -4857,6 +4858,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Analytic-DPM: an Analytic Estimate of the Optimal Reverse Variance in Diffusion Probabilistic Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> January 17, 2022 </span>    
+         <span class="authors"> Fan Bao, Chongxuan Li, Jun Zhu, Bo Zhang </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2201.06503" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  theory, methodology
 		  </div>
 		  
 	  </div>
