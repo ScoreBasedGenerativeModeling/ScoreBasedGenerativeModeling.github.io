@@ -21,6 +21,7 @@ layout: default
     <span>Select Authors: </span>
     <select id="authorselection" class="selectpicker" multiple data-live-search="true">
       <option>Aaron Courville</option>
+<option>Aaron van den Oord</option>
 <option>Abhishek Kumar</option>
 <option>Abhishek Sinha</option>
 <option>Aditya Grover</option>
@@ -88,6 +89,7 @@ layout: default
 <option>Eliya Nachmani</option>
 <option>Emiel Hoogeboom</option>
 <option>Eric Luhman</option>
+<option>Erich Elsen</option>
 <option>Evangelos A. Theodorou</option>
 <option>Fan Bao</option>
 <option>Fang Wen</option>
@@ -154,6 +156,7 @@ layout: default
 <option>Jun Zhu</option>
 <option>Jun-Yan Zhu</option>
 <option>Junhyeok Lee</option>
+<option>Junyoung Chung</option>
 <option>Karsten Kreis</option>
 <option>Kashif Rasul</option>
 <option>Ke Li</option>
@@ -179,6 +182,7 @@ layout: default
 <option>Michael Elad</option>
 <option>Michael J. Smith</option>
 <option>Mikhail Kudinov</option>
+<option>Mikolaj Binkowski</option>
 <option>Mocho Go</option>
 <option>Mohammad Norouzi</option>
 <option>Muneyoshi Inahara</option>
@@ -187,6 +191,7 @@ layout: default
 <option>Niall Jeffrey</option>
 <option>Nikhil Arora</option>
 <option>Nikola Simidjievski</option>
+<option>Nikolay Savinov</option>
 <option>Noah Snavely</option>
 <option>Nobukatsu Hojo</option>
 <option>Octavian-Eugen Ganea</option>
@@ -4474,6 +4479,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Step-unrolled Denoising Autoencoders for Text Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> December 13, 2021 </span>    
+         <span class="authors"> Nikolay Savinov, Junyoung Chung, Mikolaj Binkowski, Erich Elsen, Aaron van den Oord </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2112.06749" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology, application
 		  </div>
 		  
 	  </div>
