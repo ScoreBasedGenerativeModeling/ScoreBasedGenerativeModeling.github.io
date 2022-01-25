@@ -32,6 +32,8 @@ layout: default
 <option>Alexey A. Gritsenko</option>
 <option>Alexia Jolicoeur-Martineau</option>
 <option>Andreas Blattmann</option>
+<option>Andreas Lugmayr</option>
+<option>Andres Romero</option>
 <option>Anima Anandkumar</option>
 <option>Anna Rohrbach</option>
 <option>Antoine Wehenkel</option>
@@ -94,6 +96,7 @@ layout: default
 <option>Fan Bao</option>
 <option>Fang Wen</option>
 <option>Feiyang Chen</option>
+<option>Fisher Yu</option>
 <option>Francois Lanusse</option>
 <option>Gautam Mittal</option>
 <option>Gaëtan Hadjeres</option>
@@ -173,8 +176,10 @@ layout: default
 <option>Linqi Zhou</option>
 <option>Lior Wolf</option>
 <option>Lu Yuan</option>
+<option>Luc Van Gool</option>
 <option>Lukas Schott</option>
 <option>Mark Chen</option>
+<option>Martin Danelljan</option>
 <option>Mauricio Delbracio</option>
 <option>Max Daniels</option>
 <option>Max W. Y. Lam</option>
@@ -213,6 +218,7 @@ layout: default
 <option>Qi Meng</option>
 <option>Qian Xu</option>
 <option>Qinsheng Zhang</option>
+<option>Radu Timofte</option>
 <option>Regina Barzilay</option>
 <option>Rianne van den Berg</option>
 <option>Robin Rombach</option>
@@ -4959,6 +4965,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  theory, methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## RePaint: Inpainting using Denoising Diffusion Probabilistic Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> January 24, 2022 </span>    
+         <span class="authors"> Andreas Lugmayr, Martin Danelljan, Andres Romero, Fisher Yu, Radu Timofte, Luc Van Gool </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2201.09865" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  application, methodology
 		  </div>
 		  
 	  </div>
