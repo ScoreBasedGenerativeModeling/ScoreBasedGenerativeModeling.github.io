@@ -6,7 +6,8 @@ layout: default
   <span class="selector">
     <span>Select Categories: </span>
     <select id="tagselection" class="selectpicker" multiple data-live-search="true">
-      <option>application</option>
+      <option></option>
+<option>application</option>
 <option>blog</option>
 <option>classics</option>
 <option>code</option>
@@ -27,6 +28,7 @@ layout: default
 <option>Aditya Grover</option>
 <option>Aditya Ramesh</option>
 <option>Ajay Jain</option>
+<option>Ajil Jalal</option>
 <option>Alex Nichol</option>
 <option>Alexandros G. Dimakis</option>
 <option>Alexey A. Gritsenko</option>
@@ -91,6 +93,7 @@ layout: default
 <option>Eliya Nachmani</option>
 <option>Emiel Hoogeboom</option>
 <option>Eric Luhman</option>
+<option>Eric Price</option>
 <option>Erich Elsen</option>
 <option>Evangelos A. Theodorou</option>
 <option>Fan Bao</option>
@@ -102,6 +105,7 @@ layout: default
 <option>Gaëtan Hadjeres</option>
 <option>Gefei Wang</option>
 <option>Georgios Batzolis</option>
+<option>Giannis Daras</option>
 <option>Gilles Louppe</option>
 <option>Gong Zhang</option>
 <option>Gregory Vaksman</option>
@@ -150,6 +154,7 @@ layout: default
 <option>Jinglin Liu</option>
 <option>Joan Serrà</option>
 <option>Jonathan Ho</option>
+<option>Jonathan I. Tamir</option>
 <option>Jong Chul Ye</option>
 <option>Jong chul Ye</option>
 <option>Jongmin Yoon</option>
@@ -178,6 +183,7 @@ layout: default
 <option>Lu Yuan</option>
 <option>Luc Van Gool</option>
 <option>Lukas Schott</option>
+<option>Marius Arvinte</option>
 <option>Mark Chen</option>
 <option>Martin Danelljan</option>
 <option>Mauricio Delbracio</option>
@@ -3285,6 +3291,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  methodology, application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Robust Compressed Sensing MRI with Deep Generative Priors
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 03, 2021 </span>    
+         <span class="authors"> Ajil Jalal, Marius Arvinte, Giannis Daras, Eric Price, Alexandros G. Dimakis, Jonathan I. Tamir </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2108.01368" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  
 		  </div>
 		  
 	  </div>
