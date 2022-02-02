@@ -6,8 +6,7 @@ layout: default
   <span class="selector">
     <span>Select Categories: </span>
     <select id="tagselection" class="selectpicker" multiple data-live-search="true">
-      <option></option>
-<option>application</option>
+      <option>application</option>
 <option>blog</option>
 <option>classics</option>
 <option>code</option>
@@ -75,13 +74,16 @@ layout: default
 <option>Conor Durkan</option>
 <option>Curtis Hawthorne</option>
 <option>Dahua Lin</option>
+<option>Dan Rosenbaum</option>
 <option>Dan Su</option>
 <option>Dani Lischinski</option>
 <option>Daniel D. Johnson</option>
 <option>Daniel Tarlow</option>
 <option>Daniel Watson</option>
+<option>Danilo Rezende</option>
 <option>David A. Klindt</option>
 <option>David J. Fleet</option>
+<option>Dewei Hu</option>
 <option>Didrik Nielsen</option>
 <option>Diederik P. Kingma</option>
 <option>Dominik Lorenz</option>
@@ -92,6 +94,7 @@ layout: default
 <option>Dongjun Kim</option>
 <option>Eliya Nachmani</option>
 <option>Emiel Hoogeboom</option>
+<option>Emilien Dupont</option>
 <option>Eric Luhman</option>
 <option>Eric Price</option>
 <option>Erich Elsen</option>
@@ -100,6 +103,7 @@ layout: default
 <option>Fang Wen</option>
 <option>Feiyang Chen</option>
 <option>Fisher Yu</option>
+<option>Francois Fleuret</option>
 <option>Francois Lanusse</option>
 <option>Gautam Mittal</option>
 <option>Gaëtan Hadjeres</option>
@@ -123,6 +127,7 @@ layout: default
 <option>Huiwen Chang</option>
 <option>Humphrey Shi</option>
 <option>Hyungjin Chung</option>
+<option>Hyunjik Kim</option>
 <option>Iain Murray</option>
 <option>Ian Simon</option>
 <option>Il-Chul Moon</option>
@@ -130,6 +135,7 @@ layout: default
 <option>Ingmar Schuster</option>
 <option>Inhwa Han</option>
 <option>Ioannis Mitliagkas</option>
+<option>Ipek Oguz</option>
 <option>Ivan Vovk</option>
 <option>Jacob Austin</option>
 <option>Jacob Deasy</option>
@@ -239,6 +245,7 @@ layout: default
 <option>Ryan A. Jackson</option>
 <option>Rémi Piché-Taillefer</option>
 <option>Rémi Tachet des Combes</option>
+<option>S. M. Ali Eslami</option>
 <option>Sahaj Garg</option>
 <option>Samaneh Azadi</option>
 <option>Sang-gil Lee</option>
@@ -259,6 +266,7 @@ layout: default
 <option>Sung Ju Hwang</option>
 <option>Sungroh Yoon</option>
 <option>Supasorn Suwajanakorn</option>
+<option>Suraj Srinivas</option>
 <option>Suttisak Wizadwongsa</option>
 <option>Taesung Kwon</option>
 <option>Takuhiro Kaneko</option>
@@ -307,6 +315,7 @@ layout: default
 <option>Yotaro Katayama</option>
 <option>Yotaro Watanabe</option>
 <option>Yu Zhang</option>
+<option>Yuankai K. Tao</option>
 <option>Yuanqing Xia</option>
 <option>Yuewen Cao</option>
 <option>Yufeng Zhan</option>
@@ -547,6 +556,54 @@ layout: default
 {% capture x %}
  * [Code](https://github.com/ermongroup/ncsnv2)
 * Training tricks like exponential moving average (EMA), choosing prior variance etc.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Rethinking the Role of Gradient-Based Attribution Methods for Model Interpretability
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 16, 2020 </span>    
+         <span class="authors"> Suraj Srinivas, Francois Fleuret </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2006.09128" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -3338,7 +3395,7 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  
+			  application
 		  </div>
 		  
 	  </div>
@@ -4011,6 +4068,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Simulating Diffusion Bridges with Score Matching
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> November 14, 2021 </span>    
+         <span class="authors"> Valentin De Bortoli, Arnaud Doucet, Jeremy Heng, James Thornton </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2111.07243" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology, theory
 		  </div>
 		  
 	  </div>
@@ -5067,6 +5172,246 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application, methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Unsupervised Denoising of Retinal OCT with Diffusion Probabilistic Model
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> January 27, 2022 </span>    
+         <span class="authors"> Dewei Hu, Yuankai K. Tao, Ipek Oguz </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2201.11760" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Denoising Diffusion Restoration Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> January 27, 2022 </span>    
+         <span class="authors"> Bahjat Kawar, Michael Elad, Stefano Ermon, Jiaming Song </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2201.11793" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## DiffGAN-TTS: High-Fidelity and Efficient Text-to-Speech with Denoising Diffusion GANs
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> January 28, 2022 </span>    
+         <span class="authors"> Songxiang Liu, Dan Su, Dong Yu </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2201.11972" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology, application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## From data to functa: Your data point is a function and you should treat it like one
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> January 28, 2022 </span>    
+         <span class="authors"> Emilien Dupont, Hyunjik Kim, S. M. Ali Eslami, Danilo Rezende, Dan Rosenbaum </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2201.12204" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Progressive Distillation for Fast Sampling of Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> February 01, 2022 </span>    
+         <span class="authors"> Tim Salimans, Jonathan Ho </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2202.00512" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
 		  </div>
 		  
 	  </div>
