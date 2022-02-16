@@ -6,7 +6,8 @@ layout: default
   <span class="selector">
     <span>Select Categories: </span>
     <select id="tagselection" class="selectpicker" multiple data-live-search="true">
-      <option>application</option>
+      <option></option>
+<option>application</option>
 <option>blog</option>
 <option>classics</option>
 <option>code</option>
@@ -20,7 +21,8 @@ layout: default
   <span class="selector">
     <span>Select Authors: </span>
     <select id="authorselection" class="selectpicker" multiple data-live-search="true">
-      <option>Aaron Courville</option>
+      <option></option>
+<option>Aaron Courville</option>
 <option>Aaron van den Oord</option>
 <option>Abhishek Kumar</option>
 <option>Abhishek Sinha</option>
@@ -63,6 +65,7 @@ layout: default
 <option>Chaehun Shin</option>
 <option>Chang Liu</option>
 <option>Charles Ollion</option>
+<option>Chence Shi</option>
 <option>Cheng Yu</option>
 <option>Chengxi Li</option>
 <option>Chenhao Niu</option>
@@ -162,6 +165,7 @@ layout: default
 <option>Jiaji Huang</option>
 <option>Jiajun Wu</option>
 <option>Jiaming Song</option>
+<option>Jian Tang</option>
 <option>Jianmin Bao</option>
 <option>Jiansheng Wei</option>
 <option>Jiaxin Shi</option>
@@ -212,6 +216,7 @@ layout: default
 <option>Michael J. Smith</option>
 <option>Mikhail Kudinov</option>
 <option>Mikolaj Binkowski</option>
+<option>Minkai Xu</option>
 <option>Mocho Go</option>
 <option>Mohammad Norouzi</option>
 <option>Muneyoshi Inahara</option>
@@ -356,7 +361,8 @@ layout: default
   <div class="selector">
     <span>Select Year: </span>
     <select id="yearselection" class="selectpicker" multiple data-live-search="true">
-      <option>2019</option>
+      <option></option>
+<option>2019</option>
 <option>2020</option>
 <option>2021</option>
 <option>2022</option>
@@ -578,54 +584,6 @@ layout: default
 {% capture x %}
  * [Code](https://github.com/ermongroup/ncsnv2)
 * Training tricks like exponential moving average (EMA), choosing prior variance etc.
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## Rethinking the Role of Gradient-Based Attribution Methods for Model Interpretability
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> June 16, 2020 </span>    
-         <span class="authors"> Suraj Srinivas, Francois Fleuret </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2006.09128" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		    
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  methodology
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- 
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -1612,54 +1570,6 @@ layout: default
 	  </div>
 	  <div class="column2">
 		  <div class="tags">
-			  methodology, application
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- 
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## Diffusion Probabilistic Models for 3D Point Cloud Generation
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> March 02, 2021 </span>    
-         <span class="authors"> Shitong Luo, Wei Hu </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2103.01458" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		    
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
 			  methodology
 		  </div>
 		  
@@ -1805,54 +1715,6 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  methodology
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- 
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## 3D Shape Generation and Completion through Point-Voxel Diffusion
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> April 08, 2021 </span>    
-         <span class="authors"> Linqi Zhou, Yilun Du, Jiajun Wu </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2104.03670" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		    
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  methodology, application
 		  </div>
 		  
 	  </div>
@@ -2093,6 +1955,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Learning Gradient Fields for Molecular Conformation Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 09, 2021 </span>    
+         <span class="authors"> Chence Shi, Shitong Luo, Minkai Xu, Jian Tang </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2105.03902" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  
 		  </div>
 		  
 	  </div>
@@ -3125,6 +3035,102 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates">  </span>    
+         <span class="authors">  </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://openreview.net/forum?id=PzcvxEMzvQC" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology, application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Predicting Molecular Conformation via Dynamic Graph Score Matching
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates">  </span>    
+         <span class="authors">  </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://proceedings.neurips.cc/paper/2021/hash/a45a1d12ee0fb7f1f872ab91da18f899-Abstract.html" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  
 		  </div>
 		  
 	  </div>
@@ -4714,54 +4720,6 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- 
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## A Conditional Point Diffusion-Refinement Paradigm for 3D Point Cloud Completion
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> December 07, 2021 </span>    
-         <span class="authors"> Zhaoyang Lyu, Zhifeng Kong, Xudong Xu, Liang Pan, Dahua Lin </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2112.03530" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		    
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  methodology, application
 		  </div>
 		  
 	  </div>
