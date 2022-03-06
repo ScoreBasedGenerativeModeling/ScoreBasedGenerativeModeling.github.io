@@ -49,9 +49,9 @@ layout: default
 <option>Ben Poole</option>
 <option>Benjamin A. Dunn</option>
 <option>Benjamin Remy</option>
-<option>Bernhard SchÃ¶lkopf</option>
+<option>Bernhard Schölkopf</option>
 <option>Bharath Hariharan</option>
-<option>BjÃ¶rn Ommer</option>
+<option>Björn Ommer</option>
 <option>Bo Zhang</option>
 <option>Boah Kim</option>
 <option>Bob McGrew</option>
@@ -59,7 +59,7 @@ layout: default
 <option>Byeongsu Sim</option>
 <option>Calvin Seward</option>
 <option>Can Yang</option>
-<option>Carola-Bibiane SchÃ¶nlieb</option>
+<option>Carola-Bibiane Schönlieb</option>
 <option>Chaehun Shin</option>
 <option>Chang Liu</option>
 <option>Charles Ollion</option>
@@ -113,8 +113,9 @@ layout: default
 <option>Francois Fleuret</option>
 <option>Francois Lanusse</option>
 <option>Gautam Mittal</option>
-<option>GaÃ«tan Hadjeres</option>
+<option>Gaëtan Hadjeres</option>
 <option>Gefei Wang</option>
+<option>George Deligiannidis</option>
 <option>Georgios Batzolis</option>
 <option>Giannis Daras</option>
 <option>Gilles Louppe</option>
@@ -170,11 +171,11 @@ layout: default
 <option>Jiansheng Wei</option>
 <option>Jiaxin Shi</option>
 <option>Jinglin Liu</option>
-<option>Joan SerrÃ </option>
+<option>Joan Serrà</option>
+<option>John Thickstun</option>
 <option>Jonathan Ho</option>
 <option>Jonathan I. Tamir</option>
 <option>Jong Chul Ye</option>
-<option>Jong chul Ye</option>
 <option>Jongmin Yoon</option>
 <option>Jooyoung Choi</option>
 <option>Jordi Pons</option>
@@ -204,7 +205,9 @@ layout: default
 <option>Lior Wolf</option>
 <option>Lu Yuan</option>
 <option>Luc Van Gool</option>
+<option>Lukas Herron</option>
 <option>Lukas Schott</option>
+<option>Luping Liu</option>
 <option>Marius Arvinte</option>
 <option>Mark Chen</option>
 <option>Martin Danelljan</option>
@@ -236,14 +239,14 @@ layout: default
 <option>Omri Avrahami</option>
 <option>Pamela Mishkin</option>
 <option>Patrick Esser</option>
-<option>Patrick ForrÃ©</option>
+<option>Patrick Forré</option>
 <option>Paul Hand</option>
 <option>Pedro Sanchez</option>
 <option>Pengcheng He</option>
 <option>Peyman Milanfar</option>
 <option>Philippe Ciuciu</option>
 <option>Pieter Abbeel</option>
-<option>Pietro LiÃ²</option>
+<option>Pietro Liò</option>
 <option>Piyush Rai</option>
 <option>Prafulla Dhariwal</option>
 <option>Pranav Shyam</option>
@@ -265,8 +268,8 @@ layout: default
 <option>Ruiqi Gao</option>
 <option>Ruojin Cai</option>
 <option>Ryan A. Jackson</option>
-<option>RÃ©mi PichÃ©-Taillefer</option>
-<option>RÃ©mi Tachet des Combes</option>
+<option>Rémi Piché-Taillefer</option>
+<option>Rémi Tachet des Combes</option>
 <option>S. M. Ali Eslami</option>
 <option>Sahaj Garg</option>
 <option>Samaneh Azadi</option>
@@ -289,7 +292,7 @@ layout: default
 <option>Sotirios A. Tsaftaris</option>
 <option>Stefan Bauer</option>
 <option>Stefano Ermon</option>
-<option>StÃ©phane Courteau</option>
+<option>Stéphane Courteau</option>
 <option>Sung Ju Hwang</option>
 <option>Sungroh Yoon</option>
 <option>Sungwon Kim</option>
@@ -321,6 +324,7 @@ layout: default
 <option>Vadim Popov</option>
 <option>Valentin De Bortoli</option>
 <option>Valentin Khrulkov</option>
+<option>Vivek Jayaram</option>
 <option>Vladimir Gogoryan</option>
 <option>Wanmo Kang</option>
 <option>Wei Chen</option>
@@ -359,11 +363,13 @@ layout: default
 <option>Yusuke Tashiro</option>
 <option>Yutong He</option>
 <option>Yuxiao Hu</option>
+<option>Yuyang Shi</option>
 <option>Zaccharie Ramzi</option>
 <option>Zehua Chen</option>
 <option>Zekun Hao</option>
 <option>Zhaoyang Lyu</option>
 <option>Zhifeng Kong</option>
+<option>Zhijie Lin</option>
 <option>Zhisheng Xiao</option>
 <option>Zhong-Qiu Wang</option>
 <option>Zhou Zhao</option>
@@ -487,6 +493,54 @@ layout: default
  * Sample from multiple noisy versions of the data distribution
  * First results on popular image datasets
 * [Code](https://github.com/ermongroup/ncsn)
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Source Separation with Deep Generative Prior
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> February 19, 2020 </span>    
+         <span class="authors"> Vivek Jayaram, John Thickstun </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2002.07942" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -858,7 +912,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> September 11, 2020 </span>    
-         <span class="authors"> Alexia Jolicoeur-Martineau, RÃ©mi PichÃ©-Taillefer, RÃ©mi Tachet des Combes, Ioannis Mitliagkas </span>
+         <span class="authors"> Alexia Jolicoeur-Martineau, Rémi Piché-Taillefer, Rémi Tachet des Combes, Ioannis Mitliagkas </span>
 		</div>  
 </div>
 
@@ -1457,7 +1511,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> February 10, 2021 </span>    
-         <span class="authors"> Emiel Hoogeboom, Didrik Nielsen, Priyank Jaini, Patrick ForrÃ©, Max Welling </span>
+         <span class="authors"> Emiel Hoogeboom, Didrik Nielsen, Priyank Jaini, Patrick Forré, Max Welling </span>
 		</div>  
 </div>
 
@@ -1799,7 +1853,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> April 08, 2021 </span>    
-         <span class="authors"> Joan SerrÃ , Santiago Pascual, Jordi Pons </span>
+         <span class="authors"> Joan Serrà, Santiago Pascual, Jordi Pons </span>
 		</div>  
 </div>
 
@@ -2188,7 +2242,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> May 28, 2021 </span>    
-         <span class="authors"> Alexia Jolicoeur-Martineau, Ke Li, RÃ©mi PichÃ©-Taillefer, Tal Kachman, Ioannis Mitliagkas </span>
+         <span class="authors"> Alexia Jolicoeur-Martineau, Ke Li, Rémi Piché-Taillefer, Tal Kachman, Ioannis Mitliagkas </span>
 		</div>  
 </div>
 
@@ -2242,7 +2296,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> May 29, 2021 </span>    
-         <span class="authors"> Korbinian Abstreiter, Stefan Bauer, Bernhard SchÃ¶lkopf, Arash Mehrjou </span>
+         <span class="authors"> Korbinian Abstreiter, Stefan Bauer, Bernhard Schölkopf, Arash Mehrjou </span>
 		</div>  
 </div>
 
@@ -2433,7 +2487,7 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Diffusion SchrÃ¶dinger Bridge with Applications to Score-Based Generative Modeling
+## Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -2831,7 +2885,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> June 14, 2021 </span>    
-         <span class="authors"> Simon Rouard, GaÃ«tan Hadjeres </span>
+         <span class="authors"> Simon Rouard, Gaëtan Hadjeres </span>
 		</div>  
 </div>
 
@@ -2969,7 +3023,7 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Deep Generative Learning via SchrÃ¶dinger Bridge
+## Deep Generative Learning via Schrödinger Bridge
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -3053,6 +3107,59 @@ layout: default
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Variational Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> July 01, 2021 </span>    
+         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  variational, methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ * Main contribution seems to be alternative parameterization of the marginals of  forward SDE in terms of SNR, then decreasing SNR function is optimized in the ELBO
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -3149,59 +3256,6 @@ layout: default
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## Variational Diffusion Models
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> July 01, 2021 </span>    
-         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		     <p>
-		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
-				See More
-		      </button>
-		    </p>
-        
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  variational, methodology
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- * Main contribution seems to be alternative parameterization of the marginals of  forward SDE in terms of SNR, then decreasing SNR function is optimized in the ELBO
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -3316,7 +3370,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> July 15, 2021 </span>    
-         <span class="authors"> Yihang Wang, Pratyush Tiwary </span>
+         <span class="authors"> Yihang Wang, Lukas Herron, Pratyush Tiwary </span>
 		</div>  
 </div>
 
@@ -3652,7 +3706,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> August 19, 2021 </span>    
-         <span class="authors"> Patrick Esser, Robin Rombach, Andreas Blattmann, BjÃ¶rn Ommer </span>
+         <span class="authors"> Patrick Esser, Robin Rombach, Andreas Blattmann, Björn Ommer </span>
 		</div>  
 </div>
 
@@ -3940,7 +3994,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> October 08, 2021 </span>    
-         <span class="authors"> Hyungjin Chung, Jong chul Ye </span>
+         <span class="authors"> Hyungjin Chung, Jong Chul Ye </span>
 		</div>  
 </div>
 
@@ -4228,7 +4282,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> November 02, 2021 </span>    
-         <span class="authors"> Michael J. Smith, James E. Geach, Ryan A. Jackson, Nikhil Arora, Connor Stone, StÃ©phane Courteau </span>
+         <span class="authors"> Michael J. Smith, James E. Geach, Ryan A. Jackson, Nikhil Arora, Connor Stone, Stéphane Courteau </span>
 		</div>  
 </div>
 
@@ -4420,7 +4474,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> November 26, 2021 </span>    
-         <span class="authors"> Georgios Batzolis, Jan Stanczuk, Carola-Bibiane SchÃ¶nlieb, Christian Etmann </span>
+         <span class="authors"> Georgios Batzolis, Jan Stanczuk, Carola-Bibiane Schönlieb, Christian Etmann </span>
 		</div>  
 </div>
 
@@ -5092,7 +5146,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> December 17, 2021 </span>    
-         <span class="authors"> Jacob Deasy, Nikola Simidjievski, Pietro LiÃ² </span>
+         <span class="authors"> Jacob Deasy, Nikola Simidjievski, Pietro Liò </span>
 		</div>  
 </div>
 
@@ -5188,7 +5242,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> December 20, 2021 </span>    
-         <span class="authors"> Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, BjÃ¶rn Ommer </span>
+         <span class="authors"> Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, Björn Ommer </span>
 		</div>  
 </div>
 
@@ -6094,6 +6148,54 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
+## Pseudo Numerical Methods for Diffusion Models on Manifolds
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> February 20, 2022 </span>    
+         <span class="authors"> Luping Liu, Yi Ren, Zhijie Lin, Zhou Zhao </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2202.09778" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
 ## Diffusion Causal Models for Counterfactual Estimation
 {% endcapture %}{{ x | markdownify }}
 
@@ -6122,6 +6224,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  application
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Conditional Simulation Using Diffusion Schrodinger Bridges
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> February 27, 2022 </span>    
+         <span class="authors"> Yuyang Shi, Valentin De Bortoli, George Deligiannidis, Arnaud Doucet </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2202.13460" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  methodology
 		  </div>
 		  
 	  </div>
@@ -6208,5 +6358,4 @@ $('#tagselection').change(function (e) {
 	    }
 })
 </script>
-
 
