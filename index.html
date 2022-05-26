@@ -248,9 +248,11 @@ layout: default
 <option>Lala Li</option>
 <option>Lantao Yu</option>
 <option>Lei He</option>
+<option>Lei Xing</option>
 <option>Liang Pan</option>
 <option>Linqi Zhou</option>
 <option>Lior Wolf</option>
+<option>Liyue Shen</option>
 <option>Loïc Simon</option>
 <option>Lu Yuan</option>
 <option>Luc Van Gool</option>
@@ -3225,6 +3227,59 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
+## Variational Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> July 01, 2021 </span>    
+         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  variational, methodology
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ * Main contribution seems to be alternative parameterization of the marginals of  forward SDE in terms of SNR, then decreasing SNR function is optimized in the ELBO
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
 ## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
 {% endcapture %}{{ x | markdownify }}
 
@@ -3309,59 +3364,6 @@ layout: default
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## Variational Diffusion Models
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> July 01, 2021 </span>    
-         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		     <p>
-		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
-				See More
-		      </button>
-		    </p>
-        
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  variational, methodology
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- * Main contribution seems to be alternative parameterization of the marginals of  forward SDE in terms of SNR, then decreasing SNR function is optimized in the ELBO
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -4554,6 +4556,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  methodology, theory
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Solving Inverse Problems in Medical Imaging with Score-Based Generative Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> November 15, 2021 </span>    
+         <span class="authors"> Yang Song, Liyue Shen, Lei Xing, Stefano Ermon </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2111.08005" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  application
 		  </div>
 		  
 	  </div>
