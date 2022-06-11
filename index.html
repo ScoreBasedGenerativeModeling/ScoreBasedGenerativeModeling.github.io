@@ -3,6 +3,13 @@ layout: default
 ---
 
 <div class="row">
+ {% capture x %}
+  * [James Thornton](https://jtt94.github.io/)
+  * [Valentin De Bortoli](https://vdeborto.github.io/)
+ {% endcapture %}{{ x | markdownify }}
+ </div>
+
+<div class="row">
   <span class="selector">
     <span>Select Categories: </span>
     <select id="tagselection" class="selectpicker" multiple data-live-search="true">
