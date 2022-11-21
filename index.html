@@ -555,6 +555,7 @@ layout: default
 <option>Jitendra Malik</option>
 <option>Jiyoung Lee</option>
 <option>Joan Serrà</option>
+<option>Joe Benton</option>
 <option>Johannes Ackermann</option>
 <option>Johannes Stegmaier</option>
 <option>John Thickstun</option>
@@ -2633,6 +2634,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  eess.AS, cs.LG, cs.SD
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## From Denoising Diffusions to Denoising Markov Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> November 07, 2022 </span>    
+         <span class="authors"> Joe Benton, Yuyang Shi, Valentin De Bortoli, George Deligiannidis, Arnaud Doucet </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2211.03595" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  stat.ML, cs.LG
 		  </div>
 		  
 	  </div>
