@@ -15,6 +15,7 @@ layout: default
     <select id="tagselection" class="selectpicker" multiple data-live-search="true">
       <option>68-06</option>
 <option>68T07</option>
+<option>68T10</option>
 <option>68T99</option>
 <option>94A08</option>
 <option>G.3</option>
@@ -22,6 +23,7 @@ layout: default
 <option>I.2.0</option>
 <option>I.2.0; J.3</option>
 <option>I.2.10; I.5.4</option>
+<option>I.2.6</option>
 <option>I.4.0</option>
 <option>I.4.4</option>
 <option>I.4.8</option>
@@ -464,6 +466,7 @@ layout: default
 <option>Gabriele Corso</option>
 <option>Gabriele Scalia</option>
 <option>Gal Metzer</option>
+<option>Gang Chen</option>
 <option>Gang Li</option>
 <option>Gang Yu</option>
 <option>Ganna Pogrebna</option>
@@ -811,6 +814,7 @@ layout: default
 <option>Leonidas Guibas</option>
 <option>Li Kevin Wenliang</option>
 <option>Li Zhang</option>
+<option>Li Zhu</option>
 <option>Li-ping Liu</option>
 <option>Liang Pan</option>
 <option>Liang Zheng</option>
@@ -2429,6 +2433,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  cs.CV, cs.AI
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Speed up the inference of diffusion models via shortcut MCMC sampling
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> December 18, 2022 </span>    
+         <span class="authors"> Gang Chen </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2301.01206" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.LG, 68T10, I.2.6
 		  </div>
 		  
 	  </div>
@@ -10951,7 +11003,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> October 05, 2022 </span>    
-         <span class="authors"> Zhengcong Fei, Mingyuan Fan, Junshi Huang, Xiaoming Wei, Xiaolin Wei </span>
+         <span class="authors"> Zhengcong Fei, Mingyuan Fan, Li Zhu, Junshi Huang, Xiaoming Wei, Xiaolin Wei </span>
 		</div>  
 </div>
 
