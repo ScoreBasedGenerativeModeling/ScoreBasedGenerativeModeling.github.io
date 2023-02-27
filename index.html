@@ -587,7 +587,6 @@ layout: default
 <option>Gautam Mittal</option>
 <option>Gaëtan Hadjeres</option>
 <option>Ge Wang</option>
-<option>Ge Yang</option>
 <option>Gefan Yang</option>
 <option>Gefei Wang</option>
 <option>Gefei Yang</option>
@@ -2052,6 +2051,7 @@ layout: default
 <option>Zoubin Ghahramani</option>
 <option>Zubair Shah</option>
 <option>Zuopeng Yang</option>
+<option>and Ge Yang</option>
 <option>Álvaro Barbero Jiménez</option>
 <option>Şaban Özturk</option>
 <option>Şaban Öztürk</option>
@@ -2086,7 +2086,7 @@ layout: default
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> February 23, 2023 </span>    
-         <span class="authors"> Takuma Yoneda, Luzhe Sun, Bradly Stadie, Ge Yang, Matthew Walter </span>
+         <span class="authors"> Takuma Yoneda, Luzhe Sun, and Ge Yang, Bradly Stadie, Matthew Walter </span>
 		</div>  
 </div>
 
@@ -2156,6 +2156,54 @@ layout: default
 	  <div class="column2">
 		  <div class="tags">
 			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Modeling Molecular Structures with Intrinsic Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> February 23, 2023 </span>    
+         <span class="authors"> Gabriele Corso </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2302.12255" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  q-bio.BM, cs.LG
 		  </div>
 		  
 	  </div>
@@ -28817,13 +28865,13 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
+## Variational Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
 		<div id="bloc2">
-         <span class="dates"> 29/09/2021 </span>    
-         <span class="authors"> Minkai Xu, Lantao Yu, Yang Song, Chence Shi, Stefano Ermon, Jian Tang </span>
+         <span class="dates"> July 01, 2021 </span>    
+         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
 		</div>  
 </div>
 
@@ -28831,10 +28879,15 @@ layout: default
 	  <div class="column2" >
 	    <div id="block_container">
 		<div id="bloc2">
-		<a href="https://openreview.net/forum?id=PzcvxEMzvQC" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
-		    
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				See More
+		      </button>
+		    </p>
+        
 		</div>  
 	     </div>
 	  </div>
@@ -28852,7 +28905,7 @@ layout: default
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- 
+ * Main contribution seems to be alternative parameterization of the marginals of  forward SDE in terms of SNR, then decreasing SNR function is optimized in the ELBO
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -28913,13 +28966,13 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Variational Diffusion Models
+## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
 		<div id="bloc2">
-         <span class="dates"> July 01, 2021 </span>    
-         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
+         <span class="dates"> 29/09/2021 </span>    
+         <span class="authors"> Minkai Xu, Lantao Yu, Yang Song, Chence Shi, Stefano Ermon, Jian Tang </span>
 		</div>  
 </div>
 
@@ -28927,15 +28980,10 @@ layout: default
 	  <div class="column2" >
 	    <div id="block_container">
 		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		<a href="https://openreview.net/forum?id=PzcvxEMzvQC" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
-		     <p>
-		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
-				See More
-		      </button>
-		    </p>
-        
+		    
 		</div>  
 	     </div>
 	  </div>
@@ -28953,7 +29001,7 @@ layout: default
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- * Main contribution seems to be alternative parameterization of the marginals of  forward SDE in terms of SNR, then decreasing SNR function is optimized in the ELBO
+ 
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
