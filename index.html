@@ -362,6 +362,7 @@ layout: default
 <option>Chen-Hao Chao</option>
 <option>Chen-Hsuan Lin</option>
 <option>Chence Shi</option>
+<option>Chenfei Wu</option>
 <option>Chenfei Ye</option>
 <option>Cheng Chen</option>
 <option>Cheng Lu</option>
@@ -599,6 +600,7 @@ layout: default
 <option>Fan Bao</option>
 <option>Fan Cheng</option>
 <option>Fan Tang</option>
+<option>Fan Yang</option>
 <option>Fan Zhang</option>
 <option>Fang Wen</option>
 <option>Fang Wu</option>
@@ -695,6 +697,7 @@ layout: default
 <option>Giuseppe Torri</option>
 <option>Gleb Ryzhakov</option>
 <option>Gokberk Elmas</option>
+<option>Gong Ming</option>
 <option>Gong Zhang</option>
 <option>Gordon Wetzstein</option>
 <option>Gordon Wichern</option>
@@ -943,6 +946,7 @@ layout: default
 <option>Jianfei Chen</option>
 <option>Jianfeng Feng</option>
 <option>Jianfeng Lu</option>
+<option>Jianfeng Wang</option>
 <option>Jiang Bian</option>
 <option>Jiangtao Feng</option>
 <option>Jianhua Jiang</option>
@@ -1198,6 +1202,7 @@ layout: default
 <option>Ligong Han</option>
 <option>Lihua Qian</option>
 <option>Lijie Liu</option>
+<option>Lijuan Wang</option>
 <option>Lijun Yu</option>
 <option>Lilac Atassi</option>
 <option>Lin Geng Foo</option>
@@ -1205,6 +1210,7 @@ layout: default
 <option>Ling Yang</option>
 <option>Lingjie Liu</option>
 <option>Lingpeng Kong</option>
+<option>Linjie Li</option>
 <option>Linli Xu</option>
 <option>Linqi Zhou</option>
 <option>Linqing Liu</option>
@@ -1358,6 +1364,7 @@ layout: default
 <option>Minh N. Do</option>
 <option>Minh-Quan Le</option>
 <option>Minh-Triet Tran</option>
+<option>Minheng Ni</option>
 <option>Minjun Li</option>
 <option>Minjung Kim</option>
 <option>Minkai Xu</option>
@@ -1727,6 +1734,7 @@ layout: default
 <option>Shenghua Gao</option>
 <option>Shengjia Zhao</option>
 <option>Shengmeng Li</option>
+<option>Shengming Yin</option>
 <option>Shengqu Cai</option>
 <option>Shi Pu</option>
 <option>Shifan Zhao</option>
@@ -1751,6 +1759,7 @@ layout: default
 <option>Shuangfei Zhai</option>
 <option>Shubhajit Basak</option>
 <option>Shubham Tulsiani</option>
+<option>Shuguang Liu</option>
 <option>Shuhan Zheng</option>
 <option>Shuicheng Yan</option>
 <option>Shunta Akiyama</option>
@@ -2051,6 +2060,7 @@ layout: default
 <option>Xiao Yang</option>
 <option>Xiaochuang Han</option>
 <option>Xiaodan Du</option>
+<option>Xiaodong Wang</option>
 <option>Xiaohu Qie</option>
 <option>Xiaohui Chen</option>
 <option>Xiaohui Hu</option>
@@ -2345,6 +2355,7 @@ layout: default
 <option>Zhengxiong Luo</option>
 <option>Zhengyang Geng</option>
 <option>Zhengyang Shan</option>
+<option>Zhengyuan Yang</option>
 <option>Zhenhua Liu</option>
 <option>Zhenhui Ye</option>
 <option>Zhentao Yu</option>
@@ -2379,6 +2390,7 @@ layout: default
 <option>Zhujin Gao</option>
 <option>Zhuo-Xu Cui</option>
 <option>Zibin Meng</option>
+<option>Zicheng Liu</option>
 <option>Zico Kolter</option>
 <option>Zihao Li</option>
 <option>Zihao Wang</option>
@@ -2423,6 +2435,54 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## NUWA-XL: Diffusion over Diffusion for eXtremely Long Video Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> March 22, 2023 </span>    
+         <span class="authors"> Shengming Yin, Chenfei Wu, Huan Yang, Jianfeng Wang, Xiaodong Wang, Minheng Ni, Zhengyuan Yang, Linjie Li, Shuguang Liu, Fan Yang, Jianlong Fu, Gong Ming, Lijuan Wang, Zicheng Liu, Houqiang Li, Nan Duan </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2303.12346" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -10158,7 +10218,7 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Interventional and Counterfactual Inference with Diffusion Models
+## Learning End-to-End Channel Coding with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -10206,7 +10266,7 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Learning End-to-End Channel Coding with Diffusion Models
+## Interventional and Counterfactual Inference with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -13182,7 +13242,7 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
+## Image Denoising: The Deep Learning Revolution
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -13230,7 +13290,7 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution
+## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
