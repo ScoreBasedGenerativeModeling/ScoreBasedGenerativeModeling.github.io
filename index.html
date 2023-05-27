@@ -68031,7 +68031,7 @@ $('#titleselection').change(function (e) {
    	var items = document.getElementsByClassName('entry');
 	var tags_selected = $(this).val();
    	for (let i = 0; i < items.length; i++) {
-	     var tag_items = items[i].getElementsByClassName("title")[0];
+	     var tag_items = items[i].getElementsByClassName("title");
 	     var item_tags = tag_items.textContent.trim().split(','); 
 	     item_tags =  item_tags.map(v => v.replace("\n", '').replace("\t", '').trim());
 	      console.log("item tags");
