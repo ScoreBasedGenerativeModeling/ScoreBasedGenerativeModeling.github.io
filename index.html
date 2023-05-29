@@ -967,6 +967,11 @@ layout: default
 <option>Prompt-Free Diffusion: Taking "Text" out of Text-to-Image Diffusion Models</option>
 <option>UDPM: Upsampling Diffusion Probabilistic Models</option>
 <option>Uni-ControlNet: All-in-One Control to Text-to-Image Diffusion Models</option>
+<option>Tree-Based Diffusion Schrödinger Bridge with Applications to Wasserstein Barycenters</option>
+<option>Error Bounds for Flow Matching Methods</option>
+<option>Diverse and Expressive Speech Prosody Prediction with Denoising Diffusion Probabilistic Model</option>
+<option>Score-based Diffusion Models for Bayesian Image Reconstruction</option>
+<option>Accelerating Diffusion Models for Inverse Problems through Shortcut Sampling</option>
     </select>
   </span>
   <span class="selector">
@@ -1004,6 +1009,7 @@ layout: default
 <option>Akshat Pandey</option>
 <option>Akshay Chaudhari</option>
 <option>Alaa Khaddaj</option>
+<option>Alain Durmus</option>
 <option>Alain Rakotomamonjy</option>
 <option>Alan F. Smeaton</option>
 <option>Alan Saul</option>
@@ -1286,6 +1292,7 @@ layout: default
 <option>Chao Li</option>
 <option>Chao Wan</option>
 <option>Chao Wang</option>
+<option>Chao Weng</option>
 <option>Chao Xu</option>
 <option>Chaofan Ma</option>
 <option>Chaoning Zhang</option>
@@ -1618,6 +1625,7 @@ layout: default
 <option>Fei Deng</option>
 <option>Fei Kong</option>
 <option>Fei Ni</option>
+<option>Fei Yin</option>
 <option>Fei Zhang</option>
 <option>Feiyang Chen</option>
 <option>Felix Friedrich</option>
@@ -1728,6 +1736,7 @@ layout: default
 <option>Gong Ming</option>
 <option>Gong Zhang</option>
 <option>Gongfan Fang</option>
+<option>Gongye Liu</option>
 <option>Gordon Wetzstein</option>
 <option>Gordon Wichern</option>
 <option>Gowthami Somepalli</option>
@@ -1829,6 +1838,7 @@ layout: default
 <option>Haoxing Chen</option>
 <option>Haoyang Yang</option>
 <option>Haoyi Xiong</option>
+<option>Haoze Sun</option>
 <option>Haozheng Zhang</option>
 <option>Hareesh Ravi</option>
 <option>Harish Kamath</option>
@@ -2109,6 +2119,7 @@ layout: default
 <option>Jiaxin Cheng</option>
 <option>Jiaxing He</option>
 <option>Jiayi Guo</option>
+<option>Jiayi Li</option>
 <option>Jiayi Ma</option>
 <option>Jiaying Liu</option>
 <option>Jiayu Zou</option>
@@ -2579,6 +2590,7 @@ layout: default
 <option>Max W. Shen</option>
 <option>Max W. Y. Lam</option>
 <option>Max Welling</option>
+<option>Maxence Noble</option>
 <option>Maxime Sermesant</option>
 <option>Maximilian Augustin</option>
 <option>Maximilian Nickel</option>
@@ -2607,6 +2619,7 @@ layout: default
 <option>Michael McThrow</option>
 <option>Michael Rubinstein</option>
 <option>Michael S. Albergo</option>
+<option>Michael T. McCann</option>
 <option>Michael T. Mccann</option>
 <option>Michael Tanzer</option>
 <option>Michael Zeng</option>
@@ -3863,6 +3876,7 @@ layout: default
 <option>Yujia Huang</option>
 <option>Yujie Lu</option>
 <option>Yujin Oh</option>
+<option>Yujiu Yang</option>
 <option>Yujun Shen</option>
 <option>Yukai Shi</option>
 <option>Yukang Cao</option>
@@ -4080,6 +4094,326 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Accelerating Diffusion Models for Inverse Problems through Shortcut Sampling
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 26, 2023 </span>    
+         <span class="authors"> Gongye Liu, Haoze Sun, Jiayi Li, Fei Yin, Yujiu Yang </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2305.16965" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.LG, eess.IV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Recently, diffusion models have demonstrated a remarkable ability to solve
+inverse problems in an unsupervised manner. Existing methods mainly focus on
+modifying the posterior sampling process while neglecting the potential of the
+forward process. In this work, we propose Shortcut Sampling for Diffusion
+(SSD), a novel pipeline for solving inverse problems. Instead of initiating
+from random noise, the key concept of SSD is to find the "Embryo", a
+transitional state that bridges the measurement image y and the restored image
+x. By utilizing the "shortcut" path of "input-Embryo-output", SSD can achieve
+precise and fast restoration. To obtain the Embryo in the forward process, We
+propose Distortion Adaptive Inversion (DA Inversion). Moreover, we apply back
+projection and attention injection as additional consistency constraints during
+the generation process. Experimentally, we demonstrate the effectiveness of SSD
+on several representative tasks, including super-resolution, deblurring, and
+colorization. Compared to state-of-the-art zero-shot methods, our method
+achieves competitive results with only 30 NFEs. Moreover, SSD with 100 NFEs can
+outperform state-of-the-art zero-shot methods in certain tasks.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Error Bounds for Flow Matching Methods
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 26, 2023 </span>    
+         <span class="authors"> Joe Benton, George Deligiannidis, Arnaud Doucet </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2305.16860" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  stat.ML, cs.LG
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Score-based generative models are a popular class of generative modelling
+techniques relying on stochastic differential equations (SDE). From their
+inception, it was realized that it was also possible to perform generation
+using ordinary differential equations (ODE) rather than SDE. This led to the
+introduction of the probability flow ODE approach and denoising diffusion
+implicit models. Flow matching methods have recently further extended these
+ODE-based approaches and approximate a flow between two arbitrary probability
+distributions. Previous work derived bounds on the approximation error of
+diffusion models under the stochastic sampling regime, given assumptions on the
+$L^2$ loss. We present error bounds for the flow matching procedure using fully
+deterministic sampling, assuming an $L^2$ bound on the approximation error and
+a certain regularity condition on the data distributions.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Diverse and Expressive Speech Prosody Prediction with Denoising Diffusion Probabilistic Model
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 26, 2023 </span>    
+         <span class="authors"> Xiang Li, Songxiang Liu, Max W. Y. Lam, Zhiyong Wu, Chao Weng, Helen Meng </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2305.16749" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.SD, eess.AS
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Expressive human speech generally abounds with rich and flexible speech
+prosody variations. The speech prosody predictors in existing expressive speech
+synthesis methods mostly produce deterministic predictions, which are learned
+by directly minimizing the norm of prosody prediction error. Its unimodal
+nature leads to a mismatch with ground truth distribution and harms the model's
+ability in making diverse predictions. Thus, we propose a novel prosody
+predictor based on the denoising diffusion probabilistic model to take
+advantage of its high-quality generative modeling and training stability.
+Experiment results confirm that the proposed prosody predictor outperforms the
+deterministic baseline on both the expressiveness and diversity of prediction
+results with even fewer network parameters.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Tree-Based Diffusion Schrödinger Bridge with Applications to Wasserstein Barycenters
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 26, 2023 </span>    
+         <span class="authors"> Maxence Noble, Valentin De Bortoli, Arnaud Doucet, Alain Durmus </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2305.16557" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  stat.ML, cs.LG, math.PR
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Multi-marginal Optimal Transport (mOT), a generalization of OT, aims at
+minimizing the integral of a cost function with respect to a distribution with
+some prescribed marginals. In this paper, we consider an entropic version of
+mOT with a tree-structured quadratic cost, i.e., a function that can be written
+as a sum of pairwise cost functions between the nodes of a tree. To address
+this problem, we develop Tree-based Diffusion Schr\"odinger Bridge (TreeDSB),
+an extension of the Diffusion Schr\"odinger Bridge (DSB) algorithm. TreeDSB
+corresponds to a dynamic and continuous state-space counterpart of the
+multimarginal Sinkhorn algorithm. A notable use case of our methodology is to
+compute Wasserstein barycenters which can be recast as the solution of a mOT
+problem on a star-shaped tree. We demonstrate that our methodology can be
+applied in high-dimensional settings such as image interpolation and Bayesian
+fusion.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Score-based Diffusion Models for Bayesian Image Reconstruction
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 25, 2023 </span>    
+         <span class="authors"> Michael T. McCann, Hyungjin Chung, Jong Chul Ye, Marc L. Klasky </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2305.16482" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  eess.IV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ This paper explores the use of score-based diffusion models for Bayesian
+image reconstruction. Diffusion models are an efficient tool for generative
+modeling. Diffusion models can also be used for solving image reconstruction
+problems. We present a simple and flexible algorithm for training a diffusion
+model and using it for maximum a posteriori reconstruction, minimum mean square
+error reconstruction, and posterior sampling. We present experiments on both a
+linear and a nonlinear reconstruction problem that highlight the strengths and
+limitations of the approach.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -29184,16 +29518,15 @@ underpinning many recent advances, including those from classification,
 generative models, and representation learning. The standard approach to data
 augmentation combines simple transformations like rotations and flips to
 generate new images from existing ones. However, these new images lack
-diversity along key semantic axes present in the data. Consider the task of
-recognizing different animals. Current augmentations fail to produce diversity
-in task-relevant high-level semantic attributes like the species of the animal.
-We address the lack of diversity in data augmentation with image-to-image
-transformations parameterized by pre-trained text-to-image diffusion models.
-Our method edits images to change their semantics using an off-the-shelf
-diffusion model, and generalizes to novel visual concepts from a few labelled
-examples. We evaluate our approach on image classification tasks in a few-shot
-setting, and on a real-world weed recognition task, and observe an improvement
-in accuracy in tested domains.
+diversity along key semantic axes present in the data. Current augmentations
+cannot alter the high-level semantic attributes, such as animal species present
+in a scene, to enhance the diversity of data. We address the lack of diversity
+in data augmentation with image-to-image transformations parameterized by
+pre-trained text-to-image diffusion models. Our method edits images to change
+their semantics using an off-the-shelf diffusion model, and generalizes to
+novel visual concepts from a few labelled examples. We evaluate our approach on
+few-shot image classification tasks, and on a real-world weed recognition task,
+and observe an improvement in accuracy in tested domains.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -29380,20 +29713,19 @@ required.
 {% capture x %}
  We propose Riemannian Flow Matching (RFM), a simple yet powerful framework
 for training continuous normalizing flows on manifolds. Existing methods for
-generative modeling on manifolds either require expensive simulation,
-inherently cannot scale to high dimensions, or use approximations to limiting
-quantities that result in biased objectives. Riemannian Flow Matching bypasses
-these inconveniences and exhibits multiple benefits over prior approaches: It
-is completely simulation-free on simple geometries, it does not require
-divergence computation, and its target vector field is computed in closed form
-even on general geometries. The key ingredient behind RFM is the construction
-of a simple kernel function for defining per-sample vector fields, which
-subsumes existing Euclidean cases. Extending to general geometries, we rely on
-the use of spectral decompositions to efficiently compute kernel functions. Our
-method achieves state-of-the-art performance on real-world non-Euclidean
-datasets, and we showcase, for the first time, tractable training on general
-geometries, including on triangular meshes and maze-like manifolds with
-boundaries.
+generative modeling on manifolds either require expensive simulation, are
+inherently unable to scale to high dimensions, or use approximations for
+limiting quantities that result in biased training objectives. Riemannian Flow
+Matching bypasses these limitations and offers several advantages over previous
+approaches: it is simulation-free on simple geometries, does not require
+divergence computation, and computes its target vector field in closed-form.
+The key ingredient behind RFM is the construction of a relatively simple
+premetric for defining target vector fields, which encompasses the existing
+Euclidean case. To extend to general geometries, we rely on the use of spectral
+decompositions to efficiently compute premetrics on the fly. Our method
+achieves state-of-the-art performance on real-world non-Euclidean datasets, and
+we demonstrate tractable training on general geometries, including triangular
+meshes with highly non-trivial curvature and boundaries.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -64199,13 +64531,13 @@ at https://github.com/google-research/vdm .
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
+## Predicting Molecular Conformation via Dynamic Graph Score Matching
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
 		<div id="bloc2">
-         <span class="dates"> 29/09/2021 </span>    
-         <span class="authors"> Minkai Xu, Lantao Yu, Yang Song, Chence Shi, Stefano Ermon, Jian Tang </span>
+         <span class="dates"> 01/12/2021 </span>    
+         <span class="authors"> Shitong Luo, Chence Shi, Minkai Xu, Jian Tang </span>
 		</div>  
 </div>
 
@@ -64213,7 +64545,7 @@ at https://github.com/google-research/vdm .
 	  <div class="column2" >
 	    <div id="block_container">
 		<div id="bloc2">
-		<a href="https://openreview.net/forum?id=PzcvxEMzvQC" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		<a href="https://proceedings.neurips.cc/paper/2021/hash/a45a1d12ee0fb7f1f872ab91da18f899-Abstract.html" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
 		    
@@ -64247,13 +64579,13 @@ at https://github.com/google-research/vdm .
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Predicting Molecular Conformation via Dynamic Graph Score Matching
+## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
 		<div id="bloc2">
-         <span class="dates"> 01/12/2021 </span>    
-         <span class="authors"> Shitong Luo, Chence Shi, Minkai Xu, Jian Tang </span>
+         <span class="dates"> 29/09/2021 </span>    
+         <span class="authors"> Minkai Xu, Lantao Yu, Yang Song, Chence Shi, Stefano Ermon, Jian Tang </span>
 		</div>  
 </div>
 
@@ -64261,7 +64593,7 @@ at https://github.com/google-research/vdm .
 	  <div class="column2" >
 	    <div id="block_container">
 		<div id="bloc2">
-		<a href="https://proceedings.neurips.cc/paper/2021/hash/a45a1d12ee0fb7f1f872ab91da18f899-Abstract.html" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		<a href="https://openreview.net/forum?id=PzcvxEMzvQC" target="_blank" class="btn btn-info" role="button"> Paper </a>
 		</div>  
 		<div id="bloc3">
 		    
