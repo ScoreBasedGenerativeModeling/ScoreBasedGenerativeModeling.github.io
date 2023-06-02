@@ -4354,7 +4354,7 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## 
+## Diffusion Self-Guidance for Controllable Image Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -4409,6 +4409,1079 @@ one image with the layout of another, composing objects from many images into
 one, and more. We also show that self-guidance can be used to edit real images.
 For results and an interactive demo, see our project page at
 https://dave.ml/selfguidance/
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Yanyu Li, Huan Wang, Qing Jin, Ju Hu, Pavlo Chemerys, Yun Fu, Yanzhi Wang, Sergey Tulyakov, Jian Ren </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00980" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.LG
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Text-to-image diffusion models can create stunning images from natural
+language descriptions that rival the work of professional artists and
+photographers. However, these models are large, with complex network
+architectures and tens of denoising iterations, making them computationally
+expensive and slow to run. As a result, high-end GPUs and cloud-based inference
+are required to run diffusion models at scale. This is costly and has privacy
+implications, especially when user data is sent to a third party. To overcome
+these challenges, we present a generic approach that, for the first time,
+unlocks running text-to-image diffusion models on mobile devices in less than
+$2$ seconds. We achieve so by introducing efficient network architecture and
+improving step distillation. Specifically, we propose an efficient UNet by
+identifying the redundancy of the original model and reducing the computation
+of the image decoder via data distillation. Further, we enhance the step
+distillation by exploring training strategies and introducing regularization
+from classifier-free guidance. Our extensive experiments on MS-COCO show that
+our model with $8$ denoising steps achieves better FID and CLIP scores than
+Stable Diffusion v$1.5$ with $50$ steps. Our work democratizes content creation
+by bringing powerful text-to-image diffusion models to the hands of users.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Intriguing Properties of Text-guided Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Qihao Liu, Adam Kortylewski, Yutong Bai, Song Bai, Alan Yuille </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00974" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Text-guided diffusion models (TDMs) are widely applied but can fail
+unexpectedly. Common failures include: (i) natural-looking text prompts
+generating images with the wrong content, or (ii) different random samples of
+the latent variables that generate vastly different, and even unrelated,
+outputs despite being conditioned on the same text prompt. In this work, we aim
+to study and understand the failure modes of TDMs in more detail. To achieve
+this, we propose SAGE, an adversarial attack on TDMs that uses image
+classifiers as surrogate loss functions, to search over the discrete prompt
+space and the high-dimensional latent space of TDMs to automatically discover
+unexpected behaviors and failure cases in the image generation. We make several
+technical contributions to ensure that SAGE finds failure cases of the
+diffusion model, rather than the classifier, and verify this in a human study.
+Our study reveals four intriguing properties of TDMs that have not been
+systematically studied before: (1) We find a variety of natural text prompts
+producing images that fail to capture the semantics of input texts. We
+categorize these failures into ten distinct types based on the underlying
+causes. (2) We find samples in the latent space (which are not outliers) that
+lead to distorted images independent of the text prompt, suggesting that parts
+of the latent space are not well-structured. (3) We also find latent samples
+that lead to natural-looking images which are unrelated to the text prompt,
+implying a potential misalignment between the latent and prompt spaces. (4) By
+appending a single adversarial token embedding to an input prompt we can
+generate a variety of specified target objects, while only minimally affecting
+the CLIP score. This demonstrates the fragility of language representations and
+raises potential safety concerns.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## The Hidden Language of Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Hila Chefer, Oran Lang, Mor Geva, Volodymyr Polosukhin, Assaf Shocher, Michal Irani, Inbar Mosseri, Lior Wolf </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00966" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Text-to-image diffusion models have demonstrated an unparalleled ability to
+generate high-quality, diverse images from a textual concept (e.g., "a doctor",
+"love"). However, the internal process of mapping text to a rich visual
+representation remains an enigma. In this work, we tackle the challenge of
+understanding concept representations in text-to-image models by decomposing an
+input text prompt into a small set of interpretable elements. This is achieved
+by learning a pseudo-token that is a sparse weighted combination of tokens from
+the model's vocabulary, with the objective of reconstructing the images
+generated for the given concept. Applied over the state-of-the-art Stable
+Diffusion model, this decomposition reveals non-trivial and surprising
+structures in the representations of concepts. For example, we find that some
+concepts such as "a president" or "a composer" are dominated by specific
+instances (e.g., "Obama", "Biden") and their interpolations. Other concepts,
+such as "happiness" combine associated terms that can be concrete ("family",
+"laughter") or abstract ("friendship", "emotion"). In addition to peering into
+the inner workings of Stable Diffusion, our method also enables applications
+such as single-image decomposition to tokens, bias detection and mitigation,
+and semantic image manipulation. Our code will be available at:
+https://hila-chefer.github.io/Conceptor/
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Differential Diffusion: Giving Each Pixel Its Strength
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Eran Levin, Ohad Fried </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00950" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.GR, cs.LG, I.3.3
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Text-based image editing has advanced significantly in recent years. With the
+rise of diffusion models, image editing via textual instructions has become
+ubiquitous. Unfortunately, current models lack the ability to customize the
+quantity of the change per pixel or per image fragment, resorting to changing
+the entire image in an equal amount, or editing a specific region using a
+binary mask. In this paper, we suggest a new framework which enables the user
+to customize the quantity of change for each image fragment, thereby enhancing
+the flexibility and verbosity of modern diffusion models. Our framework does
+not require model training or fine-tuning, but instead performs everything at
+inference time, making it easily applicable to an existing model. We show both
+qualitatively and quantitatively that our method allows better controllability
+and can produce results which are unattainable by existing models. Our code is
+available at: https://github.com/exx8/differential-diffusion
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Inserting Anybody in Diffusion Models via Celeb Basis
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Ge Yuan, Xiaodong Cun, Yong Zhang, Maomao Li, Chenyang Qi, Xintao Wang, Ying Shan, Huicheng Zheng </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00926" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Exquisite demand exists for customizing the pretrained large text-to-image
+model, $\textit{e.g.}$, Stable Diffusion, to generate innovative concepts, such
+as the users themselves. However, the newly-added concept from previous
+customization methods often shows weaker combination abilities than the
+original ones even given several images during training. We thus propose a new
+personalization method that allows for the seamless integration of a unique
+individual into the pre-trained diffusion model using just $\textbf{one facial
+photograph}$ and only $\textbf{1024 learnable parameters}$ under $\textbf{3
+minutes}$. So as we can effortlessly generate stunning images of this person in
+any pose or position, interacting with anyone and doing anything imaginable
+from text prompts. To achieve this, we first analyze and build a well-defined
+celeb basis from the embedding space of the pre-trained large text encoder.
+Then, given one facial photo as the target identity, we generate its own
+embedding by optimizing the weight of this basis and locking all other
+parameters. Empowered by the proposed celeb basis, the new identity in our
+customized model showcases a better concept combination ability than previous
+personalization methods. Besides, our model can also learn several new
+identities at once and interact with each other where the previous
+customization model fails to. The code will be released.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Conditioning Diffusion Models via Attributes and Semantic Masks for Face Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Nico Giambi, Giuseppe Lisanti </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00914" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Deep generative models have shown impressive results in generating realistic
+images of faces. GANs managed to generate high-quality, high-fidelity images
+when conditioned on semantic masks, but they still lack the ability to
+diversify their output. Diffusion models partially solve this problem and are
+able to generate diverse samples given the same condition. In this paper, we
+propose a multi-conditioning approach for diffusion models via cross-attention
+exploiting both attributes and semantic masks to generate high-quality and
+controllable face images. We also studied the impact of applying
+perceptual-focused loss weighting into the latent space instead of the pixel
+space. Our method extends the previous approaches by introducing conditioning
+on more than one set of features, guaranteeing a more fine-grained control over
+the generated face images. We evaluate our approach on the CelebA-HQ dataset,
+and we show that it can generate realistic and diverse samples while allowing
+for fine-grained control over multiple attributes and semantic regions.
+Additionally, we perform an ablation study to evaluate the impact of different
+conditioning strategies on the quality and diversity of the generated images.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## UniDiff: Advancing Vision-Language Models with Generative and Discriminative Learning
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Xiao Dong, Runhui Huang, Xiaoyong Wei, Zequn Jie, Jianxing Yu, Jian Yin, Xiaodan Liang </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00813" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Recent advances in vision-language pre-training have enabled machines to
+perform better in multimodal object discrimination (e.g., image-text semantic
+alignment) and image synthesis (e.g., text-to-image generation). On the other
+hand, fine-tuning pre-trained models with discriminative or generative
+capabilities such as CLIP and Stable Diffusion on domain-specific datasets has
+shown to be effective in various tasks by adapting to specific domains.
+However, few studies have explored the possibility of learning both
+discriminative and generative capabilities and leveraging their synergistic
+effects to create a powerful and personalized multimodal model during
+fine-tuning. This paper presents UniDiff, a unified multi-modal model that
+integrates image-text contrastive learning (ITC), text-conditioned image
+synthesis learning (IS), and reciprocal semantic consistency modeling (RSC).
+UniDiff effectively learns aligned semantics and mitigates the issue of
+semantic collapse during fine-tuning on small datasets by leveraging RSC on
+visual features from CLIP and diffusion models, without altering the
+pre-trained model's basic architecture. UniDiff demonstrates versatility in
+both multi-modal understanding and generative tasks. Experimental results on
+three datasets (Fashion-man, Fashion-woman, and E-commercial Product) showcase
+substantial enhancements in vision-language retrieval and text-to-image
+generation, illustrating the advantages of combining discriminative and
+generative fine-tuning. The proposed UniDiff model establishes a robust
+pipeline for personalized modeling and serves as a benchmark for future
+comparisons in the field.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Dissecting Arbitrary-scale Super-resolution Capability from Pre-trained Diffusion Generative Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Ruibin Li, Qihua Zhou, Song Guo, Jie Zhang, Jingcai Guo, Xinyang Jiang, Yifei Shen, Zhenhua Han </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00714" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.LG, eess.IV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion-based Generative Models (DGMs) have achieved unparalleled
+performance in synthesizing high-quality visual content, opening up the
+opportunity to improve image super-resolution (SR) tasks. Recent solutions for
+these tasks often train architecture-specific DGMs from scratch, or require
+iterative fine-tuning and distillation on pre-trained DGMs, both of which take
+considerable time and hardware investments. More seriously, since the DGMs are
+established with a discrete pre-defined upsampling scale, they cannot well
+match the emerging requirements of arbitrary-scale super-resolution (ASSR),
+where a unified model adapts to arbitrary upsampling scales, instead of
+preparing a series of distinct models for each case. These limitations beg an
+intriguing question: can we identify the ASSR capability of existing
+pre-trained DGMs without the need for distillation or fine-tuning? In this
+paper, we take a step towards resolving this matter by proposing Diff-SR, a
+first ASSR attempt based solely on pre-trained DGMs, without additional
+training efforts. It is motivated by an exciting finding that a simple
+methodology, which first injects a specific amount of noise into the
+low-resolution images before invoking a DGM's backward diffusion process,
+outperforms current leading solutions. The key insight is determining a
+suitable amount of noise to inject, i.e., small amounts lead to poor low-level
+fidelity, while over-large amounts degrade the high-level signature. Through a
+finely-grained theoretical analysis, we propose the Perceptual Recoverable
+Field (PRF), a metric that achieves the optimal trade-off between these two
+factors. Extensive experiments verify the effectiveness, flexibility, and
+adaptability of Diff-SR, demonstrating superior performance to state-of-the-art
+solutions under diverse ASSR environments.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## DiffRoom: Diffusion-based High-Quality 3D Room Reconstruction and Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Xiaoliang Ju, Zhaoyang Huang, Yijin Li, Guofeng Zhang, Yu Qiao, Hongsheng Li </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00519" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ We present DiffRoom, a novel framework for tackling the problem of
+high-quality 3D indoor room reconstruction and generation, both of which are
+challenging due to the complexity and diversity of the room geometry. Although
+diffusion-based generative models have previously demonstrated impressive
+performance in image generation and object-level 3D generation, they have not
+yet been applied to room-level 3D generation due to their computationally
+intensive costs. In DiffRoom, we propose a sparse 3D diffusion network that is
+efficient and possesses strong generative performance for Truncated Signed
+Distance Field (TSDF), based on a rough occupancy prior. Inspired by
+KinectFusion's incremental alignment and fusion of local SDFs, we propose a
+diffusion-based TSDF fusion approach that iteratively diffuses and fuses TSDFs,
+facilitating the reconstruction and generation of an entire room environment.
+Additionally, to ease training, we introduce a curriculum diffusion learning
+paradigm that speeds up the training convergence process and enables
+high-quality reconstruction. According to the user study, the mesh quality
+generated by our DiffRoom can even outperform the ground truth mesh provided by
+ScanNet.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Image generation with shortest path diffusion
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Ayan Das, Stathi Fotiadis, Anil Batra, Farhang Nabiei, FengTing Liao, Sattar Vakili, Da-shan Shiu, Alberto Bernacchia </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00501" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.LG
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ The field of image generation has made significant progress thanks to the
+introduction of Diffusion Models, which learn to progressively reverse a given
+image corruption. Recently, a few studies introduced alternative ways of
+corrupting images in Diffusion Models, with an emphasis on blurring. However,
+these studies are purely empirical and it remains unclear what is the optimal
+procedure for corrupting an image. In this work, we hypothesize that the
+optimal procedure minimizes the length of the path taken when corrupting an
+image towards a given final state. We propose the Fisher metric for the path
+length, measured in the space of probability distributions. We compute the
+shortest path according to this metric, and we show that it corresponds to a
+combination of image sharpening, rather than blurring, and noise deblurring.
+While the corruption was chosen arbitrarily in previous work, our Shortest Path
+Diffusion (SPD) determines uniquely the entire spatiotemporal structure of the
+corruption. We show that SPD improves on strong baselines without any
+hyperparameter tuning, and outperforms all previous Diffusion Models based on
+image blurring. Furthermore, any small deviation from the shortest path leads
+to worse performance, suggesting that SPD provides the optimal procedure to
+corrupt images. Our work sheds new light on observations made in recent works
+and provides a new approach to improve diffusion models on images and other
+types of data.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Controllable Motion Diffusion Model
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Yi Shi, Jingbo Wang, Xuekun Jiang, Bo Dai </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00416" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.GR
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Generating realistic and controllable motions for virtual characters is a
+challenging task in computer animation, and its implications extend to games,
+simulations, and virtual reality. Recent studies have drawn inspiration from
+the success of diffusion models in image generation, demonstrating the
+potential for addressing this task. However, the majority of these studies have
+been limited to offline applications that target at sequence-level generation
+that generates all steps simultaneously. To enable real-time motion synthesis
+with diffusion models in response to time-varying control signals, we propose
+the framework of the Controllable Motion Diffusion Model (COMODO). Our
+framework begins with an auto-regressive motion diffusion model (A-MDM), which
+generates motion sequences step by step. In this way, simply using the standard
+DDPM algorithm without any additional complexity, our framework is able to
+generate high-fidelity motion sequences over extended periods with different
+types of control signals. Then, we propose our reinforcement learning-based
+controller and controlling strategies on top of the A-MDM model, so that our
+framework can steer the motion synthesis process across multiple tasks,
+including target reaching, joystick-based control, goal-oriented control, and
+trajectory following. The proposed framework enables the real-time generation
+of diverse motions that react adaptively to user commands on-the-fly, thereby
+enhancing the overall user experience. Besides, it is compatible with the
+inpainting-based editing methods and can predict much more diverse motions
+without additional fine-tuning of the basic motion generation models. We
+conduct comprehensive experiments to evaluate the effectiveness of our
+framework in performing various tasks and compare its performance against
+state-of-the-art methods.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Addressing Negative Transfer in Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Hyojun Go, JinYoung Kim, Yunsung Lee, Seunghyun Lee, Shinhyeok Oh, Hyeongdon Moon, Seungtaek Choi </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00354" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.LG
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion-based generative models have achieved remarkable success in various
+domains. It trains a model on denoising tasks that encompass different noise
+levels simultaneously, representing a form of multi-task learning (MTL).
+However, analyzing and improving diffusion models from an MTL perspective
+remains under-explored. In particular, MTL can sometimes lead to the well-known
+phenomenon of $\textit{negative transfer}$, which results in the performance
+degradation of certain tasks due to conflicts between tasks. In this paper, we
+aim to analyze diffusion training from an MTL standpoint, presenting two key
+observations: $\textbf{(O1)}$ the task affinity between denoising tasks
+diminishes as the gap between noise levels widens, and $\textbf{(O2)}$ negative
+transfer can arise even in the context of diffusion training. Building upon
+these observations, our objective is to enhance diffusion training by
+mitigating negative transfer. To achieve this, we propose leveraging existing
+MTL methods, but the presence of a huge number of denoising tasks makes this
+computationally expensive to calculate the necessary per-task loss or gradient.
+To address this challenge, we propose clustering the denoising tasks into small
+task clusters and applying MTL methods to them. Specifically, based on
+$\textbf{(O2)}$, we employ interval clustering to enforce temporal proximity
+among denoising tasks within clusters. We show that interval clustering can be
+solved with dynamic programming and utilize signal-to-noise ratio, timestep,
+and task affinity for clustering objectives. Through this, our approach
+addresses the issue of negative transfer in diffusion models by allowing for
+efficient computation of MTL methods. We validate the proposed clustering and
+its integration with MTL methods through various experiments, demonstrating
+improved sample quality of diffusion models.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Low-Light Image Enhancement with Wavelet-based Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 01, 2023 </span>    
+         <span class="authors"> Hai Jiang, Ao Luo, Songchen Han, Haoqiang Fan, Shuaicheng Liu </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00306" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion models have achieved promising results in image restoration tasks,
+yet suffer from time-consuming, excessive computational resource consumption,
+and unstable restoration. To address these issues, we propose a robust and
+efficient Diffusion-based Low-Light image enhancement approach, dubbed DiffLL.
+Specifically, we present a wavelet-based conditional diffusion model (WCDM)
+that leverages the generative power of diffusion models to produce results with
+satisfactory perceptual fidelity. Additionally, it also takes advantage of the
+strengths of wavelet transformation to greatly accelerate inference and reduce
+computational resource usage without sacrificing information. To avoid chaotic
+content and diversity, we perform both forward diffusion and reverse denoising
+in the training phase of WCDM, enabling the model to achieve stable denoising
+and reduce randomness during inference. Moreover, we further design a
+high-frequency restoration module (HFRM) that utilizes the vertical and
+horizontal details of the image to complement the diagonal information for
+better fine-grained restoration. Extensive experiments on publicly available
+real-world benchmarks demonstrate that our method outperforms the existing
+state-of-the-art methods both quantitatively and visually, and it achieves
+remarkable improvements in efficiency compared to previous diffusion-based
+methods. In addition, we empirically show that the application for low-light
+face detection also reveals the latent practical values of our method.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Diffusion Brush: A Latent Diffusion Model-based Editing Tool for AI-generated Images
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 31, 2023 </span>    
+         <span class="authors"> Peyman Gholami, Robert Xiao </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00219" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.CL, cs.LG
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Text-to-image generative models have made remarkable advancements in
+generating high-quality images. However, generated images often contain
+undesirable artifacts or other errors due to model limitations. Existing
+techniques to fine-tune generated images are time-consuming (manual editing),
+produce poorly-integrated results (inpainting), or result in unexpected changes
+across the entire image (variation selection and prompt fine-tuning). In this
+work, we present Diffusion Brush, a Latent Diffusion Model-based (LDM) tool to
+efficiently fine-tune desired regions within an AI-synthesized image. Our
+method introduces new random noise patterns at targeted regions during the
+reverse diffusion process, enabling the model to efficiently make changes to
+the specified regions while preserving the original context for the rest of the
+image. We evaluate our method's usability and effectiveness through a user
+study with artists, comparing our technique against other state-of-the-art
+image inpainting techniques and editing software for fine-tuning AI-generated
+imagery.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## SafeDiffuser: Safe Planning with Diffusion Probabilistic Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> May 31, 2023 </span>    
+         <span class="authors"> Wei Xiao, Tsun-Hsuan Wang, Chuang Gan, Daniela Rus </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.00148" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.RO, cs.SY, eess.SY
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion model-based approaches have shown promise in data-driven planning,
+but there are no safety guarantees, thus making it hard to be applied for
+safety-critical applications. To address these challenges, we propose a new
+method, called SafeDiffuser, to ensure diffusion probabilistic models satisfy
+specifications by using a class of control barrier functions. The key idea of
+our approach is to embed the proposed finite-time diffusion invariance into the
+denoising diffusion procedure, which enables trustworthy diffusion data
+generation. Moreover, we demonstrate that our finite-time diffusion invariance
+method through generative models not only maintains generalization performance
+but also creates robustness in safe data generation. We test our method on a
+series of safe planning tasks, including maze path generation, legged robot
+locomotion, and 3D space manipulation, with results showing the advantages of
+robustness and guarantees over vanilla diffusion models.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
