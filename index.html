@@ -774,7 +774,7 @@ layout: default
 <option>Diffusion Denoised Smoothing for Certified and Adversarial Robust Out-Of-Distribution Detection</option>
 <option>DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency</option>
 <option>Text-to-Image Diffusion Models are Zero-Shot Classifiers</option>
-<option>Conditional Score-Based Reconstructions for Multi-contrast MRI</option>
+<option>MRI Reconstruction with Side Information using Diffusion Models</option>
 <option>Visual Chain-of-Thought Diffusion Models</option>
 <option>DDMM-Synth: A Denoising Diffusion Model for Cross-modal Medical Image Synthesis with Sparse-view Measurement Embedding</option>
 <option>Your Diffusion Model is Secretly a Zero-Shot Classifier</option>
@@ -1053,6 +1053,12 @@ layout: default
 <option>Logic Diffusion for Knowledge Graph Reasoning</option>
 <option>Protecting the Intellectual Property of Diffusion Models by the Watermark Diffusion Process</option>
 <option>PLANNER: Generating Diversified Paragraph via Latent Language Diffusion Model</option>
+<option>Improving Diffusion-based Image Translation using Asymmetric Gradient Guidance</option>
+<option>Phoenix: A Federated Generative Diffusion Model</option>
+<option>A Survey on Generative Diffusion Models for Structured Data</option>
+<option>Multi-modal Latent Diffusion</option>
+<option>On the Design Fundamentals of Diffusion Models: A Survey</option>
+<option>ScoreCL: Augmentation-Adaptive Contrastive Learning via Score-Matching Function</option>
     </select>
   </span>
   <span class="selector">
@@ -1081,6 +1087,7 @@ layout: default
 <option>Adrienn Poór</option>
 <option>Advait Parulekar</option>
 <option>Afef Mdhaffar</option>
+<option>Afra Mashhadi</option>
 <option>Ahmed A. Elhag</option>
 <option>Ahmed Elgammal</option>
 <option>Ahsan Mahmood</option>
@@ -1782,6 +1789,7 @@ layout: default
 <option>Filip Ilic</option>
 <option>Finn Behrendt</option>
 <option>Finn Wong</option>
+<option>Fiona Victoria Stanley Jothiraj</option>
 <option>Firas Khader</option>
 <option>Firat Ozgenel</option>
 <option>Fisher Yu</option>
@@ -1854,6 +1862,7 @@ layout: default
 <option>Geoff Galgon</option>
 <option>Geoffrey Hinton</option>
 <option>Geonmo Gu</option>
+<option>George A. Koulieris</option>
 <option>George Deligiannidis</option>
 <option>George Papamakarios</option>
 <option>George Retsinas</option>
@@ -2009,6 +2018,7 @@ layout: default
 <option>He Cao</option>
 <option>He Zhang</option>
 <option>HeeJae Jun</option>
+<option>Heejoon Koo</option>
 <option>Heeseung Kim</option>
 <option>Heewoo Jun</option>
 <option>Hefeng Wang</option>
@@ -2918,6 +2928,7 @@ layout: default
 <option>Muheng Li</option>
 <option>Mukai Li</option>
 <option>Muneyoshi Inahara</option>
+<option>Mustapha Bounoua</option>
 <option>Muyang Li</option>
 <option>Muyi Sun</option>
 <option>Muzaffer Özbey</option>
@@ -3513,6 +3524,7 @@ layout: default
 <option>Sonia Nielles-Vallespin</option>
 <option>Soo-Whan Chung</option>
 <option>Soon Yau Cheong</option>
+<option>Soonwoo Kwon</option>
 <option>Sophia S. Goller</option>
 <option>Sophie Mildenberger</option>
 <option>Soroosh Tayebi Arasteh</option>
@@ -4469,6 +4481,412 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## On the Design Fundamentals of Diffusion Models: A Survey
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 07, 2023 </span>    
+         <span class="authors"> Ziyi Chang, George A. Koulieris, Hubert P. H. Shum </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.04542" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.AI, cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion models are generative models, which gradually add and remove noise
+to learn the underlying distribution of training data for data generation. The
+components of diffusion models have gained significant attention with many
+design choices proposed. Existing reviews have primarily focused on
+higher-level solutions, thereby covering less on the design fundamentals of
+components. This study seeks to address this gap by providing a comprehensive
+and coherent review on component-wise design choices in diffusion models.
+Specifically, we organize this review according to their three key components,
+namely the forward process, the reverse process, and the sampling procedure.
+This allows us to provide a fine-grained perspective of diffusion models,
+benefiting future studies in the analysis of individual components, the
+applicability of design choices, and the implementation of diffusion models.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Multi-modal Latent Diffusion
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 07, 2023 </span>    
+         <span class="authors"> Mustapha Bounoua, Giulio Franzese, Pietro Michiardi </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.04445" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Multi-modal data-sets are ubiquitous in modern applications, and multi-modal
+Variational Autoencoders are a popular family of models that aim to learn a
+joint representation of the different modalities. However, existing approaches
+suffer from a coherence-quality tradeoff, where models with good generation
+quality lack generative coherence across modalities, and vice versa. We discuss
+the limitations underlying the unsatisfactory performance of existing methods,
+to motivate the need for a different approach. We propose a novel method that
+uses a set of independently trained, uni-modal, deterministic autoencoders.
+Individual latent variables are concatenated into a common latent space, which
+is fed to a masked diffusion model to enable generative modeling. We also
+introduce a new multi-time training method to learn the conditional score
+network for multi-modal diffusion. Our methodology substantially outperforms
+competitors in both generation quality and coherence, as shown through an
+extensive experimental campaign.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Improving Diffusion-based Image Translation using Asymmetric Gradient Guidance
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 07, 2023 </span>    
+         <span class="authors"> Gihyun Kwon, Jong Chul Ye </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.04396" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.LG, stat.ML
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion models have shown significant progress in image translation tasks
+recently. However, due to their stochastic nature, there's often a trade-off
+between style transformation and content preservation. Current strategies aim
+to disentangle style and content, preserving the source image's structure while
+successfully transitioning from a source to a target domain under text or
+one-shot image conditions. Yet, these methods often require computationally
+intense fine-tuning of diffusion models or additional neural networks. To
+address these challenges, here we present an approach that guides the reverse
+process of diffusion sampling by applying asymmetric gradient guidance. This
+results in quicker and more stable image manipulation for both text-guided and
+image-guided image translation. Our model's adaptability allows it to be
+implemented with both image- and latent-diffusion models. Experiments show that
+our method outperforms various state-of-the-art models in image translation
+tasks.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## ScoreCL: Augmentation-Adaptive Contrastive Learning via Score-Matching Function
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 07, 2023 </span>    
+         <span class="authors"> JinYoung Kim, Soonwoo Kwon, Hyojun Go, Yunsung Lee, Seungtaek Choi </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.04175" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Self-supervised contrastive learning (CL) has achieved state-of-the-art
+performance in representation learning by minimizing the distance between
+positive pairs while maximizing that of negative ones. Recently, it has been
+verified that the model learns better representation with diversely augmented
+positive pairs because they enable the model to be more view-invariant.
+However, only a few studies on CL have considered the difference between
+augmented views, and have not gone beyond the hand-crafted findings. In this
+paper, we first observe that the score-matching function can measure how much
+data has changed from the original through augmentation. With the observed
+property, every pair in CL can be weighted adaptively by the difference of
+score values, resulting in boosting the performance of the existing CL method.
+We show the generality of our method, referred to as ScoreCL, by consistently
+improving various CL methods, SimCLR, SimSiam, W-MSE, and VICReg, up to 3%p in
+k-NN evaluation on CIFAR-10, CIFAR-100, and ImageNet-100. Moreover, we have
+conducted exhaustive experiments and ablations, including results on diverse
+downstream tasks, comparison with possible baselines, and improvement when used
+with other proposed augmentation methods. We hope our exploration will inspire
+more research in exploiting the score matching for CL.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## A Survey on Generative Diffusion Models for Structured Data
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 07, 2023 </span>    
+         <span class="authors"> Heejoon Koo </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.04139" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.AI
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ In recent years, generative diffusion models have achieved a rapid paradigm
+shift in deep generative models by showing groundbreaking performance across
+various applications. Meanwhile, structured data, encompassing tabular and time
+series data, has been received comparatively limited attention from the deep
+learning research community, despite its omnipresence and extensive
+applications. Thus, there is still a lack of literature and its review on
+structured data modelling via diffusion models, compared to other data
+modalities such as computer vision and natural language processing. Hence, in
+this paper, we present a comprehensive review of recently proposed diffusion
+models in the field of structured data. First, this survey provides a concise
+overview of the score-based diffusion model theory, subsequently proceeding to
+the technical descriptions of the majority of pioneering works using structured
+data in both data-driven general tasks and domain-specific applications.
+Thereafter, we analyse and discuss the limitations and challenges shown in
+existing works and suggest potential research directions. We hope this review
+serves as a catalyst for the research community, promoting the developments in
+generative diffusion models for structured data.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Phoenix: A Federated Generative Diffusion Model
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 07, 2023 </span>    
+         <span class="authors"> Fiona Victoria Stanley Jothiraj, Afra Mashhadi </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.04098" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.CV
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Generative AI has made impressive strides in enabling users to create diverse
+and realistic visual content such as images, videos, and audio. However,
+training generative models on large centralized datasets can pose challenges in
+terms of data privacy, security, and accessibility. Federated learning (FL) is
+an approach that uses decentralized techniques to collaboratively train a
+shared deep learning model while retaining the training data on individual edge
+devices to preserve data privacy. This paper proposes a novel method for
+training a Denoising Diffusion Probabilistic Model (DDPM) across multiple data
+sources using FL techniques. Diffusion models, a newly emerging generative
+model, show promising results in achieving superior quality images than
+Generative Adversarial Networks (GANs). Our proposed method Phoenix is an
+unconditional diffusion model that leverages strategies to improve the data
+diversity of generated samples even when trained on data with statistical
+heterogeneity or Non-IID (Non-Independent and Identically Distributed) data. We
+demonstrate how our approach outperforms the default diffusion model in an FL
+setting. These results indicate that high-quality samples can be generated by
+maintaining data diversity, preserving privacy, and reducing communication
+between data sources, offering exciting new possibilities in the field of
+generative AI.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -24056,18 +24474,19 @@ https://github.com/sauradip/DiffusionTAD.
 contrast-weighted images of the same anatomy to emphasize different tissue
 properties. Due to the long acquisition times required to collect fully sampled
 k-space measurements, it is common to only collect a fraction of k-space for
-some, or all, of the scans and subsequently solve an inverse problem for each
-contrast to recover the desired image from sub-sampled measurements. Recently,
-there has been a push to further accelerate MRI exams using data-driven priors,
-and generative models in particular, to regularize the ill-posed inverse
-problem of image reconstruction. These methods have shown promising
-improvements over classical methods. However, many of the approaches neglect
-the multi-contrast nature of clinical MRI exams and treat each scan as an
-independent reconstruction. In this work we show that by learning a joint
-Bayesian prior over multi-contrast data with a score-based generative model we
-are able to leverage the underlying structure between multi-contrast images and
-thus improve image reconstruction fidelity over generative models that only
-reconstruct images of a single contrast.
+each scan and subsequently solve independent inverse problems for each image
+contrast. Recently, there has been a push to further accelerate MRI exams using
+data-driven priors, and generative models in particular, to regularize the
+ill-posed inverse problem of image reconstruction. These methods have shown
+promising improvements over classical methods. However, many of the approaches
+neglect the additional information present in a clinical MRI exam like the
+multi-contrast nature of the data and treat each scan as an independent
+reconstruction. In this work we show that by learning a joint Bayesian prior
+over multi-contrast data with a score-based generative model we are able to
+leverage the underlying structure between random variables related to a given
+imaging problem. This leads to an improvement in image reconstruction fidelity
+over generative models that rely only on a marginal prior over the image
+contrast of interest.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -36721,7 +37140,7 @@ morphing script are made public: https://github.com/naserdamer/MorDIFF.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Learning End-to-End Channel Coding with Diffusion Models
+## Interventional and Counterfactual Inference with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -36788,7 +37207,7 @@ better generalization ability in testing.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Interventional and Counterfactual Inference with Diffusion Models
+## Learning End-to-End Channel Coding with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -62587,17 +63006,19 @@ degrade drastically or even fails completely
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- Gaussian processes provide an elegant framework for specifying prior and
-posterior distributions over functions. They are, however, also computationally
-expensive, and limited by the expressivity of their covariance function. We
-propose Neural Diffusion Processes (NDPs), a novel approach based upon
-diffusion models, that learn to sample from distributions over functions. Using
-a novel attention block, we can incorporate properties of stochastic processes,
-such as exchangeability, directly into the NDP's architecture. We empirically
-show that NDPs are able to capture functional distributions that are close to
-the true Bayesian posterior of a Gaussian process. This enables a variety of
-downstream tasks, including hyperparameter marginalisation and Bayesian
-optimisation.
+ Neural network approaches for meta-learning distributions over functions have
+desirable properties such as increased flexibility and a reduced complexity of
+inference. Building on the successes of denoising diffusion models for
+generative modelling, we propose Neural Diffusion Processes (NDPs), a novel
+approach that learns to sample from a rich distribution over functions through
+its finite marginals. By introducing a custom attention block we are able to
+incorporate properties of stochastic processes, such as exchangeability,
+directly into the NDP's architecture. We empirically show that NDPs can capture
+functional distributions close to the true Bayesian posterior, demonstrating
+that they can successfully emulate the behaviour of Gaussian processes and
+surpass the performance of neural processes. NDPs enable a variety of
+downstream tasks, including regression, implicit hyperparameter
+marginalisation, non-Gaussian posterior prediction and global optimisation.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -70429,6 +70850,102 @@ the log-likelihood of the continuous-space DDPM model.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
+## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> 29/09/2021 </span>    
+         <span class="authors"> Minkai Xu, Lantao Yu, Yang Song, Chence Shi, Stefano Ermon, Jian Tang </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://openreview.net/forum?id=PzcvxEMzvQC" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, stat.ML
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Predicting Molecular Conformation via Dynamic Graph Score Matching
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> 01/12/2021 </span>    
+         <span class="authors"> Shitong Luo, Chence Shi, Minkai Xu, Jian Tang </span>
+		</div>  
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://proceedings.neurips.cc/paper/2021/hash/a45a1d12ee0fb7f1f872ab91da18f899-Abstract.html" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>  
+		<div id="bloc3">
+		    
+		</div>  
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, stat.ML
+		  </div>
+		  
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
 ## Variational Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
@@ -70490,102 +71007,6 @@ many years, with often significantly faster optimization. In addition, we show
 how to use the model as part of a bits-back compression scheme, and demonstrate
 lossless compression rates close to the theoretical optimum. Code is available
 at https://github.com/google-research/vdm .
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## Predicting Molecular Conformation via Dynamic Graph Score Matching
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> 01/12/2021 </span>    
-         <span class="authors"> Shitong Luo, Chence Shi, Minkai Xu, Jian Tang </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://proceedings.neurips.cc/paper/2021/hash/a45a1d12ee0fb7f1f872ab91da18f899-Abstract.html" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		    
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  cs.LG, stat.ML
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- 
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> 29/09/2021 </span>    
-         <span class="authors"> Minkai Xu, Lantao Yu, Yang Song, Chence Shi, Stefano Ermon, Jian Tang </span>
-		</div>  
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://openreview.net/forum?id=PzcvxEMzvQC" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>  
-		<div id="bloc3">
-		    
-		</div>  
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  cs.LG, stat.ML
-		  </div>
-		  
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- 
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
