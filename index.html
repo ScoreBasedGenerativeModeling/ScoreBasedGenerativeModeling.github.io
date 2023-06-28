@@ -1139,6 +1139,10 @@ layout: default
 <option>Directional diffusion models for graph representation learning</option>
 <option>DiMSam: Diffusion Models as Samplers for Task and Motion Planning under Partial Observability</option>
 <option>Evaluating the Robustness of Text-to-image Diffusion Models against Real-world Attacks</option>
+<option>PoseDiffusion: Solving Pose Estimation via Diffusion-aided Bundle Adjustment</option>
+<option>Anomaly Detection in Networks via Score-Based Generative Models</option>
+<option>Learning from Invalid Data: On Constraint Satisfaction in Generative Models</option>
+<option>Equivariant flow matching</option>
     </select>
   </span>
   <span class="selector">
@@ -1186,6 +1190,7 @@ layout: default
 <option>Ajinkya Kale</option>
 <option>Akash Awasthi</option>
 <option>Akash Gokul</option>
+<option>Akash Srivastava</option>
 <option>Akihiro Nakamura</option>
 <option>Akim Kotelnikov</option>
 <option>Akshat Pandey</option>
@@ -1265,6 +1270,7 @@ layout: default
 <option>Andrea Vedaldi</option>
 <option>Andreas Blattmann</option>
 <option>Andreas Krause</option>
+<option>Andreas Krämer</option>
 <option>Andreas Loukas</option>
 <option>Andreas Lugmayr</option>
 <option>Andreas Maier</option>
@@ -1651,6 +1657,7 @@ layout: default
 <option>Dale Schuurmans</option>
 <option>Dan Bigioi</option>
 <option>Dan Garrette</option>
+<option>Dan Gutfreund</option>
 <option>Dan Rosenbaum</option>
 <option>Dan Ruta</option>
 <option>Dan Su</option>
@@ -1708,6 +1715,7 @@ layout: default
 <option>David Lindner</option>
 <option>David McAllester</option>
 <option>David Munechika</option>
+<option>David Novotny</option>
 <option>David Rügamer</option>
 <option>David S. Yu</option>
 <option>David Schinz</option>
@@ -1761,6 +1769,7 @@ layout: default
 <option>Ding Liu</option>
 <option>Dinggang Shen</option>
 <option>Dinghuai Zhang</option>
+<option>Dmitrii Gavrilev</option>
 <option>Dmitrii Gudkov</option>
 <option>Dmitry Baranchuk</option>
 <option>Dmitry Molchanov</option>
@@ -2462,6 +2471,7 @@ layout: default
 <option>Jianxin Sun</option>
 <option>Jianxing Yu</option>
 <option>Jianyi Wang</option>
+<option>Jianyuan Wang</option>
 <option>Jianzhu Ma</option>
 <option>Jianzhuang Liu</option>
 <option>Jiaolong Yang</option>
@@ -2833,6 +2843,7 @@ layout: default
 <option>Lennart Heim</option>
 <option>Leo Klarner</option>
 <option>Leo Schwinn</option>
+<option>Leon Klein</option>
 <option>Leonard Berrada</option>
 <option>Leonidas Guibas</option>
 <option>Leslie Pack Kaelbling</option>
@@ -2931,6 +2942,7 @@ layout: default
 <option>Luyang Zhu</option>
 <option>Luzhe Sun</option>
 <option>Lvmin Zhang</option>
+<option>Lyle Regenwetter</option>
 <option>M. Jorge Cardoso</option>
 <option>Maarten V. de Hoop</option>
 <option>Machel Reid</option>
@@ -4834,6 +4846,282 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## PoseDiffusion: Solving Pose Estimation via Diffusion-aided Bundle Adjustment
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 27, 2023 </span>
+         <span class="authors"> Jianyuan Wang, Christian Rupprecht, David Novotny </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.15667" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Camera pose estimation is a long-standing computer vision problem that to
+date often relies on classical methods, such as handcrafted keypoint matching,
+RANSAC and bundle adjustment. In this paper, we propose to formulate the
+Structure from Motion (SfM) problem inside a probabilistic diffusion framework,
+modelling the conditional distribution of camera poses given input images. This
+novel view of an old problem has several advantages. (i) The nature of the
+diffusion framework mirrors the iterative procedure of bundle adjustment. (ii)
+The formulation allows a seamless integration of geometric constraints from
+epipolar geometry. (iii) It excels in typically difficult scenarios such as
+sparse views with wide baselines. (iv) The method can predict intrinsics and
+extrinsics for an arbitrary amount of images. We demonstrate that our method
+PoseDiffusion significantly improves over the classic SfM pipelines and the
+learned approaches on two real-world datasets. Finally, it is observed that our
+method can generalize across datasets without further training. Project page:
+https://posediffusion.github.io/
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Anomaly Detection in Networks via Score-Based Generative Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 27, 2023 </span>
+         <span class="authors"> Dmitrii Gavrilev, Evgeny Burnaev </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.15324" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Node outlier detection in attributed graphs is a challenging problem for
+which there is no method that would work well across different datasets.
+Motivated by the state-of-the-art results of score-based models in graph
+generative modeling, we propose to incorporate them into the aforementioned
+problem. Our method achieves competitive results on small-scale graphs. We
+provide an empirical analysis of the Dirichlet energy, and show that generative
+models might struggle to accurately reconstruct it.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Learning from Invalid Data: On Constraint Satisfaction in Generative Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 27, 2023 </span>
+         <span class="authors"> Giorgio Giannone, Lyle Regenwetter, Akash Srivastava, Dan Gutfreund, Faez Ahmed </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.15166" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.CE
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Generative models have demonstrated impressive results in vision, language,
+and speech. However, even with massive datasets, they struggle with precision,
+generating physically invalid or factually incorrect data. This is particularly
+problematic when the generated data must satisfy constraints, for example, to
+meet product specifications in engineering design or to adhere to the laws of
+physics in a natural scene. To improve precision while preserving diversity and
+fidelity, we propose a novel training mechanism that leverages datasets of
+constraint-violating data points, which we consider invalid. Our approach
+minimizes the divergence between the generative distribution and the valid
+prior while maximizing the divergence with the invalid distribution. We
+demonstrate how generative models like GANs and DDPMs that we augment to train
+with invalid data vastly outperform their standard counterparts which solely
+train on valid data points. For example, our training procedure generates up to
+98 % fewer invalid samples on 2D densities, improves connectivity and stability
+four-fold on a stacking block problem, and improves constraint satisfaction by
+15 % on a structural topology optimization benchmark in engineering design. We
+also analyze how the quality of the invalid data affects the learning procedure
+and the generalization properties of models. Finally, we demonstrate
+significant improvements in sample efficiency, showing that a tenfold increase
+in valid samples leads to a negligible difference in constraint satisfaction,
+while less than 10 % invalid samples lead to a tenfold improvement. Our
+proposed mechanism offers a promising solution for improving precision in
+generative models while preserving diversity and fidelity, particularly in
+domains where constraint satisfaction is critical and data is limited, such as
+engineering design, robotics, and medicine.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Equivariant flow matching
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 26, 2023 </span>
+         <span class="authors"> Leon Klein, Andreas Krämer, Frank Noé </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.15030" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  stat.ML, cs.LG, physics.chem-ph, physics.comp-ph
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Normalizing flows are a class of deep generative models that are especially
+interesting for modeling probability distributions in physics, where the exact
+likelihood of flows allows reweighting to known target energy functions and
+computing unbiased observables. For instance, Boltzmann generators tackle the
+long-standing sampling problem in statistical physics by training flows to
+produce equilibrium samples of many-body systems such as small molecules and
+proteins. To build effective models for such systems, it is crucial to
+incorporate the symmetries of the target energy into the model, which can be
+achieved by equivariant continuous normalizing flows (CNFs). However, CNFs can
+be computationally expensive to train and generate samples from, which has
+hampered their scalability and practical application. In this paper, we
+introduce equivariant flow matching, a new training objective for equivariant
+CNFs that is based on the recently proposed optimal transport flow matching.
+Equivariant flow matching exploits the physical symmetries of the target energy
+for efficient, simulation-free training of equivariant CNFs. We demonstrate the
+effectiveness of our approach on many-particle systems and a small molecule,
+alanine dipeptide, where for the first time we obtain a Boltzmann generator
+with significant sampling efficiency without relying on tailored internal
+coordinate featurization. Our results show that the equivariant flow matching
+objective yields flows with shorter integration paths, improved sampling
+efficiency, and higher scalability compared to existing methods.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -40165,7 +40453,7 @@ will be published after accepted.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## A Reparameterized Discrete Diffusion Model for Text Generation
+## Raising the Cost of Malicious AI-Powered Image Editing
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -40227,7 +40515,7 @@ users, to implement (and support) the immunization process.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Raising the Cost of Malicious AI-Powered Image Editing
+## A Reparameterized Discrete Diffusion Model for Text Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -42877,7 +43165,7 @@ morphing script are made public: https://github.com/naserdamer/MorDIFF.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Learning End-to-End Channel Coding with Diffusion Models
+## Interventional and Counterfactual Inference with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -42944,7 +43232,7 @@ better generalization ability in testing.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Interventional and Counterfactual Inference with Diffusion Models
+## Learning End-to-End Channel Coding with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -43824,7 +44112,7 @@ marginals at intermediate and terminal times.
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> January 31, 2023 </span>
-         <span class="authors"> Haomin Wen, Youfang Lin, Yutong Xia, Huaiyu Wan, Roger Zimmermann, Yuxuan Liang </span>
+         <span class="authors"> Haomin Wen, Youfang Lin, Yutong Xia, Huaiyu Wan, Qingsong Wen, Roger Zimmermann, Yuxuan Liang </span>
 		</div>
 </div>
 
@@ -44265,7 +44553,7 @@ distribution of the data, measurements, and linear operator by using a
 pre-trained diffusion model for the data prior, and it solves the problem by
 posterior sampling with an efficient variant of a Gibbs sampler. The proposed
 method is problem-agnostic, meaning that a pre-trained diffusion model can be
-applied to various inverse problems without fine tuning. In experiments, it
+applied to various inverse problems without fine-tuning. In experiments, it
 achieved high performance on both blind image deblurring and vocal
 dereverberation tasks, despite the use of simple generic priors for the
 underlying linear operators.
@@ -57042,18 +57330,20 @@ by rigid motion.
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  Despite the growing success of diffusion models in continuous-valued domains
-(e.g., images), diffusion-based language models on discrete text have yet to
-match autoregressive language models on text generation benchmarks. In this
-work, we present SSD-LM -- a diffusion language model with two key design
-choices. First, SSD-LM is semi-autoregressive, iteratively generating blocks of
-text, allowing for flexible output length at decoding time while enabling local
+(e.g., images), similar efforts for discrete domains such as text have yet to
+match the performance of autoregressive language models. In this work, we
+present SSD-LM -- a diffusion-based language model with two key design choices.
+First, SSD-LM is semi-autoregressive, iteratively generating blocks of text,
+allowing for flexible output length at decoding time while enabling local
 bidirectional context updates. Second, it is simplex-based, performing
 diffusion on the natural vocabulary space rather than a learned latent space,
-allowing us to incorporate classifier guidance and modular control without any
-adaptation of off-the-shelf classifiers. We evaluate SSD-LM on unconstrained as
-well as controlled text generation benchmarks, and show that it matches or
-outperforms strong autoregressive GPT-2 baselines across standard quality and
-diversity metrics.
+allowing us to incorporate classifier guidance and modular control using
+off-the-shelf classifiers without any adaptation. We evaluate SSD-LM on
+unconstrained text generation benchmarks, and show that it matches or
+outperforms strong autoregressive GPT-2 models across standard quality and
+diversity metrics, while vastly outperforming diffusion-based baselines. On
+controlled text generation, SSD-LM also outperforms competitive baselines, with
+an extra advantage in modularity.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -59552,24 +59842,26 @@ expected to profit from deployment at scale.
 {% capture x %}
  Discovering causal relations from observational data becomes possible with
 additional assumptions such as considering the functional relations to be
-constrained as nonlinear with additive noise. In this case, the Hessian of the
-data log-likelihood can be used for finding leaf nodes in a causal graph.
-Topological ordering approaches for causal discovery exploit this by performing
-graph discovery in two steps, first sequentially identifying nodes in reverse
-order of depth (topological ordering), and secondly pruning the potential
-relations. This is more efficient since the search is performed over a
-permutation rather than a graph space. However, existing computational methods
-for obtaining the Hessian still do not scale as the number of variables and the
-number of samples are increased. Therefore, inspired by recent innovations in
-diffusion probabilistic models (DPMs), we propose DiffAN, a topological
-ordering algorithm that leverages DPMs. Further, we introduce theory for
-updating the learned Hessian without re-training the neural network, and we
-show that computing with a subset of samples gives an accurate approximation of
-the ordering, which allows scaling to datasets with more samples and variables.
-We show empirically that our method scales exceptionally well to datasets with
-up to $500$ nodes and up to $10^5$ samples while still performing on par over
-small datasets with state-of-the-art causal discovery methods. Implementation
-is available at https://github.com/vios-s/DiffAN .
+constrained as nonlinear with additive noise (ANM). Even with strong
+assumptions, causal discovery involves an expensive search problem over the
+space of directed acyclic graphs (DAGs). \emph{Topological ordering} approaches
+reduce the optimisation space of causal discovery by searching over a
+permutation rather than graph space. For ANMs, the \emph{Hessian} of the data
+log-likelihood can be used for finding leaf nodes in a causal graph, allowing
+its topological ordering. However, existing computational methods for obtaining
+the Hessian still do not scale as the number of variables and the number of
+samples increase. Therefore, inspired by recent innovations in diffusion
+probabilistic models (DPMs), we propose \emph{DiffAN}\footnote{Implementation
+is available at \url{https://github.com/vios-s/DiffAN} .}, a topological
+ordering algorithm that leverages DPMs for learning a Hessian function. We
+introduce theory for updating the learned Hessian without re-training the
+neural network, and we show that computing with a subset of samples gives an
+accurate approximation of the ordering, which allows scaling to datasets with
+more samples and variables. We show empirically that our method scales
+exceptionally well to datasets with up to $500$ nodes and up to $10^5$ samples
+while still performing on par over small datasets with state-of-the-art causal
+discovery methods. Implementation is available at
+https://github.com/vios-s/DiffAN .
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
