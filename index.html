@@ -1143,6 +1143,9 @@ layout: default
 <option>Anomaly Detection in Networks via Score-Based Generative Models</option>
 <option>Learning from Invalid Data: On Constraint Satisfaction in Generative Models</option>
 <option>Equivariant flow matching</option>
+<option>DiffComplete: Diffusion-based Generative 3D Shape Completion</option>
+<option>DoseDiff: Distance-aware Diffusion Model for Dose Prediction in Radiotherapy</option>
+<option>Easing Color Shifts in Score-Based Diffusion Models</option>
     </select>
   </span>
   <span class="selector">
@@ -1573,6 +1576,7 @@ layout: default
 <option>Chenyang Qi</option>
 <option>Chenyang Yuan</option>
 <option>Chi-Keung Tang</option>
+<option>Chi-Wing Fu</option>
 <option>Chia-Che Chang</option>
 <option>Chia-Jung Hsu</option>
 <option>Chia-Ping Chen</option>
@@ -1614,6 +1618,7 @@ layout: default
 <option>Chuanchuan Yang</option>
 <option>Chuang Gan</option>
 <option>Chuang Niu</option>
+<option>Chuanpu Li</option>
 <option>Chun Chen</option>
 <option>Chun-Hao Paul Huang</option>
 <option>Chun-Mao Lai</option>
@@ -2492,6 +2497,7 @@ layout: default
 <option>Jiaxian Guo</option>
 <option>Jiaxin Cheng</option>
 <option>Jiaxing He</option>
+<option>Jiaya Jia</option>
 <option>Jiayi Guo</option>
 <option>Jiayi Li</option>
 <option>Jiayi Ma</option>
@@ -2717,6 +2723,7 @@ layout: default
 <option>Karttikeya Mangalam</option>
 <option>Karun Kumar</option>
 <option>Kashif Rasul</option>
+<option>Katherine Deck</option>
 <option>Katherine L. Bouman</option>
 <option>Katja Hofmann</option>
 <option>Katja Schwarz</option>
@@ -2885,6 +2892,7 @@ layout: default
 <option>Lijun Yu</option>
 <option>Lilac Atassi</option>
 <option>Limei Wang</option>
+<option>Liming Zhong</option>
 <option>Lin Geng Foo</option>
 <option>Linden Li</option>
 <option>Ling Yang</option>
@@ -3517,6 +3525,7 @@ layout: default
 <option>Ruibin Li</option>
 <option>Ruichen Wang</option>
 <option>Ruihan Yang</option>
+<option>Ruihang Chu</option>
 <option>Ruijun Li</option>
 <option>Ruili Feng</option>
 <option>Ruiqi Gao</option>
@@ -3697,6 +3706,7 @@ layout: default
 <option>Shengming Yin</option>
 <option>Shengqu Cai</option>
 <option>Shengyong Chen</option>
+<option>Shentong Mo</option>
 <option>Shi Pu</option>
 <option>ShiQi Cao</option>
 <option>Shifan Zhao</option>
@@ -3982,6 +3992,7 @@ layout: default
 <option>Tingyang Xu</option>
 <option>Tinsu Pan</option>
 <option>Titas Anciukevicius</option>
+<option>Tobias Bischoff</option>
 <option>Tobias Golling</option>
 <option>Tobias Höppe</option>
 <option>Tobias Weber</option>
@@ -4106,6 +4117,7 @@ layout: default
 <option>Wei Wei</option>
 <option>Wei Xiang</option>
 <option>Wei Xiao</option>
+<option>Wei Yang</option>
 <option>Wei Ye</option>
 <option>Wei-Fang Sun</option>
 <option>Weibin Wu</option>
@@ -4316,6 +4328,7 @@ layout: default
 <option>Xuejin Chen</option>
 <option>Xuekun Jiang</option>
 <option>Xueming Qian</option>
+<option>Xuetao Wang</option>
 <option>Xueting Li</option>
 <option>Xueting Liu</option>
 <option>Xuewei Li</option>
@@ -4469,6 +4482,7 @@ layout: default
 <option>Yiwei Guo</option>
 <option>Yiwei Lyu</option>
 <option>Yiwen Li</option>
+<option>Yiwen Zhang</option>
 <option>Yixin Tan</option>
 <option>Yixin Zhu</option>
 <option>Yixuan He</option>
@@ -4659,6 +4673,7 @@ layout: default
 <option>Zekai Wang</option>
 <option>Zekang Chen</option>
 <option>Zekun Hao</option>
+<option>Zeli Chen</option>
 <option>Zenghao Chai</option>
 <option>Zeqiang Lai</option>
 <option>Zequn Jie</option>
@@ -4846,6 +4861,139 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## DoseDiff: Distance-aware Diffusion Model for Dose Prediction in Radiotherapy
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 28, 2023 </span>
+         <span class="authors"> Ruihang Chu, Enze Xie, Shentong Mo, Zhenguo Li, Matthias Nießner, Chi-Wing Fu, Jiaya Jia </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.16329" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ We introduce a new diffusion-based approach for shape completion on 3D range
+scans. Compared with prior deterministic and probabilistic methods, we strike a
+balance between realism, multi-modality, and high fidelity. We propose
+DiffComplete by casting shape completion as a generative task conditioned on
+the incomplete shape. Our key designs are two-fold. First, we devise a
+hierarchical feature aggregation mechanism to inject conditional features in a
+spatially-consistent manner. So, we can capture both local details and broader
+contexts of the conditional inputs to control the shape completion. Second, we
+propose an occupancy-aware fusion strategy in our model to enable the
+completion of multiple partial shapes and introduce higher flexibility on the
+input conditions. DiffComplete sets a new SOTA performance (e.g., 40% decrease
+on l_1 error) on two large-scale 3D shape completion benchmarks. Our completed
+shapes not only have a realistic outlook compared with the deterministic
+methods but also exhibit high similarity to the ground truths compared with the
+probabilistic alternatives. Further, DiffComplete has strong generalizability
+on objects of entirely unseen classes for both synthetic and real data,
+eliminating the need for model re-training in various applications.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Easing Color Shifts in Score-Based Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> June 27, 2023 </span>
+         <span class="authors"> Katherine Deck, Tobias Bischoff </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2306.15832" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.AI, cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Generated images of score-based models can suffer from errors in their
+spatial means, an effect, referred to as a color shift, which grows for larger
+images. This paper introduces a computationally inexpensive solution to
+mitigate color shifts in score-based diffusion models. We propose a simple
+nonlinear bypass connection in the score network, designed to process the
+spatial mean of the input and to predict the mean of the score function. This
+network architecture substantially improves the resulting spatial means of the
+generated images, and we show that the improvement is approximately independent
+of the size of the generated images. As a result, our solution offers a
+comparatively inexpensive solution for the color shift problem across image
+sizes. Lastly, we discuss the origin of color shifts in an idealized setting in
+order to motivate our approach.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -40453,7 +40601,7 @@ will be published after accepted.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Raising the Cost of Malicious AI-Powered Image Editing
+## A Reparameterized Discrete Diffusion Model for Text Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -40515,7 +40663,7 @@ users, to implement (and support) the immunization process.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## A Reparameterized Discrete Diffusion Model for Text Generation
+## Raising the Cost of Malicious AI-Powered Image Editing
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -43165,7 +43313,7 @@ morphing script are made public: https://github.com/naserdamer/MorDIFF.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Interventional and Counterfactual Inference with Diffusion Models
+## Learning End-to-End Channel Coding with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -43232,7 +43380,7 @@ better generalization ability in testing.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Learning End-to-End Channel Coding with Diffusion Models
+## Interventional and Counterfactual Inference with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -76883,6 +77031,79 @@ the log-likelihood of the continuous-space DDPM model.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
+## Variational Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> July 01, 2021 </span>
+         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, stat.ML
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion-based generative models have demonstrated a capacity for
+perceptually impressive synthesis, but can they also be great likelihood-based
+models? We answer this in the affirmative, and introduce a family of
+diffusion-based generative models that obtain state-of-the-art likelihoods on
+standard image density estimation benchmarks. Unlike other diffusion-based
+models, our method allows for efficient optimization of the noise schedule
+jointly with the rest of the model. We show that the variational lower bound
+(VLB) simplifies to a remarkably short expression in terms of the
+signal-to-noise ratio of the diffused data, thereby improving our theoretical
+understanding of this model class. Using this insight, we prove an equivalence
+between several models proposed in the literature. In addition, we show that
+the continuous-time VLB is invariant to the noise schedule, except for the
+signal-to-noise ratio at its endpoints. This enables us to learn a noise
+schedule that minimizes the variance of the resulting VLB estimator, leading to
+faster optimization. Combining these advances with architectural improvements,
+we obtain state-of-the-art likelihoods on image density estimation benchmarks,
+outperforming autoregressive models that have dominated these benchmarks for
+many years, with often significantly faster optimization. In addition, we show
+how to use the model as part of a bits-back compression scheme, and demonstrate
+lossless compression rates close to the theoretical optimum. Code is available
+at https://github.com/google-research/vdm .
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
 ## GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
 {% endcapture %}{{ x | markdownify }}
 
@@ -76967,79 +77188,6 @@ the log-likelihood of the continuous-space DDPM model.
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  
-{% endcapture %}{{ x | markdownify }}
-</div>
-</div>
-<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
-{% assign id = id | plus:1 %}
-<div class="entry">
-	<div class="row">
-	  <div class="column1" >
-{% capture x %}
-## Variational Diffusion Models
-{% endcapture %}{{ x | markdownify }}
-
-<div id="block_container">
-		<div id="bloc2">
-         <span class="dates"> July 01, 2021 </span>
-         <span class="authors"> Diederik P. Kingma, Tim Salimans, Ben Poole, Jonathan Ho </span>
-		</div>
-</div>
-
-	  </div>
-	  <div class="column2" >
-	    <div id="block_container">
-		<div id="bloc2">
-		<a href="https://arxiv.org/abs/2107.00630" target="_blank" class="btn btn-info" role="button"> Paper </a>
-		</div>
-		<div id="bloc3">
-		     <p>
-		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
-				Abstract
-		      </button>
-		    </p>
-        
-		</div>
-	     </div>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="column1" >
-	  </div>
-	  <div class="column2">
-		  <div class="tags">
-			  cs.LG, stat.ML
-		  </div>
-
-	  </div>
-	</div>
-
-<div class="collapse" id="collapse{{ id }}">
-{% capture x %}
- Diffusion-based generative models have demonstrated a capacity for
-perceptually impressive synthesis, but can they also be great likelihood-based
-models? We answer this in the affirmative, and introduce a family of
-diffusion-based generative models that obtain state-of-the-art likelihoods on
-standard image density estimation benchmarks. Unlike other diffusion-based
-models, our method allows for efficient optimization of the noise schedule
-jointly with the rest of the model. We show that the variational lower bound
-(VLB) simplifies to a remarkably short expression in terms of the
-signal-to-noise ratio of the diffused data, thereby improving our theoretical
-understanding of this model class. Using this insight, we prove an equivalence
-between several models proposed in the literature. In addition, we show that
-the continuous-time VLB is invariant to the noise schedule, except for the
-signal-to-noise ratio at its endpoints. This enables us to learn a noise
-schedule that minimizes the variance of the resulting VLB estimator, leading to
-faster optimization. Combining these advances with architectural improvements,
-we obtain state-of-the-art likelihoods on image density estimation benchmarks,
-outperforming autoregressive models that have dominated these benchmarks for
-many years, with often significantly faster optimization. In addition, we show
-how to use the model as part of a bits-back compression scheme, and demonstrate
-lossless compression rates close to the theoretical optimum. Code is available
-at https://github.com/google-research/vdm .
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
