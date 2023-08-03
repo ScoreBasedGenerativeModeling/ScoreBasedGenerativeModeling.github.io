@@ -660,7 +660,7 @@ layout: default
 <option>Adding Conditional Control to Text-to-Image Diffusion Models</option>
 <option>Human Motion Diffusion as a Generative Prior</option>
 <option>Consistency Models</option>
-<option>Understanding Diffusion Model Objectives as the ELBO with Simple Data Augmentation</option>
+<option>Variational Diffusion Models 2.0: Understanding Diffusion Model Objectives as the ELBO with Simple Data Augmentation</option>
 <option>Continuous-Time Functional Diffusion Processes</option>
 <option>Defending against Adversarial Audio via Diffusion Model</option>
 <option>Deep Momentum Multi-Marginal Schrödinger Bridge</option>
@@ -1241,6 +1241,9 @@ layout: default
 <option>MetaDiff: Meta-Learning with Conditional Diffusion for Few-Shot Learning</option>
 <option>DiffProsody: Diffusion-based Latent Prosody Generation for Expressive Speech Synthesis with Prosody Conditional Adversarial Training</option>
 <option>UniBriVL: Robust Universal Representation and Generation of Audio Driven Diffusion Models</option>
+<option>DiffusePast: Diffusion-based Generative Replay for Class Incremental Semantic Segmentation</option>
+<option>Contrast-augmented Diffusion Model with Fine-grained Sequence Alignment for Markup-to-Image Generation</option>
+<option>Patched Denoising Diffusion Models For High-Resolution Image Synthesis</option>
     </select>
   </span>
   <span class="selector">
@@ -2257,6 +2260,7 @@ layout: default
 <option>Guo-Jun Qi</option>
 <option>Guofeng Zhang</option>
 <option>Guohao Li</option>
+<option>Guojin Zhong</option>
 <option>Guoqiang Zhang</option>
 <option>Guoshuai Zhao</option>
 <option>Gus Xia</option>
@@ -2731,6 +2735,7 @@ layout: default
 <option>Jin Huang</option>
 <option>Jin Xie</option>
 <option>Jin Ye</option>
+<option>Jin Yuan</option>
 <option>Jin-Young Kim</option>
 <option>JinYoung Kim</option>
 <option>Jinbin Bai</option>
@@ -2747,6 +2752,7 @@ layout: default
 <option>Jing Zhao</option>
 <option>Jingbo Wang</option>
 <option>Jingcai Guo</option>
+<option>Jingfan Chen</option>
 <option>Jingfeng Zhang</option>
 <option>Jinghuan Shang</option>
 <option>Jingjing Lv</option>
@@ -2929,6 +2935,7 @@ layout: default
 <option>Kaifeng Pang</option>
 <option>Kaifeng Zou</option>
 <option>Kaihao Zhang</option>
+<option>Kailun Yang</option>
 <option>Kaiqi Huang</option>
 <option>Kaisheng Liang</option>
 <option>Kaiwen Xu</option>
@@ -3323,6 +3330,7 @@ layout: default
 <option>Meiling Fang</option>
 <option>Mengchun Zhang</option>
 <option>Mengkang Lu</option>
+<option>Mengqi Zhang</option>
 <option>Mengrui Chen</option>
 <option>Mengze Xu</option>
 <option>Miao Hua</option>
@@ -3570,6 +3578,7 @@ layout: default
 <option>Padhraic Smyth</option>
 <option>Pallabi Ghosh</option>
 <option>Pamela Mishkin</option>
+<option>Pan Wang</option>
 <option>Pan Xie</option>
 <option>Pan Zhou</option>
 <option>Paolo Cudrano</option>
@@ -3620,6 +3629,7 @@ layout: default
 <option>Pengcheng He</option>
 <option>Pengfei Guo</option>
 <option>Pengfei He</option>
+<option>Pengfei Wang</option>
 <option>Pengfei Zhu</option>
 <option>Penghai Zhao</option>
 <option>Pengzhi Li</option>
@@ -4476,6 +4486,7 @@ layout: default
 <option>Weijian Luo</option>
 <option>Weikang Yu</option>
 <option>Weilai Xiang</option>
+<option>Weili Guan</option>
 <option>Weili Nie</option>
 <option>Weilun Wang</option>
 <option>Weimin Tan</option>
@@ -4576,6 +4587,7 @@ layout: default
 <option>Xianjun Yang</option>
 <option>Xianming Lin</option>
 <option>Xianpan Zhou</option>
+<option>Xiao Chen</option>
 <option>Xiao Dong</option>
 <option>Xiao Liang</option>
 <option>Xiao Liu</option>
@@ -5048,6 +5060,7 @@ layout: default
 <option>Yuval Dagan</option>
 <option>Yuwang Wang</option>
 <option>Yuwei Guo</option>
+<option>Yuxi Wang</option>
 <option>Yuxi Zhou</option>
 <option>Yuxiao Chen</option>
 <option>Yuxiao Hu</option>
@@ -5109,12 +5122,14 @@ layout: default
 <option>Zhao Wang</option>
 <option>Zhaohu Xing</option>
 <option>Zhaoqiang Liu</option>
+<option>Zhaoxiang Zhang</option>
 <option>Zhaoyang Huang</option>
 <option>Zhaoyang Lyu</option>
 <option>Zhe Chen</option>
 <option>Zhen Dong</option>
 <option>Zhen Han</option>
 <option>Zhen Huang</option>
+<option>Zhen Lei</option>
 <option>Zhen Liu</option>
 <option>Zhenan Sun</option>
 <option>Zhenda Xu</option>
@@ -5186,6 +5201,7 @@ layout: default
 <option>Zhixun Su</option>
 <option>Zhiye Guo</option>
 <option>Zhiying Jiang</option>
+<option>Zhiyong Li</option>
 <option>Zhiyong Wu</option>
 <option>Zhiyu Jin</option>
 <option>Zhiyuan Liu</option>
@@ -5293,6 +5309,218 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
+## Patched Denoising Diffusion Models For High-Resolution Image Synthesis
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 02, 2023 </span>
+         <span class="authors"> Zheng Ding, Mengqi Zhang, Jiajun Wu, Zhuowen Tu </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.01316" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ We propose an effective denoising diffusion model for generating
+high-resolution images (e.g., 1024$\times$512), trained on small-size image
+patches (e.g., 64$\times$64). We name our algorithm Patch-DM, in which a new
+feature collage strategy is designed to avoid the boundary artifact when
+synthesizing large-size images. Feature collage systematically crops and
+combines partial features of the neighboring patches to predict the features of
+a shifted image patch, allowing the seamless generation of the entire image due
+to the overlap in the patch feature space. Patch-DM produces high-quality image
+synthesis results on our newly collected dataset of nature images
+(1024$\times$512), as well as on standard benchmarks of smaller sizes
+(256$\times$256), including LSUN-Bedroom, LSUN-Church, and FFHQ. We compare our
+method with previous patch-based generation methods and achieve
+state-of-the-art FID scores on all four datasets. Further, Patch-DM also
+reduces memory complexity compared to the classic diffusion models.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Contrast-augmented Diffusion Model with Fine-grained Sequence Alignment for Markup-to-Image Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 02, 2023 </span>
+         <span class="authors"> Guojin Zhong, Jin Yuan, Pan Wang, Kailun Yang, Weili Guan, Zhiyong Li </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.01147" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.MM, eess.IV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ The recently rising markup-to-image generation poses greater challenges as
+compared to natural image generation, due to its low tolerance for errors as
+well as the complex sequence and context correlations between markup and
+rendered image. This paper proposes a novel model named "Contrast-augmented
+Diffusion Model with Fine-grained Sequence Alignment" (FSA-CDM), which
+introduces contrastive positive/negative samples into the diffusion model to
+boost performance for markup-to-image generation. Technically, we design a
+fine-grained cross-modal alignment module to well explore the sequence
+similarity between the two modalities for learning robust feature
+representations. To improve the generalization ability, we propose a
+contrast-augmented diffusion model to explicitly explore positive and negative
+samples by maximizing a novel contrastive variational objective, which is
+mathematically inferred to provide a tighter bound for the model's
+optimization. Moreover, the context-aware cross attention module is developed
+to capture the contextual information within markup language during the
+denoising process, yielding better noise prediction results. Extensive
+experiments are conducted on four benchmark datasets from different domains,
+and the experimental results demonstrate the effectiveness of the proposed
+components in FSA-CDM, significantly exceeding state-of-the-art performance by
+about 2%-12% DTW improvements. The code will be released at
+https://github.com/zgj77/FSACDM.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## DiffusePast: Diffusion-based Generative Replay for Class Incremental Semantic Segmentation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 02, 2023 </span>
+         <span class="authors"> Jingfan Chen, Yuxi Wang, Pengfei Wang, Xiao Chen, Zhaoxiang Zhang, Zhen Lei, Qing Li </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.01127" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ The Class Incremental Semantic Segmentation (CISS) extends the traditional
+segmentation task by incrementally learning newly added classes. Previous work
+has introduced generative replay, which involves replaying old class samples
+generated from a pre-trained GAN, to address the issues of catastrophic
+forgetting and privacy concerns. However, the generated images lack semantic
+precision and exhibit out-of-distribution characteristics, resulting in
+inaccurate masks that further degrade the segmentation performance. To tackle
+these challenges, we propose DiffusePast, a novel framework featuring a
+diffusion-based generative replay module that generates semantically accurate
+images with more reliable masks guided by different instructions (e.g., text
+prompts or edge maps). Specifically, DiffusePast introduces a dual-generator
+paradigm, which focuses on generating old class images that align with the
+distribution of downstream datasets while preserving the structure and layout
+of the original images, enabling more precise masks. To adapt to the novel
+visual concepts of newly added classes continuously, we incorporate class-wise
+token embedding when updating the dual-generator. Moreover, we assign adequate
+pseudo-labels of old classes to the background pixels in the new step images,
+further mitigating the forgetting of previously learned knowledge. Through
+comprehensive experiments, our method demonstrates competitive performance
+across mainstream benchmarks, striking a better balance between the performance
+of old and novel classes.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
 ## Universal Adversarial Defense in Remote Sensing Based on Pre-trained Denoising Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
@@ -5334,30 +5562,30 @@ layout: default
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  Deep neural networks (DNNs) have achieved tremendous success in many remote
-sensing (RS) applications. However, their vulnerability to the threat of
-adversarial perturbations should not be neglected. Unfortunately, current
-adversarial defense approaches in RS studies usually suffer from performance
-fluctuation and unnecessary re-training costs due to the need for prior
-knowledge of the adversarial perturbations among RS data. To circumvent these
-challenges, we propose a universal adversarial defense approach in RS imagery
-(UAD-RS) using pre-trained diffusion models to defend the common DNNs against
-multiple unknown adversarial attacks. Specifically, the generative diffusion
-models are first pre-trained on different RS datasets to learn generalized
-representations in various data domains. After that, a universal adversarial
-purification framework is developed using the forward and reverse process of
-the pre-trained diffusion models to purify the perturbations from adversarial
-samples. Furthermore, an adaptive noise level selection (ANLS) mechanism is
-built to capture the optimal noise level of the diffusion model that can
-achieve the best purification results closest to the clean samples according to
-their Frechet Inception Distance (FID) in deep feature space. As a result, only
-a single pre-trained diffusion model is needed for the universal purification
-of adversarial samples on each dataset, which significantly alleviates the
-re-training efforts for each attack setting and maintains high performance
-without the prior knowledge of adversarial perturbations. Experiments on four
-heterogeneous RS datasets regarding scene classification and semantic
-segmentation verify that UAD-RS outperforms state-of-the-art adversarial
-purification approaches with a universal defense against seven commonly
-existing adversarial perturbations.
+sensing (RS) applications, in which DNNs are vulnerable to adversarial
+perturbations. Unfortunately, current adversarial defense approaches in RS
+studies usually suffer from performance fluctuation and unnecessary re-training
+costs due to the need for prior knowledge of the adversarial perturbations
+among RS data. To circumvent these challenges, we propose a universal
+adversarial defense approach in RS imagery (UAD-RS) using pre-trained diffusion
+models to defend the common DNNs against multiple unknown adversarial attacks.
+Specifically, the generative diffusion models are first pre-trained on
+different RS datasets to learn generalized representations in various data
+domains. After that, a universal adversarial purification framework is
+developed using the forward and reverse process of the pre-trained diffusion
+models to purify the perturbations from adversarial samples. Furthermore, an
+adaptive noise level selection (ANLS) mechanism is built to capture the optimal
+noise level of the diffusion model that can achieve the best purification
+results closest to the clean samples according to their Frechet Inception
+Distance (FID) in deep feature space. As a result, only a single pre-trained
+diffusion model is needed for the universal purification of adversarial samples
+on each dataset, which significantly alleviates the re-training efforts and
+maintains high performance without prior knowledge of the adversarial
+perturbations. Experiments on four heterogeneous RS datasets regarding scene
+classification and semantic segmentation verify that UAD-RS outperforms
+state-of-the-art adversarial purification approaches with a universal defense
+against seven commonly existing adversarial perturbations. Codes and the
+pre-trained models are available online (https://github.com/EricYu97/UAD-RS).
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -47636,7 +47864,7 @@ will be published after accepted.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## A Reparameterized Discrete Diffusion Model for Text Generation
+## Raising the Cost of Malicious AI-Powered Image Editing
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -47698,7 +47926,7 @@ users, to implement (and support) the immunization process.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Raising the Cost of Malicious AI-Powered Image Editing
+## A Reparameterized Discrete Diffusion Model for Text Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -54573,7 +54801,7 @@ refer to \url{https://sstzal.github.io/DiffTalk/}.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution
+## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -54651,7 +54879,7 @@ recent discoveries, and to the influence of DL in our domain.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
+## Image Denoising: The Deep Learning Revolution
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
