@@ -1290,6 +1290,10 @@ layout: default
 <option>Spiking-Diffusion: Vector Quantized Discrete Diffusion Model with Spiking Neural Networks</option>
 <option>Contrastive Diffusion Model with Auxiliary Guidance for Coarse-to-Fine PET Reconstruction</option>
 <option>Semi-Implicit Variational Inference via Score Matching</option>
+<option>Diffusion Language Models Can Perform Many Tasks with Scaling and Instruction-Finetuning</option>
+<option>Quantum-Noise-driven Generative Diffusion Models</option>
+<option>Audio Generation with Multiple Conditional Diffusion Model</option>
+<option>Score diffusion models without early stopping: finite Fisher information is all you need</option>
     </select>
   </span>
   <span class="selector">
@@ -2183,6 +2187,7 @@ layout: default
 <option>Ferhan Ture</option>
 <option>Fernando De la Torre</option>
 <option>Filip Ilic</option>
+<option>Filippo Caruso</option>
 <option>Filomena Bufano</option>
 <option>Finn Behrendt</option>
 <option>Finn Wong</option>
@@ -2293,6 +2298,7 @@ layout: default
 <option>Giorgio Mariani</option>
 <option>Giorgos Sfikas</option>
 <option>Giosue Migliorini</option>
+<option>Giovanni Conforti</option>
 <option>Giovanni Poggi</option>
 <option>Girish Chowdhary</option>
 <option>Giulio Corallo</option>
@@ -2502,6 +2508,7 @@ layout: default
 <option>Hojat Asgariandehkordi</option>
 <option>Holden Lee</option>
 <option>Hong Chen</option>
+<option>Hong Liu</option>
 <option>Hong Zhou</option>
 <option>Hong-Min Chu</option>
 <option>Hongbin Li</option>
@@ -2772,6 +2779,7 @@ layout: default
 <option>Jiangchao Yao</option>
 <option>Jiangning Zhang</option>
 <option>Jiangtao Feng</option>
+<option>Jianguo Mao</option>
 <option>Jianhai Zhang</option>
 <option>Jianhua Jiang</option>
 <option>Jianhui Sun</option>
@@ -3088,6 +3096,7 @@ layout: default
 <option>Kayvon Fatahalian</option>
 <option>Kazuki Shimada</option>
 <option>Kazusato Oko</option>
+<option>Kazushige Ouchi</option>
 <option>Ke Li</option>
 <option>Ke Sun</option>
 <option>Ke Wang</option>
@@ -3295,6 +3304,7 @@ layout: default
 <option>Lizhi Wang</option>
 <option>Long Lan</option>
 <option>Long Lian</option>
+<option>Long Yan</option>
 <option>Longhui Wei</option>
 <option>Longlin Yu</option>
 <option>Lorenz Richter</option>
@@ -3368,6 +3378,7 @@ layout: default
 <option>Marco Huber</option>
 <option>Marco Lorenzi</option>
 <option>Marco Mondelli</option>
+<option>Marco Parigi</option>
 <option>Marco Pavone</option>
 <option>Marcus A. Brubaker</option>
 <option>Marcus Liwicki</option>
@@ -3392,6 +3403,7 @@ layout: default
 <option>Markus Heinonen</option>
 <option>Markus Lill</option>
 <option>Marloes Arts</option>
+<option>Marta Gentiloni Silveri</option>
 <option>Martin Andrews</option>
 <option>Martin Danelljan</option>
 <option>Martin Gonzalez</option>
@@ -3879,6 +3891,7 @@ layout: default
 <option>Quan Bai</option>
 <option>Quan Dao</option>
 <option>Quanlin Wu</option>
+<option>Quanquan Gu</option>
 <option>Quanzheng Li</option>
 <option>Quentin Jodelet</option>
 <option>Quoc V. Le</option>
@@ -3974,6 +3987,7 @@ layout: default
 <option>Rucha Apte</option>
 <option>Rufin VanRullen</option>
 <option>Rui Gong</option>
+<option>Rui Tao</option>
 <option>Rui Wen</option>
 <option>Rui Zhang</option>
 <option>Rui Zhao</option>
@@ -4330,6 +4344,7 @@ layout: default
 <option>Stefan Bauer</option>
 <option>Stefan Sommer</option>
 <option>Stefano Ermon</option>
+<option>Stefano Martina</option>
 <option>Stefano Peluchetti</option>
 <option>Stefano Soatto</option>
 <option>Stefanos Zafeiriou</option>
@@ -4746,6 +4761,7 @@ layout: default
 <option>Xiang Li</option>
 <option>Xiang Lisa Li</option>
 <option>Xiang Yin</option>
+<option>Xiangdong Wang</option>
 <option>Xiangfeng Wang</option>
 <option>Xianghao Kong</option>
 <option>Xiangming Meng</option>
@@ -5368,6 +5384,7 @@ layout: default
 <option>Zhi Zhong</option>
 <option>Zhibin Wang</option>
 <option>Zhiding Yu</option>
+<option>Zhifang Guo</option>
 <option>Zhifeng Chen</option>
 <option>Zhifeng Kong</option>
 <option>Zhiguo Cao</option>
@@ -5509,6 +5526,295 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Score diffusion models without early stopping: finite Fisher information is all you need
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 23, 2023 </span>
+         <span class="authors"> Giovanni Conforti, Alain Durmus, Marta Gentiloni Silveri </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.12240" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  math.ST, stat.ML, stat.TH
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion models are a new class of generative models that revolve around the
+estimation of the score function associated with a stochastic differential
+equation. Subsequent to its acquisition, the approximated score function is
+then harnessed to simulate the corresponding time-reversal process, ultimately
+enabling the generation of approximate data samples. Despite their evident
+practical significance these models carry, a notable challenge persists in the
+form of a lack of comprehensive quantitative results, especially in scenarios
+involving non-regular scores and estimators. In almost all reported bounds in
+Kullback Leibler (KL) divergence, it is assumed that either the score function
+or its approximation is Lipschitz uniformly in time. However, this condition is
+very restrictive in practice or appears to be difficult to establish.
+  To circumvent this issue, previous works mainly focused on establishing
+convergence bounds in KL for an early stopped version of the diffusion model
+and a smoothed version of the data distribution, or assuming that the data
+distribution is supported on a compact manifold. These explorations have lead
+to interesting bounds in either Wasserstein or Fortet-Mourier metrics. However,
+the question remains about the relevance of such early-stopping procedure or
+compactness conditions. In particular, if there exist a natural and mild
+condition ensuring explicit and sharp convergence bounds in KL.
+  In this article, we tackle the aforementioned limitations by focusing on
+score diffusion models with fixed step size stemming from the
+Ornstein-Ulhenbeck semigroup and its kinetic counterpart. Our study provides a
+rigorous analysis, yielding simple, improved and sharp convergence bounds in KL
+applicable to any data distribution with finite Fisher information with respect
+to the standard Gaussian distribution.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Diffusion Language Models Can Perform Many Tasks with Scaling and Instruction-Finetuning
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 23, 2023 </span>
+         <span class="authors"> Jiasheng Ye, Zaixiang Zheng, Yu Bao, Lihua Qian, Quanquan Gu </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.12219" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CL, cs.AI, cs.LG
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ The recent surge of generative AI has been fueled by the generative power of
+diffusion probabilistic models and the scalable capabilities of large language
+models. Despite their potential, it remains elusive whether diffusion language
+models can solve general language tasks comparable to their autoregressive
+counterparts. This paper demonstrates that scaling diffusion models w.r.t.
+data, sizes, and tasks can effectively make them strong language learners. We
+build competent diffusion language models at scale by first acquiring knowledge
+from massive data via masked language modeling pretraining thanks to their
+intrinsic connections. We then reprogram pretrained masked language models into
+diffusion language models via diffusive adaptation, wherein task-specific
+finetuning and instruction finetuning are explored to unlock their versatility
+in solving general language tasks. Experiments show that scaling diffusion
+language models consistently improves performance across downstream language
+tasks. We further discover that instruction finetuning can elicit zero-shot and
+few-shot in-context learning abilities that help tackle many unseen tasks by
+following natural language instructions, and show promise in advanced and
+challenging abilities such as reasoning
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Quantum-Noise-driven Generative Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 23, 2023 </span>
+         <span class="authors"> Marco Parigi, Stefano Martina, Filippo Caruso </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.12013" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  quant-ph, cond-mat.dis-nn, cs.AI, cs.LG, stat.ML
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Generative models realized with machine learning techniques are powerful
+tools to infer complex and unknown data distributions from a finite number of
+training samples in order to produce new synthetic data. Diffusion models are
+an emerging framework that have recently overcome the performance of the
+generative adversarial networks in creating synthetic text and high-quality
+images. Here, we propose and discuss the quantum generalization of diffusion
+models, i.e., three quantum-noise-driven generative diffusion models that could
+be experimentally tested on real quantum systems. The idea is to harness unique
+quantum features, in particular the non-trivial interplay among coherence,
+entanglement and noise that the currently available noisy quantum processors do
+unavoidably suffer from, in order to overcome the main computational burdens of
+classical diffusion models during inference. Hence, we suggest to exploit
+quantum noise not as an issue to be detected and solved but instead as a very
+remarkably beneficial key ingredient to generate much more complex probability
+distributions that would be difficult or even impossible to express
+classically, and from which a quantum processor might sample more efficiently
+than a classical one. Therefore, our results are expected to pave the way for
+new quantum-inspired or quantum-based generative diffusion algorithms
+addressing more powerfully classical tasks as data generation/prediction with
+widespread real-world applications ranging from climate forecasting to
+neuroscience, from traffic flow analysis to financial forecasting.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Audio Generation with Multiple Conditional Diffusion Model
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 23, 2023 </span>
+         <span class="authors"> Zhifang Guo, Jianguo Mao, Rui Tao, Long Yan, Kazushige Ouchi, Hong Liu, Xiangdong Wang </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.11940" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.SD, cs.CL, cs.LG, eess.AS
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Text-based audio generation models have limitations as they cannot encompass
+all the information in audio, leading to restricted controllability when
+relying solely on text. To address this issue, we propose a novel model that
+enhances the controllability of existing pre-trained text-to-audio models by
+incorporating additional conditions including content (timestamp) and style
+(pitch contour and energy contour) as supplements to the text. This approach
+achieves fine-grained control over the temporal order, pitch, and energy of
+generated audio. To preserve the diversity of generation, we employ a trainable
+control condition encoder that is enhanced by a large language model and a
+trainable Fusion-Net to encode and fuse the additional conditions while keeping
+the weights of the pre-trained text-to-audio model frozen. Due to the lack of
+suitable datasets and evaluation metrics, we consolidate existing datasets into
+a new dataset comprising the audio and corresponding conditions and use a
+series of evaluation metrics to evaluate the controllability performance.
+Experimental results demonstrate that our model successfully achieves
+fine-grained control to accomplish controllable audio generation. Audio samples
+and our dataset are publicly available at
+https://conditionaudiogen.github.io/conditionaudiogen/
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -6058,7 +6364,9 @@ culture-specific concepts in different languages. Experimental results on both
 MG-18 and MC-18 demonstrate that AltDiffusion outperforms current
 state-of-the-art T2I models, e.g., Stable Diffusion in multilingual
 understanding, especially with respect to culture-specific concepts, while
-still having comparable capability for generating high-quality images.
+still having comparable capability for generating high-quality images. All
+source code and checkpoints could be found in
+https://github.com/superhero-7/AltDiffuson.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -39922,7 +40230,7 @@ available at https://github.com/ZGCTroy/LayoutDiffusion.
 <div id="block_container">
 		<div id="bloc2">
          <span class="dates"> March 30, 2023 </span>
-         <span class="authors"> Idan Schwartz, Vésteinn Snæbjarnarson, Sagie Benaim, Hila Chefer, Ryan Cotterell, Lior Wolf, Serge Belongie </span>
+         <span class="authors"> Idan Schwartz, Vésteinn Snæbjarnarson, Hila Chefer, Ryan Cotterell, Serge Belongie, Lior Wolf, Sagie Benaim </span>
 		</div>
 </div>
 
@@ -39957,28 +40265,28 @@ available at https://github.com/ZGCTroy/LayoutDiffusion.
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  Recent advances in text-to-image diffusion models have enabled the generation
-of diverse and high-quality images. However, generated images often fall short
-of depicting subtle details and are susceptible to errors due to ambiguity in
-the input text. One way of alleviating these issues is to train diffusion
-models on class-labeled datasets. This comes with a downside, doing so limits
-their expressive power: (i) supervised datasets are generally small compared to
+of diverse and high-quality images. While impressive, the images often fall
+short of depicting subtle details and are susceptible to errors due to
+ambiguity in the input text. One way of alleviating these issues is to train
+diffusion models on class-labeled datasets. This approach has two
+disadvantages: (i) supervised datasets are generally small compared to
 large-scale scraped text-image datasets on which text-to-image models are
-trained, and so the quality and diversity of generated images are severely
-affected, or (ii) the input is a hard-coded label, as opposed to free-form
-text, which limits the control over the generated images.
+trained, affecting the quality and diversity of the generated images, or (ii)
+the input is a hard-coded label, as opposed to free-form text, limiting the
+control over the generated images.
   In this work, we propose a non-invasive fine-tuning technique that
 capitalizes on the expressive potential of free-form text while achieving high
-accuracy through discriminative signals from a pretrained classifier, which
-guides the generation. This is done by iteratively modifying the embedding of a
-single input token of a text-to-image diffusion model, using the classifier, by
-steering generated images toward a given target class. Our method is fast
-compared to prior fine-tuning methods and does not require a collection of
-in-class images or retraining of a noise-tolerant classifier. We evaluate our
-method extensively, showing that the generated images are: (i) more accurate
-and of higher quality than standard diffusion models, (ii) can be used to
-augment training data in a low-resource setting, and (iii) reveal information
-about the data used to train the guiding classifier. The code is available at
-\url{https://github.com/idansc/discriminative_class_tokens}
+accuracy through discriminative signals from a pretrained classifier. This is
+done by iteratively modifying the embedding of an added input token of a
+text-to-image diffusion model, by steering generated images toward a given
+target class according to a classifier. Our method is fast compared to prior
+fine-tuning methods and does not require a collection of in-class images or
+retraining of a noise-tolerant classifier. We evaluate our method extensively,
+showing that the generated images are: (i) more accurate and of higher quality
+than standard diffusion models, (ii) can be used to augment training data in a
+low-resource setting, and (iii) reveal information about the data used to train
+the guiding classifier. The code is available at
+\url{https://github.com/idansc/discriminative_class_tokens}.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
