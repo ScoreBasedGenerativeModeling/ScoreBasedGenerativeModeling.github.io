@@ -1294,6 +1294,9 @@ layout: default
 <option>Quantum-Noise-driven Generative Diffusion Models</option>
 <option>Audio Generation with Multiple Conditional Diffusion Model</option>
 <option>Score diffusion models without early stopping: finite Fisher information is all you need</option>
+<option>Diffuse, Attend, and Segment: Unsupervised Zero-Shot Segmentation using Stable Diffusion</option>
+<option>Renormalizing Diffusion Models</option>
+<option>Improving Generative Model-based Unfolding with Schrödinger Bridges</option>
     </select>
   </span>
   <span class="selector">
@@ -1438,6 +1441,7 @@ layout: default
 <option>Andranik Movsisyan</option>
 <option>Andre Wibisono</option>
 <option>Andrea Asperti</option>
+<option>Andrea Colaco</option>
 <option>Andrea DeMarco</option>
 <option>Andrea Dittadi</option>
 <option>Andrea Montanari</option>
@@ -2955,6 +2959,7 @@ layout: default
 <option>Joon Son Chung</option>
 <option>Joonghyuk Shin</option>
 <option>Jooyoung Choi</option>
+<option>Jordan Cotler</option>
 <option>Jordi Pons</option>
 <option>Jorge Cardoso</option>
 <option>Jorma Laaksonen</option>
@@ -3012,6 +3017,7 @@ layout: default
 <option>Junhyeok Lee</option>
 <option>Junhyuk So</option>
 <option>Junier Oliva</option>
+<option>Junjiao Tian</option>
 <option>Junjie Shen</option>
 <option>Junjie Zhou</option>
 <option>Junjun He</option>
@@ -3204,6 +3210,7 @@ layout: default
 <option>Laurent Sartran</option>
 <option>Laurent Sifre</option>
 <option>Laurynas Karazija</option>
+<option>Lavisha Aggarwal</option>
 <option>Lazar Atanackovic</option>
 <option>Le Kang</option>
 <option>Le Wu</option>
@@ -3369,6 +3376,7 @@ layout: default
 <option>Maomao Li</option>
 <option>Maosong Sun</option>
 <option>Maozong Zheng</option>
+<option>Mar Gonzalez-Franco</option>
 <option>Marc Aubreville</option>
 <option>Marc D. Normandin</option>
 <option>Marc L. Klasky</option>
@@ -4079,6 +4087,7 @@ layout: default
 <option>Sarah C. Foreman</option>
 <option>Saravan Rajmohan</option>
 <option>Sarthak Mittal</option>
+<option>Sascha Diefenbacher</option>
 <option>Sasha Luccioni</option>
 <option>Sattar Vakili</option>
 <option>Saurabh Prasad</option>
@@ -5526,6 +5535,211 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Diffuse, Attend, and Segment: Unsupervised Zero-Shot Segmentation using Stable Diffusion
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 23, 2023 </span>
+         <span class="authors"> Junjiao Tian, Lavisha Aggarwal, Andrea Colaco, Zsolt Kira, Mar Gonzalez-Franco </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.12469" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Producing quality segmentation masks for images is a fundamental problem in
+computer vision. Recent research has explored large-scale supervised training
+to enable zero-shot segmentation on virtually any image style and unsupervised
+training to enable segmentation without dense annotations. However,
+constructing a model capable of segmenting anything in a zero-shot manner
+without any annotations is still challenging. In this paper, we propose to
+utilize the self-attention layers in stable diffusion models to achieve this
+goal because the pre-trained stable diffusion model has learned inherent
+concepts of objects within its attention layers. Specifically, we introduce a
+simple yet effective iterative merging process based on measuring KL divergence
+among attention maps to merge them into valid segmentation masks. The proposed
+method does not require any training or language dependency to extract quality
+segmentation for any images. On COCO-Stuff-27, our method surpasses the prior
+unsupervised zero-shot SOTA method by an absolute 26% in pixel accuracy and 17%
+in mean IoU.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Renormalizing Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 23, 2023 </span>
+         <span class="authors"> Jordan Cotler, Semon Rezchikov </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.12355" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  hep-th, cs.LG, hep-lat
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ We explain how to use diffusion models to learn inverse renormalization group
+flows of statistical and quantum field theories. Diffusion models are a class
+of machine learning models which have been used to generate samples from
+complex distributions, such as the distribution of natural images, by learning
+the inverse process to a diffusion process which adds noise to the data until
+the distribution of the data is pure noise. Nonperturbative renormalization
+group schemes can naturally be written as diffusion processes in the space of
+fields. We combine these observations in a concrete framework for building
+ML-based models for studying field theories, in which the models learn the
+inverse process to an explicitly-specified renormalization group scheme. We
+detail how these models define a class of adaptive bridge (or parallel
+tempering) samplers for lattice field theory. Because renormalization group
+schemes have a physical meaning, we provide explicit prescriptions for how to
+compare results derived from models associated to several different
+renormalization group schemes of interest. We also explain how to use diffusion
+models in a variational method to find ground states of quantum systems. We
+apply some of our methods to numerically find RG flows of interacting
+statistical field theories. From the perspective of machine learning, our work
+provides an interpretation of multiscale diffusion models, and gives
+physically-inspired suggestions for diffusion models which should have novel
+properties.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Improving Generative Model-based Unfolding with Schrödinger Bridges
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 23, 2023 </span>
+         <span class="authors"> Sascha Diefenbacher, Guan-Horng Liu, Vinicius Mikuni, Benjamin Nachman, Weili Nie </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.12351" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  hep-ph, cs.LG, hep-ex
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Machine learning-based unfolding has enabled unbinned and high-dimensional
+differential cross section measurements. Two main approaches have emerged in
+this research area: one based on discriminative models and one based on
+generative models. The main advantage of discriminative models is that they
+learn a small correction to a starting simulation while generative models scale
+better to regions of phase space with little data. We propose to use
+Schroedinger Bridges and diffusion models to create SBUnfold, an unfolding
+approach that combines the strengths of both discriminative and generative
+models. The key feature of SBUnfold is that its generative model maps one set
+of events into another without having to go through a known probability density
+as is the case for normalizing flows and standard diffusion models. We show
+that SBUnfold achieves excellent performance compared to state of the art
+methods on a synthetic Z+jets dataset.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -43046,20 +43260,26 @@ the same hardware setting when generating 1024 frames. The homepage link is
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- We present a technique for segmenting real and AI-generated images using
-latent diffusion models (LDMs) trained on internet-scale datasets. First, we
-show that the latent space of LDMs (z-space) is a better input representation
-compared to other feature representations like RGB images or CLIP encodings for
-text-based image segmentation. By training the segmentation models on the
-latent z-space, which creates a compressed representation across several
-domains like different forms of art, cartoons, illustrations, and photographs,
-we are also able to bridge the domain gap between real and AI-generated images.
-We show that the internal features of LDMs contain rich semantic information
-and present a technique in the form of LD-ZNet to further boost the performance
-of text-based segmentation. Overall, we show up to 6% improvement over standard
-baselines for text-to-image segmentation on natural images. For AI-generated
-imagery, we show close to 20% improvement compared to state-of-the-art
-techniques.
+ Large-scale pre-training tasks like image classification, captioning, or
+self-supervised techniques do not incentivize learning the semantic boundaries
+of objects. However, recent generative foundation models built using text-based
+latent diffusion techniques may learn semantic boundaries. This is because they
+have to synthesize intricate details about all objects in an image based on a
+text description. Therefore, we present a technique for segmenting real and
+AI-generated images using latent diffusion models (LDMs) trained on
+internet-scale datasets. First, we show that the latent space of LDMs (z-space)
+is a better input representation compared to other feature representations like
+RGB images or CLIP encodings for text-based image segmentation. By training the
+segmentation models on the latent z-space, which creates a compressed
+representation across several domains like different forms of art, cartoons,
+illustrations, and photographs, we are also able to bridge the domain gap
+between real and AI-generated images. We show that the internal features of
+LDMs contain rich semantic information and present a technique in the form of
+LD-ZNet to further boost the performance of text-based segmentation. Overall,
+we show up to 6% improvement over standard baselines for text-to-image
+segmentation on natural images. For AI-generated imagery, we show close to 20%
+improvement compared to state-of-the-art techniques. The project is available
+at https://koutilya-pnvr.github.io/LD-ZNet/.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -51551,7 +51771,7 @@ will be published after accepted.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## A Reparameterized Discrete Diffusion Model for Text Generation
+## Raising the Cost of Malicious AI-Powered Image Editing
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -51613,7 +51833,7 @@ users, to implement (and support) the immunization process.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Raising the Cost of Malicious AI-Powered Image Editing
+## A Reparameterized Discrete Diffusion Model for Text Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -58488,7 +58708,7 @@ refer to \url{https://sstzal.github.io/DiffTalk/}.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution
+## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -58566,7 +58786,7 @@ recent discoveries, and to the influence of DL in our domain.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
+## Image Denoising: The Deep Learning Revolution
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
