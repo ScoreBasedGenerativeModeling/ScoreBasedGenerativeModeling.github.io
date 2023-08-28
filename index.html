@@ -1297,6 +1297,8 @@ layout: default
 <option>Diffuse, Attend, and Segment: Unsupervised Zero-Shot Segmentation using Stable Diffusion</option>
 <option>Renormalizing Diffusion Models</option>
 <option>Improving Generative Model-based Unfolding with Schrödinger Bridges</option>
+<option>A Survey of Diffusion Based Image Generation Models: Issues and Their Solutions</option>
+<option>Diff-Retinex: Rethinking Low-light Image Enhancement with A Generative Diffusion Model</option>
     </select>
   </span>
   <span class="selector">
@@ -2862,6 +2864,7 @@ layout: default
 <option>Jindong Jiang</option>
 <option>Jing Cheng</option>
 <option>Jing Hua</option>
+<option>Jing Huang</option>
 <option>Jing Liao</option>
 <option>Jing Qin</option>
 <option>Jing Wang</option>
@@ -3284,6 +3287,7 @@ layout: default
 <option>Liming Zhong</option>
 <option>Lin Geng Foo</option>
 <option>Linden Li</option>
+<option>Linfeng Tang</option>
 <option>Ling Yang</option>
 <option>Linghe Kong</option>
 <option>Lingjie Liu</option>
@@ -3593,6 +3597,7 @@ layout: default
 <option>Mohammed El-Amine Azz</option>
 <option>Mohammed Haroon Dupty</option>
 <option>Mohit Bansal</option>
+<option>Mohiuddin Muhammad Tasnim</option>
 <option>Mohsen Fayyaz</option>
 <option>Molei Tao</option>
 <option>Mor Geva</option>
@@ -4489,6 +4494,7 @@ layout: default
 <option>Tianxin Huang</option>
 <option>Tianyang Hu</option>
 <option>Tianyi Li</option>
+<option>Tianyi Zhang</option>
 <option>Tianyi Zhou</option>
 <option>Tianyu Han</option>
 <option>Tianyu Pang</option>
@@ -4659,6 +4665,7 @@ layout: default
 <option>Wei Liang</option>
 <option>Wei Liu</option>
 <option>Wei Ping</option>
+<option>Wei Shi</option>
 <option>Wei Tian</option>
 <option>Wei Wei</option>
 <option>Wei Xiang</option>
@@ -4917,6 +4924,7 @@ layout: default
 <option>Xun Chen</option>
 <option>Xun Huang</option>
 <option>Xunpeng Huang</option>
+<option>Xunpeng Yi</option>
 <option>Xutao Guo</option>
 <option>Ya Zhang</option>
 <option>Ya-Ping Hsieh</option>
@@ -5542,6 +5550,141 @@ layout: default
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
+## Diff-Retinex: Rethinking Low-light Image Enhancement with A Generative Diffusion Model
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 25, 2023 </span>
+         <span class="authors"> Xunpeng Yi, Han Xu, Hao Zhang, Linfeng Tang, Jiayi Ma </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.13164" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, eess.IV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ In this paper, we rethink the low-light image enhancement task and propose a
+physically explainable and generative diffusion model for low-light image
+enhancement, termed as Diff-Retinex. We aim to integrate the advantages of the
+physical model and the generative network. Furthermore, we hope to supplement
+and even deduce the information missing in the low-light image through the
+generative network. Therefore, Diff-Retinex formulates the low-light image
+enhancement problem into Retinex decomposition and conditional image
+generation. In the Retinex decomposition, we integrate the superiority of
+attention in Transformer and meticulously design a Retinex Transformer
+decomposition network (TDN) to decompose the image into illumination and
+reflectance maps. Then, we design multi-path generative diffusion networks to
+reconstruct the normal-light Retinex probability distribution and solve the
+various degradations in these components respectively, including dark
+illumination, noise, color deviation, loss of scene contents, etc. Owing to
+generative diffusion model, Diff-Retinex puts the restoration of low-light
+subtle detail into practice. Extensive experiments conducted on real-world
+low-light datasets qualitatively and quantitatively demonstrate the
+effectiveness, superiority, and generalization of the proposed method.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## A Survey of Diffusion Based Image Generation Models: Issues and Their Solutions
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 25, 2023 </span>
+         <span class="authors"> Tianyi Zhang, Zheng Wang, Jing Huang, Mohiuddin Muhammad Tasnim, Wei Shi </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.13142" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Recently, there has been significant progress in the development of large
+models. Following the success of ChatGPT, numerous language models have been
+introduced, demonstrating remarkable performance. Similar advancements have
+also been observed in image generation models, such as Google's Imagen model,
+OpenAI's DALL-E 2, and stable diffusion models, which have exhibited impressive
+capabilities in generating images. However, similar to large language models,
+these models still encounter unresolved challenges. Fortunately, the
+availability of open-source stable diffusion models and their underlying
+mathematical principles has enabled the academic community to extensively
+analyze the performance of current image generation models and make
+improvements based on this stable diffusion framework. This survey aims to
+examine the existing issues and the current solutions pertaining to image
+generation models.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
 ## Diffuse, Attend, and Segment: Unsupervised Zero-Shot Segmentation using Stable Diffusion
 {% endcapture %}{{ x | markdownify }}
 
@@ -5880,7 +6023,7 @@ language models consistently improves performance across downstream language
 tasks. We further discover that instruction finetuning can elicit zero-shot and
 few-shot in-context learning abilities that help tackle many unseen tasks by
 following natural language instructions, and show promise in advanced and
-challenging abilities such as reasoning
+challenging abilities such as reasoning.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -51771,7 +51914,7 @@ will be published after accepted.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Raising the Cost of Malicious AI-Powered Image Editing
+## A Reparameterized Discrete Diffusion Model for Text Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -51833,7 +51976,7 @@ users, to implement (and support) the immunization process.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## A Reparameterized Discrete Diffusion Model for Text Generation
+## Raising the Cost of Malicious AI-Powered Image Editing
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -54483,7 +54626,7 @@ morphing script are made public: https://github.com/naserdamer/MorDIFF.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Interventional and Counterfactual Inference with Diffusion Models
+## Learning End-to-End Channel Coding with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -54550,7 +54693,7 @@ better generalization ability in testing.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Learning End-to-End Channel Coding with Diffusion Models
+## Interventional and Counterfactual Inference with Diffusion Models
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -58708,7 +58851,7 @@ refer to \url{https://sstzal.github.io/DiffTalk/}.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
+## Image Denoising: The Deep Learning Revolution
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -58786,7 +58929,7 @@ recent discoveries, and to the influence of DL in our domain.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution
+## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -70331,24 +70474,18 @@ https://github.com/jeremiastraub/diffusion.
  While modern machine learning models rely on increasingly large training
 datasets, data is often limited in privacy-sensitive domains. Generative models
 trained with differential privacy (DP) on sensitive data can sidestep this
-challenge, providing access to synthetic data instead. However, training DP
-generative models is highly challenging due to the noise injected into training
-to enforce DP. We propose to leverage diffusion models (DMs), an emerging class
-of deep generative models, and introduce Differentially Private Diffusion
-Models (DPDMs), which enforce privacy using differentially private stochastic
-gradient descent (DP-SGD). We motivate why DP-SGD is well suited for training
-DPDMs, and thoroughly investigate the DM parameterization and the sampling
-algorithm, which turn out to be crucial ingredients in DPDMs. Furthermore, we
-propose noise multiplicity, a simple yet powerful modification of the DM
-training objective tailored to the DP setting to boost performance. We validate
-our novel DPDMs on widely-used image generation benchmarks and achieve
-state-of-the-art (SOTA) performance by large margins. For example, on MNIST we
-improve the SOTA FID from 48.4 to 5.01 and downstream classification accuracy
-from 83.2% to 98.1% for the privacy setting DP-$(\varepsilon{=}10,
-\delta{=}10^{-5})$. Moreover, on standard benchmarks, classifiers trained on
-DPDM-generated synthetic data perform on par with task-specific DP-SGD-trained
-classifiers, which has not been demonstrated before for DP generative models.
-Project page and code: https://nv-tlabs.github.io/DPDM.
+challenge, providing access to synthetic data instead. We build on the recent
+success of diffusion models (DMs) and introduce Differentially Private
+Diffusion Models (DPDMs), which enforce privacy using differentially private
+stochastic gradient descent (DP-SGD). We investigate the DM parameterization
+and the sampling algorithm, which turn out to be crucial ingredients in DPDMs,
+and propose noise multiplicity, a powerful modification of DP-SGD tailored to
+the training of DMs. We validate our novel DPDMs on image generation benchmarks
+and achieve state-of-the-art performance in all experiments. Moreover, on
+standard benchmarks, classifiers trained on DPDM-generated synthetic data
+perform on par with task-specific DP-SGD-trained classifiers, which has not
+been demonstrated before for DP generative models. Project page and code:
+https://nv-tlabs.github.io/DPDM.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
