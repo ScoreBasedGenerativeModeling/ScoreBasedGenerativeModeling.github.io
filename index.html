@@ -660,7 +660,7 @@ layout: default
 <option>Adding Conditional Control to Text-to-Image Diffusion Models</option>
 <option>Human Motion Diffusion as a Generative Prior</option>
 <option>Consistency Models</option>
-<option>Variational Diffusion Models 2.0: Understanding Diffusion Model Objectives as the ELBO with Simple Data Augmentation</option>
+<option>VDM++: Variational Diffusion Models for High-Quality Synthesis</option>
 <option>Continuous-Time Functional Diffusion Processes</option>
 <option>Defending against Adversarial Audio via Diffusion Model</option>
 <option>Deep Momentum Multi-Marginal Schrödinger Bridge</option>
@@ -822,7 +822,7 @@ layout: default
 <option>Mask-conditioned latent diffusion for generating gastrointestinal polyp images</option>
 <option>Continual Diffusion: Continual Customization of Text-to-Image Diffusion with C-LoRA</option>
 <option>DreamPose: Fashion Image-to-Video Synthesis via Stable Diffusion</option>
-<option>SpectralDiff: Hyperspectral Image Classification with Spectral-Spatial Diffusion Models</option>
+<option>SpectralDiff: A Generative Framework for Hyperspectral Image Classification with Diffusion Models</option>
 <option>InterGen: Diffusion-based Multi-human Motion Generation under Complex Interactions</option>
 <option>CamDiff: Camouflage Image Augmentation via Diffusion Model</option>
 <option>Diffusion models with location-scale noise</option>
@@ -1322,6 +1322,10 @@ layout: default
 <option>RetroBridge: Modeling Retrosynthesis with Markov Bridges</option>
 <option>LightGrad: Lightweight Diffusion Probabilistic Model for Text-to-Speech</option>
 <option>A Recycling Training Strategy for Medical Image Segmentation with Diffusion Denoising Models</option>
+<option>DiffuGen: Adaptable Approach for Generating Labeled Image Datasets using Stable Diffusion Models</option>
+<option>Diffusion Model with Clustering-based Conditioning for Food Image Generation</option>
+<option>BuilDiff: 3D Building Shape Generation using Single-Image Conditional Point Cloud Diffusion Models</option>
+<option>Fast Diffusion EM: a diffusion model for blind inverse problems with application to deconvolution</option>
     </select>
   </span>
   <span class="selector">
@@ -1500,6 +1504,7 @@ layout: default
 <option>Andrey Spiridonov</option>
 <option>Andrey Voynov</option>
 <option>Andriy Mnih</option>
+<option>Andrés Almansa</option>
 <option>Andy Ly</option>
 <option>Andy Shih</option>
 <option>Angela Castillo</option>
@@ -1777,6 +1782,7 @@ layout: default
 <option>Chaoyun Zhang</option>
 <option>Charles Godfrey</option>
 <option>Charles Harris</option>
+<option>Charles Laroche</option>
 <option>Charles Ollion</option>
 <option>Charles R. Qi</option>
 <option>Charlotte Bunne</option>
@@ -2103,7 +2109,9 @@ layout: default
 <option>Dylan Walker</option>
 <option>Edgar Simo-Serra</option>
 <option>Edmund J. C. Findlay</option>
+<option>Edward J. Delp</option>
 <option>Edward Johns</option>
+<option>Edward Kim</option>
 <option>Edwin Zhang</option>
 <option>Ehsan Hajiramezanali</option>
 <option>Ehsan Khodapanah Aghdam</option>
@@ -2167,6 +2175,7 @@ layout: default
 <option>Etrit Haxholli</option>
 <option>Eun Sun Lee</option>
 <option>Eunhyeok Park</option>
+<option>Eva Coupete</option>
 <option>Eva Sciacca</option>
 <option>Evan Montoya</option>
 <option>Evan Shelhamer</option>
@@ -2224,6 +2233,7 @@ layout: default
 <option>Fengge Wu</option>
 <option>Fengheng Li</option>
 <option>Fengpei Li</option>
+<option>Fengqing Zhu</option>
 <option>Fengyin Lin</option>
 <option>Fengying Yan</option>
 <option>Fereshteh Forghani</option>
@@ -2328,6 +2338,7 @@ layout: default
 <option>George Papamakarios</option>
 <option>George Retsinas</option>
 <option>George Toderici</option>
+<option>George Vosselman</option>
 <option>Georges El Fakhri</option>
 <option>Georgia Chalvatzaki</option>
 <option>Georgios Batzolis</option>
@@ -2829,6 +2840,7 @@ layout: default
 <option>Jiang Wang</option>
 <option>Jiangchao Yao</option>
 <option>Jiangning Zhang</option>
+<option>Jiangpeng He</option>
 <option>Jiangtao Feng</option>
 <option>Jianguo Mao</option>
 <option>Jianhai Zhang</option>
@@ -3576,9 +3588,11 @@ layout: default
 <option>Michael S. Albergo</option>
 <option>Michael S. Jones</option>
 <option>Michael S. Ryoo</option>
+<option>Michael Shenoda</option>
 <option>Michael T. McCann</option>
 <option>Michael T. Mccann</option>
 <option>Michael Tanzer</option>
+<option>Michael Ying Yang</option>
 <option>Michael Zeng</option>
 <option>Michal Geyer</option>
 <option>Michal Irani</option>
@@ -3668,6 +3682,7 @@ layout: default
 <option>Moritz Fuchs</option>
 <option>Morteza Mardani</option>
 <option>Moshe Sipper</option>
+<option>Mridul Gupta</option>
 <option>Mu Li</option>
 <option>Muah Kim</option>
 <option>Mubarak Shah</option>
@@ -5068,6 +5083,7 @@ layout: default
 <option>Yao Du</option>
 <option>Yao Feng</option>
 <option>Yao Mu</option>
+<option>Yao Wei</option>
 <option>Yao Zhao</option>
 <option>Yao-Chih Lee</option>
 <option>Yaohui Li</option>
@@ -5295,6 +5311,7 @@ layout: default
 <option>Yudong Liu</option>
 <option>Yue Cao</option>
 <option>Yue Deng</option>
+<option>Yue Han</option>
 <option>Yue Liao</option>
 <option>Yue Zhao</option>
 <option>Yuejie Chi</option>
@@ -5647,6 +5664,275 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Fast Diffusion EM: a diffusion model for blind inverse problems with application to deconvolution
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> September 01, 2023 </span>
+         <span class="authors"> Charles Laroche, Andrés Almansa, Eva Coupete </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.00287" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Using diffusion models to solve inverse problems is a growing field of
+research. Current methods assume the degradation to be known and provide
+impressive results in terms of restoration quality and diversity. In this work,
+we leverage the efficiency of those models to jointly estimate the restored
+image and unknown parameters of the degradation model. In particular, we
+designed an algorithm based on the well-known Expectation-Minimization (EM)
+estimation method and diffusion models. Our method alternates between
+approximating the expected log-likelihood of the inverse problem using samples
+drawn from a diffusion model and a maximization step to estimate unknown model
+parameters. For the maximization step, we also introduce a novel blur kernel
+regularization based on a Plug \& Play denoiser. Diffusion models are long to
+run, thus we provide a fast version of our algorithm. Extensive experiments on
+blind image deblurring demonstrate the effectiveness of our method when
+compared to other state-of-the-art approaches.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## DiffuGen: Adaptable Approach for Generating Labeled Image Datasets using Stable Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> September 01, 2023 </span>
+         <span class="authors"> Michael Shenoda, Edward Kim </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.00248" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Generating high-quality labeled image datasets is crucial for training
+accurate and robust machine learning models in the field of computer vision.
+However, the process of manually labeling real images is often time-consuming
+and costly. To address these challenges associated with dataset generation, we
+introduce "DiffuGen," a simple and adaptable approach that harnesses the power
+of stable diffusion models to create labeled image datasets efficiently. By
+leveraging stable diffusion models, our approach not only ensures the quality
+of generated datasets but also provides a versatile solution for label
+generation. In this paper, we present the methodology behind DiffuGen, which
+combines the capabilities of diffusion models with two distinct labeling
+techniques: unsupervised and supervised. Distinctively, DiffuGen employs prompt
+templating for adaptable image generation and textual inversion to enhance
+diffusion model capabilities.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Diffusion Model with Clustering-based Conditioning for Food Image Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> September 01, 2023 </span>
+         <span class="authors"> Yue Han, Jiangpeng He, Mridul Gupta, Edward J. Delp, Fengqing Zhu </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.00199" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV, cs.AI, cs.LG
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Image-based dietary assessment serves as an efficient and accurate solution
+for recording and analyzing nutrition intake using eating occasion images as
+input. Deep learning-based techniques are commonly used to perform image
+analysis such as food classification, segmentation, and portion size
+estimation, which rely on large amounts of food images with annotations for
+training. However, such data dependency poses significant barriers to
+real-world applications, because acquiring a substantial, diverse, and balanced
+set of food images can be challenging. One potential solution is to use
+synthetic food images for data augmentation. Although existing work has
+explored the use of generative adversarial networks (GAN) based structures for
+generation, the quality of synthetic food images still remains subpar. In
+addition, while diffusion-based generative models have shown promising results
+for general image generation tasks, the generation of food images can be
+challenging due to the substantial intra-class variance. In this paper, we
+investigate the generation of synthetic food images based on the conditional
+diffusion model and propose an effective clustering-based training framework,
+named ClusDiff, for generating high-quality and representative food images. The
+proposed method is evaluated on the Food-101 dataset and shows improved
+performance when compared with existing image generation works. We also
+demonstrate that the synthetic food images generated by ClusDiff can help
+address the severe class imbalance issue in long-tailed food classification
+using the VFN-LT dataset.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## BuilDiff: 3D Building Shape Generation using Single-Image Conditional Point Cloud Diffusion Models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 31, 2023 </span>
+         <span class="authors"> Yao Wei, George Vosselman, Michael Ying Yang </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.00158" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ 3D building generation with low data acquisition costs, such as single
+image-to-3D, becomes increasingly important. However, most of the existing
+single image-to-3D building creation works are restricted to those images with
+specific viewing angles, hence they are difficult to scale to general-view
+images that commonly appear in practical cases. To fill this gap, we propose a
+novel 3D building shape generation method exploiting point cloud diffusion
+models with image conditioning schemes, which demonstrates flexibility to the
+input images. By cooperating two conditional diffusion models and introducing a
+regularization strategy during denoising process, our method is able to
+synthesize building roofs while maintaining the overall structures. We validate
+our framework on two newly built datasets and extensive experiments show that
+our method outperforms previous works in terms of building generation quality.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
@@ -21989,22 +22275,19 @@ with object-level editing and improves upon existing approaches.
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- We present Viewset Diffusion: a framework for training image-conditioned 3D
-generative models from 2D data. Image-conditioned 3D generative models allow us
-to address the inherent ambiguity in single-view 3D reconstruction. Given one
-image of an object, there is often more than one possible 3D volume that
-matches the input image, because a single image never captures all sides of an
-object. Deterministic models are inherently limited to producing one possible
-reconstruction and therefore make mistakes in ambiguous settings. Modelling
-distributions of 3D shapes is challenging because 3D ground truth data is often
-not available. We propose to solve the issue of data availability by training a
-diffusion model which jointly denoises a multi-view image set.We constrain the
-output of Viewset Diffusion models to a single 3D volume per image set,
-guaranteeing consistent geometry. Training is done through reconstruction
-losses on renderings, allowing training with only three images per object. Our
-design of architecture and training scheme allows our model to perform 3D
-generation and generative, ambiguity-aware single-view reconstruction in a
-feed-forward manner. Project page: szymanowiczs.github.io/viewset-diffusion.
+ We present Viewset Diffusion, a diffusion-based generator that outputs 3D
+objects while only using multi-view 2D data for supervision. We note that there
+exists a one-to-one mapping between viewsets, i.e., collections of several 2D
+views of an object, and 3D models. Hence, we train a diffusion model to
+generate viewsets, but design the neural network generator to reconstruct
+internally corresponding 3D models, thus generating those too. We fit a
+diffusion model to a large number of viewsets for a given category of objects.
+The resulting generator can be conditioned on zero, one or more input views.
+Conditioned on a single view, it performs 3D reconstruction accounting for the
+ambiguity of the task and allowing to sample multiple solutions compatible with
+the input. The model performs reconstruction efficiently, in a feed-forward
+manner, and is trained using only rendering losses using as few as three views
+per viewset. Project page: szymanowiczs.github.io/viewset-diffusion.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -39602,27 +39885,32 @@ Video results are available on our project page.
 
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
- Hyperspectral image (HSI) classification is an important topic in the field
-of remote sensing, and has a wide range of applications in Earth science. HSIs
-contain hundreds of continuous bands, which are characterized by high dimension
-and high correlation between adjacent bands. The high dimension and redundancy
-of HSI data bring great difficulties to HSI classification. In recent years, a
-large number of HSI feature extraction and classification methods based on deep
-learning have been proposed. However, their ability to model the global
-relationships among samples in both spatial and spectral domains is still
-limited. In order to solve this problem, an HSI classification method with
-spectral-spatial diffusion models is proposed. The proposed method realizes the
-reconstruction of spectral-spatial distribution of the training samples with
-the forward and reverse spectral-spatial diffusion process, thus modeling the
-global spatial-spectral relationship between samples. Then, we use the
-spectral-spatial denoising network of the reverse process to extract the
-unsupervised diffusion features. Features extracted by the spectral-spatial
-diffusion models can achieve cross-sample perception from the reconstructed
-distribution of the training samples, thus obtaining better classification
-performance. Experiments on three public HSI datasets show that the proposed
-method can achieve better performance than the state-of-the-art methods. The
-source code and the pre-trained spectral-spatial diffusion model will be
-publicly available at https://github.com/chenning0115/SpectralDiff.
+ Hyperspectral Image (HSI) classification is an important issue in remote
+sensing field with extensive applications in earth science. In recent years, a
+large number of deep learning-based HSI classification methods have been
+proposed. However, existing methods have limited ability to handle
+high-dimensional, highly redundant, and complex data, making it challenging to
+capture the spectral-spatial distributions of data and relationships between
+samples. To address this issue, we propose a generative framework for HSI
+classification with diffusion models (SpectralDiff) that effectively mines the
+distribution information of high-dimensional and highly redundant data by
+iteratively denoising and explicitly constructing the data generation process,
+thus better reflecting the relationships between samples. The framework
+consists of a spectral-spatial diffusion module, and an attention-based
+classification module. The spectral-spatial diffusion module adopts forward and
+reverse spectral-spatial diffusion processes to achieve adaptive construction
+of sample relationships without requiring prior knowledge of graphical
+structure or neighborhood information. It captures spectral-spatial
+distribution and contextual information of objects in HSI and mines
+unsupervised spectral-spatial diffusion features within the reverse diffusion
+process. Finally, these features are fed into the attention-based
+classification module for per-pixel classification. The diffusion features can
+facilitate cross-sample perception via reconstruction distribution, leading to
+improved classification performance. Experiments on three public HSI datasets
+demonstrate that the proposed method can achieve better performance than
+state-of-the-art methods. For the sake of reproducibility, the source code of
+SpectralDiff will be publicly available at
+https://github.com/chenning0115/SpectralDiff.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -50817,10 +51105,10 @@ certified accuracy than baselines.
 <div class="collapse" id="collapse{{ id }}">
 {% capture x %}
  To achieve the highest perceptual quality, state-of-the-art diffusion models
-are optimized with objectives that look very different from the maximum
-likelihood and the Evidence Lower Bound (ELBO) objectives. In this work, we
-reveal that diffusion model objectives are actually closely related to the
-ELBO.
+are optimized with objectives that typically look very different from the
+maximum likelihood and the Evidence Lower Bound (ELBO) objectives. In this
+work, we reveal that diffusion model objectives are actually closely related to
+the ELBO.
   Specifically, we show that all commonly used diffusion model objectives
 equate to a weighted integral of ELBOs over different noise levels, where the
 weighting depends on the specific objective used. Under the condition of
@@ -53564,7 +53852,7 @@ will be published after accepted.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## A Reparameterized Discrete Diffusion Model for Text Generation
+## Raising the Cost of Malicious AI-Powered Image Editing
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -53626,7 +53914,7 @@ users, to implement (and support) the immunization process.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Raising the Cost of Malicious AI-Powered Image Editing
+## A Reparameterized Discrete Diffusion Model for Text Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -60504,7 +60792,7 @@ refer to \url{https://sstzal.github.io/DiffTalk/}.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
+## Image Denoising: The Deep Learning Revolution
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -60582,7 +60870,7 @@ recent discoveries, and to the influence of DL in our domain.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Image Denoising: The Deep Learning Revolution
+## Image Denoising: The Deep Learning Revolution and Beyond -- A Survey Paper --
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
