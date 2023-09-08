@@ -1350,6 +1350,7 @@ layout: default
 <option>Reuse and Diffuse: Iterative Denoising for Text-to-Video Generation</option>
 <option>DiffDefense: Defending against Adversarial Attacks via Diffusion Models</option>
 <option>Relay Diffusion: Unifying diffusion process across resolutions for image synthesis</option>
+<option>Monte Carlo guided Diffusion for Bayesian linear inverse problems</option>
     </select>
   </span>
   <span class="selector">
@@ -2338,6 +2339,7 @@ layout: default
 <option>Furu Wei</option>
 <option>Fuxin Fan</option>
 <option>Fuxing Gao</option>
+<option>Gabriel Cardoso</option>
 <option>Gabriel Nobis</option>
 <option>Gabriel Raya</option>
 <option>Gabriel Synnaeve</option>
@@ -5235,6 +5237,7 @@ layout: default
 <option>Yatin Dandi</option>
 <option>Yawar Siddiqui</option>
 <option>Yawen Huang</option>
+<option>Yazid Janati El Idrissi</option>
 <option>Ye Mao</option>
 <option>Ye Yuan</option>
 <option>Ye Zhu</option>
@@ -10385,6 +10388,70 @@ understanding, especially with respect to culture-specific concepts, while
 still having comparable capability for generating high-quality images. All
 source code and checkpoints could be found in
 https://github.com/superhero-7/AltDiffuson.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Monte Carlo guided Diffusion for Bayesian linear inverse problems
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> August 15, 2023 </span>
+         <span class="authors"> Gabriel Cardoso, Yazid Janati El Idrissi, Sylvain Le Corff, Eric Moulines </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2308.07983" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  stat.ML, cs.LG, stat.ME
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Ill-posed linear inverse problems that combine knowledge of the forward
+measurement model with prior models arise frequently in various applications,
+from computational photography to medical imaging. Recent research has focused
+on solving these problems with score-based generative models (SGMs) that
+produce perceptually plausible images, especially in inpainting problems. In
+this study, we exploit the particular structure of the prior defined in the SGM
+to formulate recovery in a Bayesian framework as a Feynman--Kac model adapted
+from the forward diffusion model used to construct score-based diffusion. To
+solve this Feynman--Kac problem, we propose the use of Sequential Monte Carlo
+methods. The proposed algorithm, MCGdiff, is shown to be theoretically grounded
+and we provide numerical simulations showing that it outperforms competing
+baselines when dealing with ill-posed inverse problems.
 {% endcapture %}{{ x | markdownify }}
 </div>
 </div>
@@ -55632,7 +55699,7 @@ will be published after accepted.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## A Reparameterized Discrete Diffusion Model for Text Generation
+## Raising the Cost of Malicious AI-Powered Image Editing
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
@@ -55694,7 +55761,7 @@ users, to implement (and support) the immunization process.
 	<div class="row">
 	  <div class="column1" >
 {% capture x %}
-## Raising the Cost of Malicious AI-Powered Image Editing
+## A Reparameterized Discrete Diffusion Model for Text Generation
 {% endcapture %}{{ x | markdownify }}
 
 <div id="block_container">
