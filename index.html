@@ -1351,6 +1351,7 @@ layout: default
 <option>DiffDefense: Defending against Adversarial Attacks via Diffusion Models</option>
 <option>Relay Diffusion: Unifying diffusion process across resolutions for image synthesis</option>
 <option>Monte Carlo guided Diffusion for Bayesian linear inverse problems</option>
+<option>MaskDiffusion: Boosting Text-to-Image Consistency with Conditional Mask</option>
     </select>
   </span>
   <span class="selector">
@@ -4051,6 +4052,7 @@ layout: default
 <option>Qianhui Wu</option>
 <option>Qiao Tian</option>
 <option>Qiaosong Qi</option>
+<option>Qibin Hou</option>
 <option>Qichen Ye</option>
 <option>Qiegen Liu</option>
 <option>Qifeng Chen</option>
@@ -5237,6 +5239,7 @@ layout: default
 <option>Yatin Dandi</option>
 <option>Yawar Siddiqui</option>
 <option>Yawen Huang</option>
+<option>Yaxing Wang</option>
 <option>Yazid Janati El Idrissi</option>
 <option>Ye Mao</option>
 <option>Ye Yuan</option>
@@ -5519,6 +5522,7 @@ layout: default
 <option>Yunxiang Li</option>
 <option>Yupan Huang</option>
 <option>Yupei Lin</option>
+<option>Yupeng Zhou</option>
 <option>Yuping Wang</option>
 <option>Yuqi Gong</option>
 <option>Yuqi Yang</option>
@@ -5779,6 +5783,7 @@ layout: default
 <option>Zsolt Kira</option>
 <option>Zubair Shah</option>
 <option>Zuhao Liu</option>
+<option>Zuo-Liang Zhu</option>
 <option>Zuobai Zhang</option>
 <option>Zuopeng Yang</option>
 <option>Zuxuan Wu</option>
@@ -5809,6 +5814,74 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## MaskDiffusion: Boosting Text-to-Image Consistency with Conditional Mask
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> September 08, 2023 </span>
+         <span class="authors"> Yupeng Zhou, Daquan Zhou, Zuo-Liang Zhu, Yaxing Wang, Qibin Hou, Jiashi Feng </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.04399" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Recent advancements in diffusion models have showcased their impressive
+capacity to generate visually striking images. Nevertheless, ensuring a close
+match between the generated image and the given prompt remains a persistent
+challenge. In this work, we identify that a crucial factor leading to the
+text-image mismatch issue is the inadequate cross-modality relation learning
+between the prompt and the output image. To better align the prompt and image
+content, we advance the cross-attention with an adaptive mask, which is
+conditioned on the attention maps and the prompt embeddings, to dynamically
+adjust the contribution of each text token to the image features. This
+mechanism explicitly diminishes the ambiguity in semantic information embedding
+from the text encoder, leading to a boost of text-to-image consistency in the
+synthesized images. Our method, termed MaskDiffusion, is training-free and
+hot-pluggable for popular pre-trained diffusion models. When applied to the
+latent diffusion models, our MaskDiffusion can significantly improve the
+text-to-image consistency with negligible computation overhead compared to the
+original diffusion models.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
