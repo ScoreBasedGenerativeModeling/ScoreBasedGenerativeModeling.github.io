@@ -1359,6 +1359,9 @@ layout: default
 <option>SA-Solver: Stochastic Adams Solver for Fast Sampling of Diffusion Models</option>
 <option>Diffusion-Based Co-Speech Gesture Generation Using Joint Text and Audio Representation</option>
 <option>Learning Energy-Based Models by Cooperative Diffusion Recovery Likelihood</option>
+<option>Elucidating the solution space of extended reverse-time SDE for diffusion models</option>
+<option>InstaFlow: One Step is Enough for High-Quality Diffusion-Based Text-to-Image Generation</option>
+<option>Diffusion-based Adversarial Purification for Robust Deep MRI Reconstruction</option>
     </select>
   </span>
   <span class="selector">
@@ -2754,6 +2757,7 @@ layout: default
 <option>Isaac Corley</option>
 <option>Ishaan Gulrajani</option>
 <option>Isidro Hotzel</option>
+<option>Ismail Alkhouri</option>
 <option>István Fazekas</option>
 <option>Itai Gat</option>
 <option>Ivan Kapelyukh</option>
@@ -4090,12 +4094,14 @@ layout: default
 <option>Qinghe Wang</option>
 <option>Qinghua Hu</option>
 <option>Qinghui Liu</option>
+<option>Qingmin Liao</option>
 <option>Qingping Zheng</option>
 <option>Qingqing Huang</option>
 <option>Qingsong Wen</option>
 <option>Qingwei Lin</option>
 <option>Qingyuan Xu</option>
 <option>Qingzhe Gao</option>
+<option>Qinpeng Cui</option>
 <option>Qinsheng Zhang</option>
 <option>Qinye Zhou</option>
 <option>Qiong Luo</option>
@@ -4200,6 +4206,7 @@ layout: default
 <option>Ron Mokady</option>
 <option>Rongjie Huang</option>
 <option>Rongrong Ji</option>
+<option>Rongrong Wang</option>
 <option>Rosanne Liu</option>
 <option>Rose Yu</option>
 <option>Roy Ganz</option>
@@ -4266,6 +4273,7 @@ layout: default
 <option>Sagie Benaim</option>
 <option>Sahra Ghalebikesabi</option>
 <option>Saining Xie</option>
+<option>Saiprasad Ravishankar</option>
 <option>Saiyue Lyu</option>
 <option>Sakarn Khamkaeo</option>
 <option>Salman Khan</option>
@@ -4434,6 +4442,7 @@ layout: default
 <option>Shih-Chieh Su</option>
 <option>Shihao Ji</option>
 <option>Shihao Zhao</option>
+<option>Shijun Liang</option>
 <option>Shikai Fang</option>
 <option>Shikui Tu</option>
 <option>Shikun Sun</option>
@@ -5140,6 +5149,7 @@ layout: default
 <option>Xinyang Jiang</option>
 <option>Xinyang Zhang</option>
 <option>Xinyi Yang</option>
+<option>Xinyi Zhang</option>
 <option>Xinyin Ma</option>
 <option>Xinying Guo</option>
 <option>Xinyu Hu</option>
@@ -5152,6 +5162,7 @@ layout: default
 <option>Xiuming Zhang</option>
 <option>Xiurong Jiang</option>
 <option>Xiuyu Li</option>
+<option>Xiwen Zhang</option>
 <option>Xiyuan Kang</option>
 <option>Xize Cheng</option>
 <option>Xizewen Han</option>
@@ -5810,6 +5821,7 @@ layout: default
 <option>Zizhao Hu</option>
 <option>Zohya Khalique</option>
 <option>Zolnamar Dorjsembe</option>
+<option>Zongqing Lu</option>
 <option>Zongsheng Yue</option>
 <option>Zongwei Wu</option>
 <option>Zongyuan Yang</option>
@@ -5848,6 +5860,219 @@ layout: default
 {% assign id = 0 %}
  <hr/>
  
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## InstaFlow: One Step is Enough for High-Quality Diffusion-Based Text-to-Image Generation
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> September 12, 2023 </span>
+         <span class="authors"> Xingchao Liu, Xiwen Zhang, Jianzhu Ma, Jian Peng, Qiang Liu </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.06380" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion models have revolutionized text-to-image generation with its
+exceptional quality and creativity. However, its multi-step sampling process is
+known to be slow, often requiring tens of inference steps to obtain
+satisfactory results. Previous attempts to improve its sampling speed and
+reduce computational costs through distillation have been unsuccessful in
+achieving a functional one-step model. In this paper, we explore a recent
+method called Rectified Flow, which, thus far, has only been applied to small
+datasets. The core of Rectified Flow lies in its \emph{reflow} procedure, which
+straightens the trajectories of probability flows, refines the coupling between
+noises and images, and facilitates the distillation process with student
+models. We propose a novel text-conditioned pipeline to turn Stable Diffusion
+(SD) into an ultra-fast one-step model, in which we find reflow plays a
+critical role in improving the assignment between noise and images. Leveraging
+our new pipeline, we create, to the best of our knowledge, the first one-step
+diffusion-based text-to-image generator with SD-level image quality, achieving
+an FID (Frechet Inception Distance) of $23.3$ on MS COCO 2017-5k, surpassing
+the previous state-of-the-art technique, progressive distillation, by a
+significant margin ($37.2$ $\rightarrow$ $23.3$ in FID). By utilizing an
+expanded network with 1.7B parameters, we further improve the FID to $22.4$. We
+call our one-step models \emph{InstaFlow}. On MS COCO 2014-30k, InstaFlow
+yields an FID of $13.1$ in just $0.09$ second, the best in $\leq 0.1$ second
+regime, outperforming the recent StyleGAN-T ($13.9$ in $0.1$ second). Notably,
+the training of InstaFlow only costs 199 A100 GPU days. Project
+page:~\url{https://github.com/gnobitab/InstaFlow}.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Elucidating the solution space of extended reverse-time SDE for diffusion models
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> September 12, 2023 </span>
+         <span class="authors"> Qinpeng Cui, Xinyi Zhang, Zongqing Lu, Qingmin Liao </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.06169" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  cs.LG, cs.CV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Diffusion models (DMs) demonstrate potent image generation capabilities in
+various generative modeling tasks. Nevertheless, their primary limitation lies
+in slow sampling speed, requiring hundreds or thousands of sequential function
+evaluations through large neural networks to generate high-quality images.
+Sampling from DMs can be seen as solving corresponding stochastic differential
+equations (SDEs) or ordinary differential equations (ODEs). In this work, we
+formulate the sampling process as an extended reverse-time SDE (ER SDE),
+unifying prior explorations into ODEs and SDEs. Leveraging the semi-linear
+structure of ER SDE solutions, we offer exact solutions and arbitrarily
+high-order approximate solutions for VP SDE and VE SDE, respectively. Based on
+the solution space of the ER SDE, we yield mathematical insights elucidating
+the superior performance of ODE solvers over SDE solvers in terms of fast
+sampling. Additionally, we unveil that VP SDE solvers stand on par with their
+VE SDE counterparts. Finally, we devise fast and training-free samplers, ER-SDE
+Solvers, elevating the efficiency of stochastic samplers to unprecedented
+levels. Experimental results demonstrate achieving 3.45 FID in 20 function
+evaluations and 2.24 FID in 50 function evaluations on the ImageNet
+64$\times$64 dataset.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
+{% assign id = id | plus:1 %}
+<div class="entry">
+	<div class="row">
+	  <div class="column1" >
+{% capture x %}
+## Diffusion-based Adversarial Purification for Robust Deep MRI Reconstruction
+{% endcapture %}{{ x | markdownify }}
+
+<div id="block_container">
+		<div id="bloc2">
+         <span class="dates"> September 11, 2023 </span>
+         <span class="authors"> Ismail Alkhouri, Shijun Liang, Rongrong Wang, Qing Qu, Saiprasad Ravishankar </span>
+		</div>
+</div>
+
+	  </div>
+	  <div class="column2" >
+	    <div id="block_container">
+		<div id="bloc2">
+		<a href="https://arxiv.org/abs/2309.05794" target="_blank" class="btn btn-info" role="button"> Paper </a>
+		</div>
+		<div id="bloc3">
+		     <p>
+		      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse{{ id }}" aria-expanded="false" aria-controls="collapse{{ id }}">
+				Abstract
+		      </button>
+		    </p>
+        
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="column1" >
+	  </div>
+	  <div class="column2">
+		  <div class="tags">
+			  eess.IV
+		  </div>
+
+	  </div>
+	</div>
+
+<div class="collapse" id="collapse{{ id }}">
+{% capture x %}
+ Deep learning (DL) methods have been extensively employed in magnetic
+resonance imaging (MRI) reconstruction, demonstrating remarkable performance
+improvements compared to traditional non-DL methods. However, recent studies
+have uncovered the susceptibility of these models to carefully engineered
+adversarial perturbations. In this paper, we tackle this issue by leveraging
+diffusion models. Specifically, we introduce a defense strategy that enhances
+the robustness of DL-based MRI reconstruction methods through the utilization
+of pre-trained diffusion models as adversarial purifiers. Unlike conventional
+state-of-the-art adversarial defense methods (e.g., adversarial training), our
+proposed approach eliminates the need to solve a minimax optimization problem
+to train the image reconstruction model from scratch, and only requires
+fine-tuning on purified adversarial examples. Our experimental findings
+underscore the effectiveness of our proposed technique when benchmarked against
+leading defense methodologies for MRI reconstruction such as adversarial
+training and randomized smoothing.
+{% endcapture %}{{ x | markdownify }}
+</div>
+</div>
+<!--EndPost--------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--Post--------------------------------------------------------------------------------------------------------------------------------------------->
 {% assign id = id | plus:1 %}
